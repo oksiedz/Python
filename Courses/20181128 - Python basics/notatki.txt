@@ -1,0 +1,206 @@
+Warsztaty python
+prowadzący
+Bartłomiej Biernacki
+bartlomiej@biernacki.me
+github.com/pax0r
+
+Zasoby:
+Google
+Dokumentacja Python: https://docs.python.org/3/
+Stackoverflow: https://stackoverflow.com/
+GitHub: https://gitbuh.com/pax0r/python-warsztaty-2
+
+Dlaczego Python?
+- Prosta składnia
+Kompaktowy kod
+Kod niezależny od systemu
+Wszechstronny (Big Data, AI, Web, devops, pentesting)
+Popularność (Facebook, Google, Instagram, Dropbox)
+
+Tworzenie kodu:
+Interpreter
+zwykły notatnik (pliku tekstowe *.py)
+IDE - dodatkowa funkcjonalnośc jak: podpowiedzi, kolorowanie składni, debugger, testy (np.Python IDLE, PyCharm, VS Code, Sublme, Atom)
+
+Uruchamianie kodu:
+Interpreterkonsola/wiersz poleceń (python.exe)
+IDE umożliwiają uruchamianie bezpośredni (program nie zawsze zadziała bez IDE)
+
+typy danych:
+int - liczby całkowite
+float - liczby zmienno-przecinkowe
+str - łańcuchy znaków (string)
+Bool - prawda fałsz
+None - nic,null, blank
+listy słowniki, tuple, pliki, własne typy
+
+Zmienna:
+nazwany obszar pamięci, w kórym znajduje się jakś wartość
+pozwala na ponowne użycie wartości w innym miejscu w kodzie
+np.
+moja_liczba = 124 (= to znak przypisania)
+nazwisko = "Kowalski"
+
+Matematyczne:
++, -, *, /, //, %, **
+logiczne
+==, !=, <, >, <=, >=, in, is, and, or, not
+
+Operator przypisania 
+= 
+najpierw wykonywanie (obliczane) jest wyrażeniem, które znajduje się po prawej stronie znaku, następnie ta wartość jest przypisywana do zmiennej po lewej stronie znaku
+wynik = 5 != 4 and 'a' not in 'Andrzej' etc.
+
+Operator porównania:
+ = przypisuje wartość do zmiennej
+ == operator porównania - porównuje dwie wartości (zwraca true lub false)
+
+Komentarze
+# 
+wszystko po tym znaku jest ignorowane przez interpreter. Może służyć do opisania fragmentu kodu.
+
+Metody wbudowane typów
+Każdy typ danych posiada zdefiniownae metody (funckje), które pozwalają na wykonanie różnych (najpopularniejszych) działań, właściwch dla tego typu.
+* typ.funkcja()
+np. "ala ma kota".capitalize() #zamienia pierwszą literę stringu na Wielką literę
+
+Sting
+
+Liczby:
+liczby zapisujemy bez ciapek, bez apostrofów.
+Jeżeli liczbę zapiszemy w ciapkach to będzie traktowany jako napis (string).
+
+funkcje input i print
+nazwisko = input ("podaj nazwisko")
+input () przyjmuje od użytkownika dane i zapisuje do zmiennej. Wszystko jest stringiem.
+
+print(nazwisko)
+print() służy do wydrukowania tekstu na keranie: automatycznie dodaje na końcu stirna znak specjalny nowej linii \n
+
+Blok kodu:
+Instrukcja wyrażenie: #dwukropek ropoczynający blok
+    instrukcja #4 spacje w bloku wewnętrznym etc,kolejny poziom to już 8 spacji
+
+Taki zapis mówi, że instrukcje poniżej są powiązane z blokiem
+
+Instrukcja warunkowa:
+if(): #warunek
+    
+elif(): #inny warunek wykonywany gdy if jest fałszymy
+    
+elif(): #inny warunek
+    
+else(): #przypadek domyślny, tu nie sprawdzamy warunku, kod w else będzie wykonany, gdy powyższe są fałszywe
+
+range
+
+#range(stop)
+range(3) #dostaniemy liczbę 0, 1, 2 o długości 3
+#range(start,stop)
+range(4,8) #dostaniemy 4,5,6,7
+#range(start,stop,krok) #liczba stop nigdy nie znajdzie się w range
+range(0,10,3) #dostaniemy 0,3,6,9
+
+Lista
+list(),[]
+
+lista = [1, 2, 3]
+lista2 = ["kwiatek", "doniczka", "ziemia", "woda"]
+lista3 = []
+lista4 = [1, "dwa"]
+lista5 = list(range(2,5))
+Możemy indeksować, slice'ować do leementu odwołujemy się przez indeksować
+
+krotka
+tuple()
+Tuple jet typem niezmiennym - raz zdefiniowanego typu nie można zmienić
+tuple1 = ("raz", "dwa", "trzy")
+tuple1[0] = "jeden"
+
+x = "jeden", "dwa" #to będzie tuple
+
+Słownik
+dict(),[]
+
+{klucz:wartość}
+klucz - musi być typem niezmiennym (stringm tuple, liczba) musi być unikalny
+wartość - mogą być powtórzone
+odwołujemy się poprzez klucza nie indeks!!!
+slownik
+
+Pętla while
+
+while (wartość logiczna True):
+    kod
+	....
+	update warrtości logicznej na False
+
+Kod wewnątrz pętli while, będzie powtarzany dopóki wartość logiczna (wyrażenie zmodyfikowane  będzie równie True).
+
+Pętla for
+
+for element in kolekcja:
+    możemy użyć element
+	....
+
+Pętla "for" wykona się tyle razy ile elementów jest w kolekcji
+
+Funkcje:
+definiowanie:
+def do_nothing():
+    pass
+
+wywoływanie
+do_nothing()
+
+def do_nothing(x, y ,z): ###x, y, z to argumenty funkcji
+    pass
+
+jeżeli mamy argument domyślny to piszemy:
+def do_nothing(x, y=10): #y jest domyślna zmienna
+    pass
+
+return
+
+funkcja może robić coś wewnątrz siebie (nawet nie trzeba print)
+
+def give_square
+funkcja to reużywalny blok kodu
+
+obsługa plików
+otiweramy plik
+plik = open("sciezka_do_pliku", tryb)
+
+tryuby:
+r- tylko do odczytu
+w - zapisuwanie pliku (stary plik o tej nazwie będzie usunięty)
+r+ - do odczytu i zapisu
+a - dopisywanie do pliku (dane są dopisane do końca istniejącego pliku)
+
+pliki należy zamykać po zyciu
+plik = open ("plik.txt")
+    #kod
+plik.close()
+
+otwarcie pliku za pomocą with pozwala na automatyczne zamykanie pliku rzez pythona
+
+with open("plik.txt") as plik: #równoważnie można by było zrobić jako: plik = with open ("plik.txt"):
+    print(plik.readline())
+
+plid.read() - odczytaine całego pliku , zwracany jest string zawierający cały tekst pliku (włącznie e znakami \n) - opc. argument int określająca ilość bajtów do wczytania
+
+plik.readline() - odczytanianie jednej linni z pliku, każde kolejne wyczytanie to kolejna linia
+
+plik.readlines() - odczytuje cały tekst ale zwraca listę stringów (linijek, włącznie ze znakiem \n)
+
+for line in plik:#metoda na odczytanie całego pliku i wy
+    print(line, end='')
+
+############333moduł requests
+import requests #pozwala udawac przeglarke i sciagac dane ze stron internetowych
+result = requests.get("http://google.pl") #prosi strone o dane
+print(result.text)
+
+result2 = requests.get("https://catfact.ninja/fact")
+koci_fakt = result.json()
+print("Random cat fact: "m koci_fakt['fact"])

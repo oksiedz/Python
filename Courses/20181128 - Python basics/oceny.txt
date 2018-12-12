@@ -1,0 +1,7 @@
+Nowak 5
+Kowalski 6
+Malinowska 3
+Biernacki 2
+Wiśniewski 4
+Lewadowska 3
+Kamińska 5
