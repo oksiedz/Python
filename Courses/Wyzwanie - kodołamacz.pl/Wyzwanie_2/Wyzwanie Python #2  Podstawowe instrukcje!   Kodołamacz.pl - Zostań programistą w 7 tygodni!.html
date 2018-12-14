@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Google Tag Manager -->
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/438403872984586.js" async=""></script><script async="" src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/fbevents.js"></script><script type="text/javascript" async="" src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/tracking.js"></script><script type="text/javascript" async="" src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/analytics.js"></script><script async="" src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K55LPRR');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/swipebox.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/bootstrap.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/style.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/syntax.css" rel="stylesheet">
+    <link rel="stylesheet" href="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ionicons.css">
+    <!-- <link href=""/assets/color-box/color-style.css rel="stylesheet" /> -->
+    <!-- <link href=""/assets/color-box/farbtastic/farbtastic.css rel="stylesheet" /> -->
+    <link rel="stylesheet" href="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Wyzwanie Python #2: Podstawowe instrukcje! | Kodołamacz.pl - Zostań programistą w 7 tygodni!</title>
+<meta name="generator" content="Jekyll v3.7.4">
+<meta property="og:title" content="Wyzwanie Python #2: Podstawowe instrukcje!">
+<meta name="author" content="mbartoszuk">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Gdy pierwsze kroki mamy już za sobą i umiemy uruchomić nasz pierwszy program, czas zapoznać się z podstawowymi instrukcjami, jakich możemy użyć w języku Python. Będzie to podstawa, na której będziemy mogli budować dalsze, bardziej skomplikowane programy.">
+<meta property="og:description" content="Gdy pierwsze kroki mamy już za sobą i umiemy uruchomić nasz pierwszy program, czas zapoznać się z podstawowymi instrukcjami, jakich możemy użyć w języku Python. Będzie to podstawa, na której będziemy mogli budować dalsze, bardziej skomplikowane programy.">
+<link rel="canonical" href="https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/">
+<meta property="og:url" content="https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/">
+<meta property="og:site_name" content="Kodołamacz.pl - Zostań programistą w 7 tygodni!">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-12-13T10:00:00+00:00">
+<script type="application/ld+json">
+{"datePublished":"2018-12-13T10:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/"},"@type":"BlogPosting","url":"https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/","author":{"@type":"Person","name":"mbartoszuk"},"headline":"Wyzwanie Python #2: Podstawowe instrukcje!","description":"Gdy pierwsze kroki mamy już za sobą i umiemy uruchomić nasz pierwszy program, czas zapoznać się z podstawowymi instrukcjami, jakich możemy użyć w języku Python. Będzie to podstawa, na której będziemy mogli budować dalsze, bardziej skomplikowane programy.","dateModified":"2018-12-13T10:00:00+00:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script async="" src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/hotjar-391963.js"></script><script async="" src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/modules-aac78db949fa8bad21a45e66f0427dc1.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K55LPRR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="box-wide">
+    <!-- header v1 -->
+<header class="header-v1" id="home-section">
+    <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 45px;"><div class="sticky-bar" style="position: fixed; top: 0px;">
+    <div class="container">
+        <div class="header-top">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo"><a href="https://kodolamacz.pl/"><img src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/kodolamacz_logo3.svg"></a></div>
+                </div>
+                <div class="col-md-9">
+                    <nav class="main-nav">
+                        <div class="responsive-menu"><i class="fa fa-bars"></i></div>
+                        <ul style="display: none;">
+                            <li><a href="https://kodolamacz.pl/#o-nas">O nas</a>
+                                <ul>
+                                    <li><a href="https://kodolamacz.pl/#o-nas">Dlaczego my?</a></li>
+                                    <li><a href="https://kodolamacz.pl/kadra/">Wykładowcy</a></li>
+                                    <li><a href="https://kodolamacz.pl/biuro-prasowe/">Biuro prasowe</a></li>
+                                
+                                </ul>
+                            </li>
+                            <li><a href="#bootcampy">Nasze kursy</a>
+                                    <ul>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-datascience/">Data Science</a></li>
+									  <li><a href="https://kodolamacz.pl/bootcamp-python/">Python</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-fullstack/">Full-stack</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-javascript/">JavaScript</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-java/">Java</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-tester/">Tester automatyczny</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-android/">Android</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-tworzenie-gier/">Tworzenie gier</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-cpp/">C++ for IoT Development</a></li>		
+                                    </ul>
+                            </li>
+                            <li><a href="https://kodolamacz.pl/dofinansowanie/">Dofinansowanie</a></li>
+                            <li><a data-anchor="works-section" href="https://kodolamacz.pl/pracodawcy/">Dla pracodawców</a></li>
+                            <li><a href="https://kodolamacz.pl/blog/">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+<div class="messagepop pop">
+    <h2>Pobierz informator</h2>
+    <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+      <div class="form-group">
+       <label for="email" class="control-label">Adres email:</label>
+       <input type="email" class="form-control" id="email" placeholder="Email" name="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="custom_bootcamp" class="control-label">Wybierz interesującą Cię ścieżkę:</label>
+          <select name="custom_bootcamp" class="form-control">
+            <option value="Data Scientist" selected="selected">Data Scientist</option>
+            <option value="Full-stack Developer">Full-stack Developer</option>
+            <option value="Java Developer">Java Developer</option>
+            <option value="JavaScript Developer">JavaScript Developer</option>
+            <option value="Game Developer">Game Developer</option>
+            <option value="Tester oprogramowania">Tester oprogramowania</option>
+            <option value="C++ Developer">C++ Developer (IoT)</option>
+            <option value="Android Developer">Android Developer</option>
+          </select>
+      </div>
+      <input type="hidden" name="campaign_token" value="nvPRH">
+	    <input type="hidden" name="thankyou_url" value="https://kodolamacz.pl/dziekujemy">
+      <div class="form-group">
+          <input type="submit" value="Pobierz" name="commit" id="message_submit" class="btn btn-info">
+          <input type="button" class="btn btn-default" id="messagepop_close" value="Anuluj">
+      </div>
+    </form>
+    <p style="font-size: 10px;line-height: 1.7em;">Wysyłając niniejszy 
+formularz, wyrażam zgodę na przesyłanie informacji handlowych drogą 
+elektroniczną przez firmę Sages Sp. z o.o. z siedzibą w Warszawie przy 
+ul. Nowogrodzkiej 62c, zgodnie z ustawą z dnia 18 lipca 2002 r. o 
+świadczeniu usług drogą elektroniczną (Dz. U. z 2002 r. Nr 144, poz. 
+1204 z późn. zm.).</p>
+</div>
+
+
+</header>
+<!-- header v1 -->
+
+
+    
+<!-- start post -->
+<div class="blog-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="blog-post single-post">
+                  <div class="post-header">
+                    <h1>Wyzwanie Python #2: Podstawowe instrukcje!</h1>
+                    <p><i class="fa fa-calendar"></i> 
+                    13
+                    grudnia
+                    
+                    2018</p>
+                  </div>
+                    <div class="post-cover">
+                        <img src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/okladkablog2.png" alt="Wyzwanie Python #2: Podstawowe instrukcje!">
+                    </div>
+                    <div class="post-content">
+                        <p>Gdy pierwsze kroki mamy już za sobą i umiemy 
+uruchomić nasz pierwszy program, czas zapoznać się z podstawowymi 
+instrukcjami, jakich możemy użyć w języku Python. Będzie to podstawa, na
+ której będziemy mogli budować dalsze, bardziej skomplikowane programy.</p>
+
+<h2 id="komentarze">Komentarze</h2>
+
+<p>Zanim przejdziemy do konkretnych instrukcji, warto wspomnieć, czym 
+jest komentarz w kodzie. Jest to wydzielony fragment kodu, który nie 
+jest w żaden sposób interpretowany przez interpreter języka Python. Ma 
+on służyć jedynie człowiekowi, aby kod był czytelniejszy. Zazwyczaj jest
+ to skomentowanie mniej oczywistych partii kodu, informacja o tym, do 
+czego służy dana funkcja, czy po prostu wyłączenie wiersza kodu, którego
+ chwilowo nie chcemy wykonywać.</p>
+
+<p>Język Python dopuszcza dwa rodzaje komentarzy: jedno- oraz wielowierszowe. Te pierwsze zaczynamy znakiem <code class="highlighter-rouge">#</code>.
+ Od tego znaku aż do końca wiersza kod nie jest interpretowany. Dobry 
+zwyczaj nakazuje zostawienie jednego znaku odstępu (spacji) pomiędzy tym
+ znakiem a początkiem tekstu komentarza.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># funkcja główna programu
+def main():
+    print("Witaj świecie!") # ta funkcja wypisuje napis
+    # wiersz poniżej wczytuje dane z klawiatury
+    pobrany_napis = input()
+    print("Twój napis to: " + pobrany_napis)
+# uruchomienie funkcji głównej
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<p>Istnieje też komentarz wielowierszowy. Ten zaczyna się od trzech znaków <code class="highlighter-rouge">"</code>: <code class="highlighter-rouge">"""</code>.
+ Tak naprawdę zapis ten tworzy napis wielowierszowy (o samych napisach 
+będziemy jeszcze pisać), ale są one (te napisy) używane także do 
+obszerniejszych komentarzy.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"""
+Tutaj następuje obszerne wyjaśnienie funkcji main().
+Przyjmowane parametry: żadne
+Wartość zwracana: żadna
+"""
+def main():
+    print("Witaj świecie!")
+    pobrany_napis = input()
+    print("Twój napis to: " + pobrany_napis)
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<p>Oczywiście możemy w ramach jednego kodu źródłowego dowolnie używać na przemian obu typów komentarzy.</p>
+
+<h2 id="zmienne">Zmienne</h2>
+
+<p>W naszych programach często będziemy obliczać jakieś wartości lub 
+wczytywać je od użytkownika. Jednak samo obliczenie wartości to nie 
+wszystko. Trzeba jeszcze ją gdzieś zapisać, aby wynik ciężkiej pracy 
+procesora nie poszedł na marne. Gdy ją zapiszemy, możemy z niej 
+skorzystać wielokrotnie, bez ponownego jej obliczania. Aby to zrobić, 
+musimy posłużyć się zmienną. Zmienna często jest przyrównywana do 
+pudełeczka. Co więcej, pudełeczko ma swoją etykietę. To właśnie po tej 
+etykiecie odwołujemy się do niego w dalszej częsci programu. 
+Podsumowując, ważnym jest, żeby rozróżniać dwie rzeczy: nazwę zmiennej 
+(etykietę pudełka) i jej wartość (wnętrze pudełka). Przykładowo:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 7
+</code></pre></div></div>
+
+<p>Powyżej mamy zmienną o nazwie <code class="highlighter-rouge">a</code>, która ma wartość <code class="highlighter-rouge">7</code>. Pamiętajmy, że zmienna, jak sama nazwa wskazuje, może zmieniać swoją wartość w czasie trwania programu:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 7
+print(a)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 7
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 8
+print(a)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 8
+</code></pre></div></div>
+
+<p>Teraz omówmy styl nazewnictwa zmiennych. Jest to wbrew pozorom dość 
+ważne zagadnienie, które mocno wpływa na czytelność kodu, a więc także 
+na koszt jego utrzymania w przyszłości (np. czy łatwo jest zmodyfikować 
+kod w przyszłości, gdy zapomnimy, co dokładnie w nim napisaliśmy lub 
+pracujemy na cudzym kodzie).</p>
+
+<p>Zacznijmy od tego, jakie znaki mogą składać się na nazwę zmiennej. Otóż jest to zdefiniowane w <a href="https://docs.python.org/3/reference/lexical_analysis.html#identifiers">dokumentacji do języka</a>: mogą to być małe i wielkie litery od <code class="highlighter-rouge">a</code> do <code class="highlighter-rouge">z</code>, znak podkreślenia <code class="highlighter-rouge">_</code>, a także cyfry od <code class="highlighter-rouge">0</code> do <code class="highlighter-rouge">9</code>, przy czym nazwa zmiennej nie może się od cyfry zaczynać (może za to od litery i znaku podkreślenia).</p>
+
+<p>Gdy już wiemy, jakie znaki może zawierać identyfikator zmiennej, 
+przede wszystkim zapamiętajmy zasadę: komentarz jest zawsze złym 
+rozwiązaniem i należy go w miarę możliwości unikać. Za to dobrym 
+rozwiązaniem jest takie nazywanie zmiennych i funkcji, aby te nazwy same
+ w sobie tłumaczyły, co kod robi. Tak więc złym rozwiązaniem jest:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p = 0.23 # podatek VAT
+</code></pre></div></div>
+
+<p>zaś dobrym:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>podatek_VAT = 0.23
+</code></pre></div></div>
+
+<p>Ponieważ i tak nie musimy pisać nazwy zmiennej w całości, a wystarczy
+ napisać jedynie jej początek, a środowisko programistyczne podpowie nam
+ i uzupełni resztę, nie bójmy się nawet dość długich nazw zmiennych:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>podatek_VAT_do_2010 = 0.22
+podatek_VAT_od_2011 = 0.23
+</code></pre></div></div>
+
+<p>Jak widzimy, dłuższe nazwy zmiennych powodują pewien kłopot: jak 
+łączyć poszczególne składowe takiej nazwy? Wyróżniamy parę typowych 
+sposobów:</p>
+
+<ul>
+  <li>
+    <p>b (pojedyncza mała litera)</p>
+  </li>
+  <li>
+    <p>B (pojedyncza wielka litera)</p>
+  </li>
+  <li>
+    <p>lowercase (małe litery)</p>
+  </li>
+  <li>
+    <p>lower_case_with_underscores (małe litery z podkreśleniami)</p>
+  </li>
+  <li>
+    <p>UPPERCASE (wielkie litery)</p>
+  </li>
+  <li>
+    <p>UPPER_CASE_WITH_UNDERSCORES (wielkie litery z podkreśleniami)</p>
+  </li>
+  <li>
+    <p>CapitalizedWords (lub CapWords czy CamelCase – nazwane tak od 
+“garbów” jakie tworzą wielkie litery). Uwaga: Podczas używania akronimów
+ w tym stylu, używamy wielkich liter dla całego akronimu, stąd 
+napiszemy: <code class="highlighter-rouge">HTTPServerError</code>, a nie: <code class="highlighter-rouge">HttpServerError</code>.</p>
+  </li>
+  <li>
+    <p>mixedCase (tak jak poprzednio, ale zaczynamy małą literą)</p>
+  </li>
+  <li>
+    <p>Capitalized_Words_With_Underscores (brzydki, nieużywany sposób)</p>
+  </li>
+</ul>
+
+<p>Więcej o nazewnictwie można przeczytać <a href="https://www.python.org/dev/peps/pep-0008/#naming-conventions">tutaj</a>.</p>
+
+<p>Którego sposobu używać? Tak naprawdę odpowiedź jest następująca: 
+wszystko jedno którego, byle konsekwentnie. Jednak gdy wczytamy się w 
+dokumentację <a href="https://www.python.org/dev/peps/pep-0008/#prescriptive-naming-conventions">Pythona</a>,
+ znajdziemy informację, że polecanym sposobem dla zmiennych oraz funkcji
+ jest używanie małych liter oraz znaku podkreślenia 
+(lower_case_with_underscores). Niektóre firmy tworzą swoje własne 
+konwencje nazewnicze dla danego języka, jak np. <a href="https://github.com/google/styleguide/blob/gh-pages/pyguide.md#s3.16-naming">Google</a>.</p>
+
+<p>Pozostaje jeszcze odpowiedzieć na pytanie, w jakim języku tworzyć 
+nazwy zmiennych. W tym poradniku, dla celów dydaktycznych, nazwy 
+zmiennych będą w języku polskim, aby nie zniechęcać osób (być może 
+jeszcze bardzo młodych), które nie znają języka angielskiego, a chcą 
+uczyć się programować. Jednak w praktyce, w firmach, nawet całkowicie 
+polskich, programuje się w języku angielskim (w tym języku nazywa się 
+zmienne i funkcje). Po pierwsze nie występuje wtedy problem z odmianą 
+słów przez przypadki, a po drugie nigdy nie wiadomo, kiedy w dobie 
+powszechnej globalizacji dojdzie do zespołu osoba, która nie posługuje 
+się językiem polskim.</p>
+
+<h2 id="typy-danych">Typy danych</h2>
+
+<p>Każda zmienna, albo, mówiąc ogólniej, każda wartość w programie, ma 
+swój typ. Są liczby całkowite, zmiennopozycyjne, zespolone, napisy, 
+wartości logiczne… Jednak, w odróżnieniu od takich języków jak C++, C# 
+czy Java, w języku Python występuje <a href="https://pl.wikipedia.org/wiki/Typowanie_dynamiczne">typowanie dynamiczne</a>. Oznacza to, że konkretny identyfikator, konkretna zmienna, np. <code class="highlighter-rouge">a</code>, może raz przechowywać napis (<code class="highlighter-rouge">"Ala ma kota"</code>) by po chwili przechowywać liczbę całkowitą (<code class="highlighter-rouge">3</code>).
+ W niektórych językach programowania jest to nie do pomyślenia, jednak 
+Python ceni wolność programisty w tym względzie, by go sztucznie nie 
+ograniczać (oczywiście dzieje się to pewnym kosztem: trudniej analizuje 
+się programy, w których nie możemy mieć pewności, na jakich danych 
+operujemy). Do sprawdzania typu danych służy funkcja <code class="highlighter-rouge">type()</code>.</p>
+
+<p>I tak najważniejszymi typami w języku Python są:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">bool</code>, wartość logiczna, tak lub nie, prawda (<code class="highlighter-rouge">True</code>) albo fałsz (<code class="highlighter-rouge">False</code>):</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>logiczna = True
+print(type(logiczna))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## &lt;class 'bool'&gt;
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">int</code>, liczba całkowita, np. <code class="highlighter-rouge">-7</code>, <code class="highlighter-rouge">0</code> czy <code class="highlighter-rouge">3</code>:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calkowita = -7
+print(type(calkowita))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## &lt;class 'int'&gt;
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">float</code>, czyli wartość zmiennopozycyjna, można ją utożsamiać z wartościami rzeczywistymi, np. <code class="highlighter-rouge">-0.67</code>, <code class="highlighter-rouge">1.0</code>, <code class="highlighter-rouge">3.14</code>:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zmiennopozycyjna = -7.4
+print(type(zmiennopozycyjna))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## &lt;class 'float'&gt;
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">complex</code>, czyli liczba zespolona, np. <code class="highlighter-rouge">-7+8.5j</code>. Warto pamiętać, że w Pythonie jednostką urojoną jest <code class="highlighter-rouge">j</code>, a nie <code class="highlighter-rouge">i</code>.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zespolona = -7.4+8.4j
+print(type(zespolona))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## &lt;class 'complex'&gt;
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">str</code>, powszechnie znany w innych językach jako <code class="highlighter-rouge">string</code>,
+ czyli napis. Napis poznajemy głównie po tym, że jest zapisany w 
+cudzysłowie (i to odróżnia go choćby od nazwy zmiennej czy liczby, które
+ nie są w cudzysłowach). Dodamy, że w języku Python nie ma znaczenia, 
+czy posługujemy się pojedynczymi (<code class="highlighter-rouge">'</code>) czy podwójnymi (<code class="highlighter-rouge">"</code>) cudzysłowami:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>napis = "6+7j" # równie dobrze "ala ma kota"
+print(type(napis))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## &lt;class 'str'&gt;
+</code></pre></div></div>
+
+<h2 id="konwersje-typów">Konwersje typów</h2>
+
+<p>Często zachodzi potrzeba konwersji typów, w szczególności z lub do 
+napisowego. Do tego służą funkcje, które nazywają się dokładnie tak, jak
+ typy. Przyjrzyjmy się prostej konwersji z <code class="highlighter-rouge">int</code> na <code class="highlighter-rouge">float</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(float(5))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 5.0
+</code></pre></div></div>
+
+<p>Jak widzimy całkowite <code class="highlighter-rouge">5</code> (bez kropki ani zera po niej) zostało przekonwertowane na zmiennopozycyjne <code class="highlighter-rouge">5.0</code>. Możemy też dokonać konwersji w drugą stronę:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(int(5.0))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 5
+</code></pre></div></div>
+
+<p>Co jednak się stanie, gdy spróbujemy przekonwertować liczbę, która ma niezerową część ułamkową?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(int(5.7))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 5
+</code></pre></div></div>
+
+<p>Jak widzimy, zostanie ona ucięta, niezależnie od tego, czy było jej 
+bliżej do kolejnej liczby całkowitej czy poprzedniej. Tak samo dla liczb
+ ujemnych:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(int(-5.7))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## -5
+</code></pre></div></div>
+
+<p>Przyjrzyjmy się teraz konwersjom dotyczących napisów. Z napisu do liczby (przypomnijmy, że napisy poznajemy po cudzysłowach):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(float("-5.3"))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## -5.3
+</code></pre></div></div>
+
+<p>A także z liczby do napisu:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>napis = str(-5.3)
+print(napis)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## -5.3
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(type(napis))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## &lt;class 'str'&gt;
+</code></pre></div></div>
+
+<p>Niestety podczas wypisywania napisu jest to robione bez cudzysłowów, dlatego dla pewności dodaliśmy sprawdzenie typu.</p>
+
+<p>Konwersji z napisu na liczbę będziemy dokonywać podczas używania funkcji <code class="highlighter-rouge">input()</code>,
+ np. gdy będziemy wczytywać liczbę od użytkownika, a konwersji na napis,
+ gdy będziemy chcieli połączyć (dokonać konkatenacji) napis z liczbą 
+(liczbę trzeba przekonwertować najpierw na napis).</p>
+
+<h2 id="operatory">Operatory</h2>
+
+<p>Gdy wiemy już, jakie typy danych możemy przechowywać, czas dokonać pierwszych operacji na nich!</p>
+
+<h3 id="podstawowe-operatory-arytmetyczne">Podstawowe operatory arytmetyczne</h3>
+
+<p>Język Python udostępnia typowe operacje znane z lekcji matematyki:</p>
+
+<ul>
+  <li>dodawanie (<code class="highlighter-rouge">+</code>)</li>
+  <li>odejmowanie (<code class="highlighter-rouge">-</code>)</li>
+  <li>mnożenie (<code class="highlighter-rouge">*</code>)</li>
+  <li>dzielenie (<code class="highlighter-rouge">/</code>)</li>
+  <li>reszta z dzielenia, modulo (<code class="highlighter-rouge">%</code>)</li>
+</ul>
+
+<p>Napiszmy prosty program, ilustrujący użycie tych operatorów:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    x = 7
+    y = 3
+    
+    suma = x + y
+    print("Dodawanie: " + str(suma))
+    
+    roznica = x - y
+    print("Różnica: " + str(roznica))
+    
+    iloczyn = x * y
+    print("Iloczyn: " + str(iloczyn))
+    
+    iloraz = x / y
+    print("Iloraz: " + str(iloraz))
+    
+    reszta = x % y
+    print("Reszta z dzielenia: " + str(reszta))
+    
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Dodawanie: 10
+## Różnica: 4
+## Iloczyn: 21
+## Iloraz: 2.3333333333333335
+## Reszta z dzielenia: 1
+</code></pre></div></div>
+
+<p>Zwróćmy uwagę na <code class="highlighter-rouge">str()</code>. Jest 
+to funkcja konwertująca podany argument (w naszym wypadku wynik operacji
+ matematycznej, który jest liczbą) na napis. Czemu jest to potrzebne? 
+Otóż <code class="highlighter-rouge">+</code> którym łączymy napis, np. <code class="highlighter-rouge">"Reszta z dzielenia: "</code>,
+ z wynikiem działania, potrzebuje, aby oba argumenty były napisami. O 
+ile pierwszy jest z definicji, o tyle drugi jest liczbą, którą dopiero 
+trzeba przekonwertować na napis, aby typy się zgadzały.</p>
+
+<h3 id="operatory-łączone">Operatory łączone</h3>
+
+<p>Czasami zachodzi potrzeba, aby zmodyfikować wartość zmiennej na 
+podstawie dotychczasowej wartości w niej przechowywanej. Wyobraźmy 
+sobie, że mamy 3 ziemniaki w garnku. Teraz chcemy dodać jeszcze 2 nowe 
+ziemniaki do garnka (gdyż właśnie teściowa zapowiedziała nam się na 
+obiad). Na podstawie dotychczasowej wiedzy moglibyśmy napisać:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ziemniaki_w_garnku = 3
+ziemniaki_w_garnku = ziemniaki_w_garnku + 2
+print(ziemniaki_w_garnku)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 5
+</code></pre></div></div>
+
+<p>Jednak taki zapis jest dość barokowy, a potrzeba dość częsta, dlatego możemy równie dobrze napisać:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ziemniaki_w_garnku = 3
+ziemniaki_w_garnku += 2
+print(ziemniaki_w_garnku)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 5
+</code></pre></div></div>
+
+<p>Operator <code class="highlighter-rouge">+=</code> jest operatorem, 
+który modyfikuje zmienną stojącą po lewej stronie, dodając do jej 
+dotychczasowej wartości wartość stojącą po prawej stronie. Analogicznie 
+mamy operatory <code class="highlighter-rouge">-=</code>, <code class="highlighter-rouge">*=</code>, <code class="highlighter-rouge">/=</code>, <code class="highlighter-rouge">%=</code>.</p>
+
+<p>Warto przy okazji zaznaczyć, że w języku Python, w przeciwności do wielu innych popularnych języków, nie występuje operator <code class="highlighter-rouge">++</code>, zwiększający wartość zmiennej o <code class="highlighter-rouge">1</code>. Stąd trzeba pisać zmienna <code class="highlighter-rouge">+= 1</code>.</p>
+
+<h3 id="operatory-porównań">Operatory porównań</h3>
+
+<p>Przejdźmy teraz do operatorów porównań. Można je postrzegać dokładnie
+ tak samo, jak operatory arytmetyczne, takie jak dodawanie, jednak ich 
+wynikiem są wartości logiczne, tj. prawda (<code class="highlighter-rouge">True</code>) albo fałsz (<code class="highlighter-rouge">False</code>). I tak zacznijmy od prostego przykładu:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>logiczna = 4 &lt; 5
+print(logiczna)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## True
+</code></pre></div></div>
+
+<p>oraz:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>logiczna = 6 &gt;= 10
+print(logiczna)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## False
+</code></pre></div></div>
+
+<p>Jak widzimy, operatory <code class="highlighter-rouge">&lt;</code> (mniejsze) czy <code class="highlighter-rouge">&gt;=</code>
+ (większe równe) sprawdzają relację pomiędzy dwoma liczbami i zwracają 
+wartość logiczną, czy sprawdzana relacja zachodzi. Oczywiście ma to 
+większy sens, gdy argumentami są zmienne, których wartości nie są nam 
+znane na etapie pisania programu (bo np. wczytujemy je od użytkownika z 
+klawiatury).</p>
+
+<p>Oto lista operatorów logicznych w języku Python:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">&lt;</code> - mniejsze</li>
+  <li><code class="highlighter-rouge">&lt;=</code> - mniejsze równe, zwróćmy uwagę, że zapisujemy tak jak czytamy, nie ma operatora <code class="highlighter-rouge">=&lt;</code> (równe mniejsze)</li>
+  <li><code class="highlighter-rouge">&gt;</code> - większe</li>
+  <li><code class="highlighter-rouge">&gt;=</code> - większe równe</li>
+  <li><code class="highlighter-rouge">==</code> - równa się. Tutaj bardzo ważne jest, aby odróżniać operator przypisania <code class="highlighter-rouge">(=)</code> od operatora porównania równa się (==). To bardzo częsty błąd wśród początkujących programistów. Operator <code class="highlighter-rouge">=</code> nie jest symetryczny, ma na celu przekopiowanie wartości z prawej do lewej. W niektórych językach zapisuje się go jako <code class="highlighter-rouge">&lt;-</code> (ale nie w Pythonie). Operator <code class="highlighter-rouge">=</code> nie ma nic wspólnego z wartościami logicznymi. Za to operator <code class="highlighter-rouge">==</code>
+ jest operatorem zwracającym wartość logiczną, a co więcej, jest on 
+operatorem symetryczym (nie ma znaczenia zamienienie kolejnością 
+argumentów).</li>
+  <li><code class="highlighter-rouge">!=</code> - nie równa się</li>
+</ul>
+
+<p>Napiszmy prosty kod, który zilustruje działanie poszczególnych operatorów:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    x = 7
+    y = 3
+    
+    print(str(x) + "&lt;" + str(y) + " == " + str(x &lt; y))
+    print(str(x) + "&lt;=" + str(y) + " == " + str(x &lt;= y))
+    print(str(x) + "&gt;" + str(y) + " == " + str(x &gt; y))
+    print(str(x) + "&gt;=" + str(y) + " == " + str(x &gt;= y))
+    print(str(x) + "==" + str(y) + " == " + str(x == y))
+    print(str(x) + "!=" + str(y) + " == " + str(x != y))
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 7&lt;3 == False
+## 7&lt;=3 == False
+## 7&gt;3 == True
+## 7&gt;=3 == True
+## 7==3 == False
+## 7!=3 == True
+</code></pre></div></div>
+
+<p>To, co nowe w tym kodzie, to wielokrotne sklejanie napisów: najpierw konwertujemy <code class="highlighter-rouge">x</code> do napisu, potem doklejamy napis reprezentujący relację logiczną (np. <code class="highlighter-rouge">"&lt;="</code>), następnie skonwertowaną do napisu wartość <code class="highlighter-rouge">y</code>, by ostatecznie dokleić wynik działania danego operatora.</p>
+
+<h3 id="łączenie-wielu-operatorów">Łączenie wielu operatorów</h3>
+
+<p>Specyficzną dla języka Python możliwością jest sprawdzenie dwóch 
+relacji naraz. Może się to przydać np. do sprawdzenia, czy liczba należy
+ do zadanego przedziału:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wiek = 35
+czy_wiek_produkcyjny = 18 &lt;= wiek &lt;= 65
+print(czy_wiek_produkcyjny)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## True
+</code></pre></div></div>
+
+<h3 id="operatory-logiczne">Operatory logiczne</h3>
+
+<p>Pozostaje nam jeszcze omówić parę operatorów logicznych, czyli 
+takich, których argumentami są wartości logiczne oraz ich wynik także 
+jest taką wartością. Są to znane nam z lekcji logiki operatory 
+koniunkcji (<code class="highlighter-rouge">and</code>), alternatywy (<code class="highlighter-rouge">or</code>), a także zaprzeczenie (<code class="highlighter-rouge">not</code>).</p>
+
+<ul>
+  <li>Operator koniunkcji, <code class="highlighter-rouge">and</code>, utożsamiany z polskim i. Zwraca wartość <code class="highlighter-rouge">True</code> wtedy i tylko wtedy, gdy oba argumenty są równe <code class="highlighter-rouge">True</code>:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("1 i 1: " + str(True and True))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 1 i 1: True
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("0 i 1: " + str(False and True))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 0 i 1: False
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("1 i 0: " + str(True and False))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 1 i 0: False
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("0 i 0: " + str(False and False))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 0 i 0: False
+</code></pre></div></div>
+
+<ul>
+  <li>Operator alternatywy, <code class="highlighter-rouge">or</code>, utożsamiany z polskim lub. Zwraca wartość <code class="highlighter-rouge">True</code> wtedy i tylko wtedy, gdy przynajmniej jeden argument jest równy <code class="highlighter-rouge">True</code>:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("1 lub 1: " + str(True or True))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 1 lub 1: True
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("0 lub 1: " + str(False or True))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 0 lub 1: True
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("1 lub 0: " + str(True or False))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 1 lub 0: True
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("0 lub 0: " + str(False or False))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 0 lub 0: False
+</code></pre></div></div>
+
+<ul>
+  <li>Operator zaprzeczenia, <code class="highlighter-rouge">not</code>, utożsamiany z polskim nie. Zwraca wartość przeciwną, niż argument:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("nie 1: " + str(not True))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## nie 1: False
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("nie 0: " + str(not False))
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## nie 0: True
+</code></pre></div></div>
+
+<p>Przykładowe użycie: gdybyśmy nie wiedzieli, że przynależność do 
+zbioru możemy sprawdzić poprzez połączenie dwóch operatorów relacyjnych,
+ to moglibyśmy go dokonać w ten sposób:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wiek = 35
+czy_wiek_produkcyjny = 18 &lt;= wiek and wiek &lt;= 65
+print(czy_wiek_produkcyjny)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## True
+</code></pre></div></div>
+
+<h2 id="instrukcja-warunkowa">Instrukcja warunkowa</h2>
+
+<p>W programie często musimy obsłużyć następujący scenariusz: wykonać 
+kod, ale tylko pod jakimś warunkiem, w przeciwnym wypadku albo nie robić
+ nic, albo wręcz wykonać zgoła odmienny kod. W takim celu stosujemy 
+instrukcję warunkową <code class="highlighter-rouge">if</code>. Spójrzmy na najprostszy przykład:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wiek = 35
+if wiek &gt;= 18:
+    print("osoba jest pełnoletnia")
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## osoba jest pełnoletnia
+</code></pre></div></div>
+
+<p>Spójrzmy, co stanie się, gdy warunek nie będzie spełniony:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wiek = 15
+if wiek &gt;= 18:
+    print("osoba jest pełnoletnia")
+</code></pre></div></div>
+
+<p>Nie wypisze się nic, ponieważ warunek nie jest spełniony. Ogólnie możemy powiedzieć, że instrukcja warunkowa ma postać:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if warunek:
+    instrukcja1
+    instrukcja2
+</code></pre></div></div>
+
+<p>Zwróćmy uwagę na to, że warunek nie jest zamknięty w okrągłych 
+nawiasach (w przeciwności do większości języków programowania), a 
+instrukcje znajdujące się w instrukcji warunkowej są wcięte, tak jak 
+pisaliśmy o tym w pierwszym wyzwaniu. Oczywiście warunek może korzystać z
+ dobrodziejstw wszystkich operatorów porównania oraz logicznych, które 
+przedstawiliśmy wcześniej.</p>
+
+<p>Co, gdy chcemy wykonać pewien kod, gdy warunek nie jest spełniony? Wtedy z pomocą przychodzi nam słowo kluczowe <code class="highlighter-rouge">else</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if warunek:
+    instrukcja1
+    instrukcja2
+else: # kod poniżej wykona się, gdy warunek nie będzie spełniony
+    instrukcja3
+    instrukcja4
+</code></pre></div></div>
+
+<p>I tak, w naszym przykładowym programie dla sklepu monopolowego otwartego całą dobę byłoby to:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wiek = 15
+if wiek &gt;= 18:
+    print("osoba jest pełnoletnia")
+else:
+    print("osoba jest niepełnoletnia")
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## osoba jest niepełnoletnia
+</code></pre></div></div>
+
+<p>Jednak to jeszcze nie koniec! W języku Python, w przeciwności do 
+innych języków programowania, istnieje specjalna konstrukcja, gdy chcemy
+ obsługiwać więcej, niż 3 przypadki:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if warunek:
+    instrukcja1
+    instrukcja2
+elif warunek2: # gdy warunek nieprawdziwy, sprawdz warunek2
+    instrukcja3
+    instrukcja4
+elif warunek3: #gdy warunek2 nieprawdziwy, sprawdz warunek3
+    instrukcja5
+    instrukcja6
+else: #gdy zaden z warunkow nie byl prawdziwy
+    instrukcja7
+    instrukcja8
+</code></pre></div></div>
+
+<p>Tym razem przeniesiemy się w realia Stanów Zjednoczonych:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wiek = 19
+if wiek &gt;= 21:
+    print("osoba może pić alkohol i posiadać broń")
+elif wiek &gt;= 18:
+    print("osoba może pić alkohol")
+else:
+    print("osoba nie może pić alkoholu ani posiadać broni")
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## osoba może pić alkohol
+</code></pre></div></div>
+
+<h3 id="pętle">Pętle</h3>
+
+<p>Programowanie w dużej mierze opiera się na uogólnianiu rozwiązań 
+problemów. Chodzi o to, aby napisać jeden kod, który rozwiązuje jak 
+najwięcej możliwych problemów. Przykładem niech będzie obliczanie 
+średniej ocen w szkole: chcemy napisać program, który będzie umiał 
+obliczyć średnią niezależnie od liczby ocen, z których ją wyciągamy: nie
+ chcemy kodu, który “na sztywno” zawsze oblicza ją z 3 czy 5 liczb, ale z
+ n liczb. Wiąże się z tym zagadnieniem problem powtarzania kodu: możemy 
+napisać 5 razy pod rząd kod, który prosi o liczbę użytkownika, a 
+następnie dodaje ją do sumy. Jednak jest to dokładnie tym, czego chcemy 
+uniknąć. W końcu mamy tu pewne powtórzenie: za każdym razem prosimy o 
+liczbę i za każdym razem dodajemy tę liczbę do sumy. Czy nie można kazać
+ programowi wykonywać tych dwóch czynności wielokrotnie? Np. pieć razy? 
+siedem? Właśnie w tym celu wymyślono pętle: aby nakazać programowi 
+wykonywać ten sam lub bardzo podobny (różniący się jedynie wartościami 
+poszczególnych zmiennych) kod wiele razy.</p>
+
+<p>Zanim przejdziemy do średniej, spójrzmy na klasyczny przykład 
+wypisywania kolejnych liczb, od 0 do 9, który pozwoli nam zrozumieć 
+pętle. W języku Python mamy dwa rodzaje pętli: <code class="highlighter-rouge">for</code> oraz <code class="highlighter-rouge">while</code>. Najpierw przyjrzyjmy się pętli <code class="highlighter-rouge">for</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for i in range(0, 10):
+    print(i)
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 0
+## 1
+## 2
+## 3
+## 4
+## 5
+## 6
+## 7
+## 8
+## 9
+</code></pre></div></div>
+
+<p>Taki zapis oznacza, że ciało pętli (wcięte wiersze kodu pod słowem <code class="highlighter-rouge">for</code>) będą wykonywać się 10 razy: za każdym razem wartość zmiennej <code class="highlighter-rouge">i</code> będzie różna: najpierw będzie to <code class="highlighter-rouge">0</code>, potem <code class="highlighter-rouge">1</code>, potem <code class="highlighter-rouge">2</code> i tak aż do <code class="highlighter-rouge">9</code> włącznie. Tutaj kod nie robi nic poza wypisaniem wartości zmiennej <code class="highlighter-rouge">i</code> na ekran. Przyjrzyjmy się dokładnie: pierwszy argument funkcji <code class="highlighter-rouge">range()</code> jest podany włącznie (<code class="highlighter-rouge">i</code> przyjmie wartość <code class="highlighter-rouge">0</code>), podczas gdy drugi wyłącznie (<code class="highlighter-rouge">i</code> nie przyjmie wartości <code class="highlighter-rouge">10</code>, ale jedynie <code class="highlighter-rouge">9</code>).
+ Choć początkowo jest to nieintuicyjne, przekonamy się w przyszłości, że
+ w wielu zastosowaniach takie podejście jest wygodniejsze.</p>
+
+<p>Tak naprawdę <code class="highlighter-rouge">for</code> jest odpowiednikiem <code class="highlighter-rouge">foreach</code>
+ znanym z innych języków. Jednak jeśli nie masz doświadczeń z tymi 
+językami, na razie taki poziom zrozumienia w zupełności nam wystarczy.</p>
+
+<p>Spójrzmy teraz na pętlę <code class="highlighter-rouge">while</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 0
+while i &lt; 10:
+    print(i)
+    i+=1
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 0
+## 1
+## 2
+## 3
+## 4
+## 5
+## 6
+## 7
+## 8
+## 9
+</code></pre></div></div>
+
+<p>Tutaj logika jest nieco inna, choć sam efekt ten sam. Stworzyliśmy zmienną <code class="highlighter-rouge">i</code> wcześniej, przypisując jej wartość <code class="highlighter-rouge">0</code>. Następnie w samej pętli  <code class="highlighter-rouge">while</code> jest warunek: wykonuj ciało pętli (kod wcięty pod słowem <code class="highlighter-rouge">while</code>) dopóki wartość zmiennej <code class="highlighter-rouge">i</code>
+ jest ostro mniejsza od 10 (w matematyce mówimy ostro gdy chcemy 
+podkreślić, że nie dopuszczamy równości). Dopóki więc ten warunek jest 
+spełniony, wykonujemy dwa polecenia: wypisujemy wartość zmiennej <code class="highlighter-rouge">i</code>, oraz dodajemy do niej liczbę 1. Widzimy tu dwie różnice względem pętli <code class="highlighter-rouge">for</code>: nie podajemy z góry, jakie wartości ma przyjmować zmienna <code class="highlighter-rouge">i</code>. Za to podajemy warunek logiczny, jak długo pętla ma się wykonywać. Za to musimy sami zadbać o zmianę wartości w zmiennej <code class="highlighter-rouge">i</code>,
+ tak aby ostatecznie warunek stał się fałszywy. Na zmienną, która się 
+zmienia w każdej iteracji pętli (iteracja to jedno wykonanie ciała 
+pętli, potocznie mówi się obrót), w naszym przypadku <code class="highlighter-rouge">i</code>, mówi się zmienna iterująca.</p>
+
+<p>Przejdźmy teraz do przykładu z średnią. Najpierw wersja z pętlą <code class="highlighter-rouge">for</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    print("Podaj liczbę ocen, które będą wchodzić w skład średniej")
+    liczba_ocen = int(input())
+    suma = 0
+    
+    for i in range(1, liczba_ocen+1):
+        print("Podaj ocenę " + str(i))
+        ocena = float(input())
+        suma += ocena
+    
+    print("Suma ocen to " + str(suma))
+    print("średnia ocen to " + str(suma/liczba_ocen))
+    
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<p>Najciekawszymi aspektami tego rozwiązania jest konwersja wczytanego napisu (poprzez <code class="highlighter-rouge">input()</code> do liczby całkowitej przez <code class="highlighter-rouge">int())</code>,
+ a także ustalenie zakresu pętli: tym razem zaczęliśmy od 1 (żeby nie 
+straszyć użytkownika oceną zerową) i w związku z tym górną granicą jest 
+ <code class="highlighter-rouge">liczba_ocen+1</code>, ponieważ jest to 
+granica wyłączna. W samej pętli wczytywane napisy konwertujemy do liczb 
+zmiennopozycyjnych, aby móc uwzględnić oceny typu <code class="highlighter-rouge">3.5</code> i inne “z ułamkiem”.</p>
+
+<p>Teraz przyjrzyjmy się analogicznemu kodowi z pętlą <code class="highlighter-rouge">while</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    print("Podaj liczbę ocen, które będą wchodzić w skład średniej")
+    liczba_ocen = int(input())
+    suma = 0
+    i = 1
+    while i &lt;= liczba_ocen:
+        print("Podaj ocenę " + str(i))
+        ocena = float(input())
+        suma += ocena
+        i += 1
+    print("Suma ocen to " + str(suma))
+    print("średnia ocen to " + str(suma / liczba_ocen))
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<p>Tym razem pozwoliliśmy sobie na nieostrą nierówność, aby zmienna <code class="highlighter-rouge">i</code> mogła przyjąć wartość równą <code class="highlighter-rouge">liczba_ocen</code>.
+ Poza tym kod jest analogiczny do poprzedniego, z tą różnicą, że 
+inicjujemy zmienną iterującą przed pętlą, a na końcu jej ciała 
+zwiększamy wartość <code class="highlighter-rouge">i</code> o jeden.</p>
+
+<p>Pozostaje pytanie, którą pętlę wybrać, skoro są one tak podobne? W 
+tym momencie może być trudno mieć jakąś intuicję, jednak generalna 
+zasada jest następująca: pętli <code class="highlighter-rouge">while</code>
+ używa się wtedy, gdy nie jesteśmy w stanie na etapie pisania programu 
+powiedzieć, ile będzie iteracji pętli, gdyż ta liczba jest mocno zależna
+ od danych wejściowych (algorytmy numeryczne, wczytywanie danych z 
+nieznanych źródeł…), podczas gdy pętla <code class="highlighter-rouge">for</code>
+ jest używana, gdy możemy powiedzieć, ile będzie iteracji, nawet jeśli 
+ta odpowiedź wynosi “długość tablicy”, albo “wartość zmiennej n”.</p>
+
+<h3 id="słowo-kluczowe-continue">Słowo kluczowe <code class="highlighter-rouge">continue</code></h3>
+
+<p>Czasami zachodzi potrzeba pominięcia konkretnej iteracji pętli. W tym celu służy instrukcja <code class="highlighter-rouge">continue</code>. Gdy ją wykonamy, wracamy do sprawdzenia warunku pętli (pętla <code class="highlighter-rouge">while</code>) lub też zmienna iterująca przyjmuje kolejną wartość (pętla <code class="highlighter-rouge">for</code>).
+ Zazwyczaj instrukcję continue zapisujemy w instrukcji warunkowej. 
+Rozbudujmy poprzedni przykład, poprzez pomijanie liczb ujemnych w naszym
+ programie (wszak oceny nie mogą być ujemne i są zapewne błędem 
+użytkownika).</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    print("Podaj liczbę ocen, które będą wchodzić w skład średniej")
+    liczba_ocen = int(input())
+    suma = 0
+    i = 1
+    while i &lt;= liczba_ocen:
+        print("Podaj ocenę " + str(i))
+        ocena = float(input())
+        if ocena &lt; 0:
+            continue
+        suma += ocena
+        i += 1
+    print("Suma ocen to " + str(suma))
+    print("średnia ocen to " + str(suma / liczba_ocen))
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<p>Jak widzimy, program prosi o daną ocenę, aż nie otrzyma wartości nieujemnej.</p>
+
+<h3 id="słowo-kluczowe-break">Słowo kluczowe <code class="highlighter-rouge">break</code></h3>
+
+<p>Drugim słowem kluczowym używanym w pętlach jest <code class="highlighter-rouge">break</code>. Służy ono do przerwania całej pętli. Tym razem napiszmy program, który będzie przerywał sumowanie, gdy napotka liczbę ujemną:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    print("Podaj liczbę ocen, które będą wchodzić w skład średniej")
+    liczba_ocen = int(input())
+    suma = 0
+    
+    for i in range(1, liczba_ocen+1):
+        print("Podaj ocenę " + str(i))
+        ocena = float(input())
+        if ocena &lt; 0:
+            break
+        suma += ocena
+    
+    print("Suma ocen to " + str(suma))
+    print("średnia ocen to " + str(suma/liczba_ocen))
+    
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<p>Zwróćmy uwagę, że takie podejście ma wiele niedoróbek: choćby fakt, 
+że dzielimy przez liczbę ocen podaną przez użytkownika na początku 
+programu, a nie faktycznie wprowadzonych. Naprawę tego niedociągnięcia 
+pozostawiamy Tobie, drogi Czytelniku ;).</p>
+
+<h2 id="zadanie-2">Zadanie 2</h2>
+
+<p>Teraz zadanie dla Was! Korzystając z wiedzy, jaką przedstawiliśmy do 
+tej pory (zmienne różnych typów, instrukcje warunkowe, pętle) napiszcie 
+program, który będzie prostym kalkulatorem! Kolejne argumenty działań 
+oraz konkretną operację do wykonania na nich będziemy podawać z 
+klawiatury w terminalu.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Podaj w oddzielnych wierszach liczbę, operację matematyczną: +,-,*,/,%, a następnie kolejną liczbę:
+12
++
+3
+Twój wynik to: 15
+Chcesz wykonać kolejne działanie? Wpisz literę t lub n.
+</code></pre></div></div>
+
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-author">
+                            <img src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/mbartoszuk.png" alt="Maciej Bartoszuk">
+                            <h6>Maciej Bartoszuk</h6>
+                            <p>Ukończył z wyróżnieniem informatykę na 
+wydziale Matematyki i Nauk Informacyjnych Politechniki Warszawskiej, 
+gdzie aktualnie pracuje w zakładzie Sztucznej Inteligencji i Metod 
+Obliczeniowych. Tam też od 2013 roku prowadzi zajęcia dydaktyczne z 
+programowania w R, Pythonie, C/C++, C#. Uczestnik studiów doktoranckich w
+ Instytucie Podstaw Informatyki Polskiej Akademii Nauk w latach 
+2013-2015. W 2018 roku obronił doktorat z wyróżnieniem na swoim rodzimym
+ wydziale: System do oceny podobieństwa kodów źródłowych w językach 
+funkcyjnych oparty na metodach uczenia maszynowego i agregacji danych, 
+który obejmuje zarówno algorytmy przetwarzania kodów źródłowych 
+programów, jak i data science. Współautor książki Przetwarzanie i 
+analiza danych w języku Python wydanej przez PWN. Ponadto trener na 
+bootcampach Data Science, gdzie uczy programować w języku Python pod 
+kątem analizy danych.</p>
+                        </div>
+
+                        <!-- <ul class="socials">
+                            <li>Udostępnij post</li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                        </ul> -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+    <div class="sidebar wow bounceInRight">
+        <!-- <div class="widget">
+            <form class="widget-search-form">
+                <i class="fa fa-search"></i>
+                <input type="submit" value="" name="submit" class="search-button">
+                <input class="search-line" name="search" type="text" placeholder="Szukaj">
+            </form>
+        </div>
+
+        <div class="widget">
+            <h3 class="widget-title">Twitter<span></span></h3>
+            <div class="twitter-widget" data-user="envato" data-posts="3"></div>
+        </div> -->
+
+        <div class="widget">
+            <div class="tab-widget">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab-1" data-toggle="tab">Popularne posty</a></li>
+                    <li><a href="#tab-2" data-toggle="tab">Ostatnie posty</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab-1">
+                      
+                      
+                      
+                        
+                        <div class="mini-post">
+                            <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/big-data-science-jak-przewidziec-przyszlosc/"><img src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ds.png" alt="mini post"></a></div>
+                            <h3><a href="https://kodolamacz.pl/blog/big-data-science-jak-przewidziec-przyszlosc/">(Big) Data Science. Jak przewidzieć przyszłość?</a></h3>
+                            <h6>
+                            15
+                            lutego
+                              
+                            2017</h6>
+                        </div>
+                        
+                      
+                        
+                        <div class="mini-post">
+                            <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/zawod-data-scientist-czyli-jak-zostac-jednorozcem/"><img src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jednorozec.jpg" alt="mini post"></a></div>
+                            <h3><a href="https://kodolamacz.pl/blog/zawod-data-scientist-czyli-jak-zostac-jednorozcem/">Zawód Data Scientist, czyli jak zostać jednorożcem</a></h3>
+                            <h6>
+                            18
+                            września
+                              
+                            2017</h6>
+                        </div>
+                        
+                      
+                        
+                          
+                  </div>
+                  <div class="tab-pane fade" id="tab-2">
+                    
+                    
+                    
+                      
+                      <div class="mini-post">
+                          <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/"><img src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/okladkablog2.png" alt="mini post"></a></div>
+                          <h3><a href="https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/">Wyzwanie Python #2: Podstawowe instrukcje!</a></h3>
+                          <h6>
+                          13
+                          grudnia
+                          
+                          2018</h6>
+                      </div>
+                      
+                    
+                      
+                      <div class="mini-post">
+                          <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/"><img src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/okladkablog.png" alt="mini post"></a></div>
+                          <h3><a href="https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/">Wyzwanie Python #1: Hello world!</a></h3>
+                          <h6>
+                          6
+                          grudnia
+                          
+                          2018</h6>
+                      </div>
+                      
+                    
+                      
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="widget">
+            <h3 class="widget-title">Social<span></span></h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+        </div> -->
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+
+  </div>
+  <!-- start scripts -->
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery-2.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery-ui.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/popups.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/bootstrap.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/masonry.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/instagram.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/plugins.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/sticky.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/options.js" type="text/javascript"></script>
+<!-- <script src="/assets/color-box/color-js.js" type="text/javascript"></script> -->
+<!-- <script src="/assets/color-box/farbtastic/farbtastic.js" type="text/javascript"></script> -->
+<!-- end scripts -->
+
+
+
+
+
+<script type="text/javascript" id="">window.__lc=window.__lc||{};window.__lc.license=7063941;(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://":"http://")+"cdn.livechatinc.com/tracking.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","438403872984586");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=438403872984586&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:391963,hjsv:5};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"//static.hotjar.com/c/hotjar-",".js?sv\x3d");</script><script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/get_dynamic_config.json"></script><script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/get_static_config.json"></script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html"></iframe><div id="ads"></div><script src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/localization.json"></script><div id="livechat-compact-container" style="position: fixed; bottom: 0px; right: 15px; width: 250px; height: 53px; overflow: hidden; visibility: visible; z-index: 2147483639; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden; opacity: 1; transform: translateY(0%);"><iframe src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/a.html" id="livechat-compact-view" style="position: relative;top: 20px;left: 0;width: 100%;border: 0;padding: 0;margin: 0;float: none;background: none" scrolling="no" allowtransparency="true" title="LiveChat Minimized Widget"></iframe><a id="livechat-badge" href="#" onclick="LC_API.show_full_view({source:'minimized click'});return false" style="position: absolute;display: block;visibility: hidden;height: 16px;padding: 0 4px;line-height: 16px;background: #f00;color: #fff;font-size: 10px;text-decoration: none;font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;border-radius: 3px;box-shadow: 0 -1px 0px #f00, -1px 0 0px #f00, 1px 0 0px #f00, 0 1px 0px #f00, 0 0 2px #000;border-top: 1px solid #f99;width: 16px;border-radius: 50%;box-shadow: none;border-top: 0;padding: 0;text-align: center;font-family: 'Lato', sans-serif;top: 12px;left: 20px"></a></div><div id="livechat-full" style="position: fixed; bottom: 0px; right: 15px; width: 400px; height: 450px; overflow: hidden; visibility: hidden; z-index: -1; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden; transform: translateY(100%); opacity: 0;"><iframe src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/open_chat.html" id="livechat-full-view" name="livechat-full-view" title="LiveChat Widget" scrolling="no" allowtransparency="true" allow="autoplay" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; border: 0px none; padding: 0px; margin: 0px; float: none; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;"></iframe></div><div id="lc_invite_layer" style="text-align: left; display: none; z-index: 16777261;"></div><div id="lc_overlay_layer" style="background-color: rgb(0, 0, 0); position: fixed; left: 0px; top: 0px; z-index: 16777260; display: none; width: 100%; height: 100%;"></div><script id="livechat-ping" src="Wyzwanie%20Python%20%232%20%20Podstawowe%20instrukcje!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ping.json"></script></body></html>

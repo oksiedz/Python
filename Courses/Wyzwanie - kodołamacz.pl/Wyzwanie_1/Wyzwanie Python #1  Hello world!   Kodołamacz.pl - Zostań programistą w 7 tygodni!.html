@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Google Tag Manager -->
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/438403872984586.js" async=""></script><script async="" src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/fbevents.js"></script><script type="text/javascript" async="" src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/tracking.js"></script><script type="text/javascript" async="" src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/analytics.js"></script><script async="" src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K55LPRR');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/swipebox.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/bootstrap.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/style.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/syntax.css" rel="stylesheet">
+    <link rel="stylesheet" href="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ionicons.css">
+    <!-- <link href=""/assets/color-box/color-style.css rel="stylesheet" /> -->
+    <!-- <link href=""/assets/color-box/farbtastic/farbtastic.css rel="stylesheet" /> -->
+    <link rel="stylesheet" href="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Wyzwanie Python #1: Hello world! | Kodołamacz.pl - Zostań programistą w 7 tygodni!</title>
+<meta name="generator" content="Jekyll v3.7.4">
+<meta property="og:title" content="Wyzwanie Python #1: Hello world!">
+<meta name="author" content="mbartoszuk">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="W tym poradniku dowiesz się, jak rozpocząć swoją przygodę z programowaniem w języku Python. Poradnik został przygotowany tak, aby dostarczyć tylko najpotrzebniejsze informacje w jak najbardziej zwięzłej formie, aby móc zacząć pisać swoje pierwsze programy. Wymagań jest niewiele: komputer, internet, a także dużo czasu, chęci i wytrwałości.">
+<meta property="og:description" content="W tym poradniku dowiesz się, jak rozpocząć swoją przygodę z programowaniem w języku Python. Poradnik został przygotowany tak, aby dostarczyć tylko najpotrzebniejsze informacje w jak najbardziej zwięzłej formie, aby móc zacząć pisać swoje pierwsze programy. Wymagań jest niewiele: komputer, internet, a także dużo czasu, chęci i wytrwałości.">
+<link rel="canonical" href="https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/">
+<meta property="og:url" content="https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/">
+<meta property="og:site_name" content="Kodołamacz.pl - Zostań programistą w 7 tygodni!">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-12-06T10:00:00+00:00">
+<script type="application/ld+json">
+{"datePublished":"2018-12-06T10:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/"},"@type":"BlogPosting","url":"https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/","author":{"@type":"Person","name":"mbartoszuk"},"headline":"Wyzwanie Python #1: Hello world!","description":"W tym poradniku dowiesz się, jak rozpocząć swoją przygodę z programowaniem w języku Python. Poradnik został przygotowany tak, aby dostarczyć tylko najpotrzebniejsze informacje w jak najbardziej zwięzłej formie, aby móc zacząć pisać swoje pierwsze programy. Wymagań jest niewiele: komputer, internet, a także dużo czasu, chęci i wytrwałości.","dateModified":"2018-12-06T10:00:00+00:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script async="" src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/hotjar-391963.js"></script><script async="" src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/modules-aac78db949fa8bad21a45e66f0427dc1.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K55LPRR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="box-wide">
+    <!-- header v1 -->
+<header class="header-v1" id="home-section">
+    <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 45px;"><div class="sticky-bar" style="position: fixed; top: 0px;">
+    <div class="container">
+        <div class="header-top">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo"><a href="https://kodolamacz.pl/"><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/kodolamacz_logo3.svg"></a></div>
+                </div>
+                <div class="col-md-9">
+                    <nav class="main-nav">
+                        <div class="responsive-menu"><i class="fa fa-bars"></i></div>
+                        <ul style="display: none;">
+                            <li><a href="https://kodolamacz.pl/#o-nas">O nas</a>
+                                <ul>
+                                    <li><a href="https://kodolamacz.pl/#o-nas">Dlaczego my?</a></li>
+                                    <li><a href="https://kodolamacz.pl/kadra/">Wykładowcy</a></li>
+                                    <li><a href="https://kodolamacz.pl/biuro-prasowe/">Biuro prasowe</a></li>
+                                
+                                </ul>
+                            </li>
+                            <li><a href="#bootcampy">Nasze kursy</a>
+                                    <ul>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-datascience/">Data Science</a></li>
+									  <li><a href="https://kodolamacz.pl/bootcamp-python/">Python</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-fullstack/">Full-stack</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-javascript/">JavaScript</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-java/">Java</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-tester/">Tester automatyczny</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-android/">Android</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-tworzenie-gier/">Tworzenie gier</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-cpp/">C++ for IoT Development</a></li>		
+                                    </ul>
+                            </li>
+                            <li><a href="https://kodolamacz.pl/dofinansowanie/">Dofinansowanie</a></li>
+                            <li><a data-anchor="works-section" href="https://kodolamacz.pl/pracodawcy/">Dla pracodawców</a></li>
+                            <li><a href="https://kodolamacz.pl/blog/">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+<div class="messagepop pop">
+    <h2>Pobierz informator</h2>
+    <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+      <div class="form-group">
+       <label for="email" class="control-label">Adres email:</label>
+       <input type="email" class="form-control" id="email" placeholder="Email" name="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="custom_bootcamp" class="control-label">Wybierz interesującą Cię ścieżkę:</label>
+          <select name="custom_bootcamp" class="form-control">
+            <option value="Data Scientist" selected="selected">Data Scientist</option>
+            <option value="Full-stack Developer">Full-stack Developer</option>
+            <option value="Java Developer">Java Developer</option>
+            <option value="JavaScript Developer">JavaScript Developer</option>
+            <option value="Game Developer">Game Developer</option>
+            <option value="Tester oprogramowania">Tester oprogramowania</option>
+            <option value="C++ Developer">C++ Developer (IoT)</option>
+            <option value="Android Developer">Android Developer</option>
+          </select>
+      </div>
+      <input type="hidden" name="campaign_token" value="nvPRH">
+	    <input type="hidden" name="thankyou_url" value="https://kodolamacz.pl/dziekujemy">
+      <div class="form-group">
+          <input type="submit" value="Pobierz" name="commit" id="message_submit" class="btn btn-info">
+          <input type="button" class="btn btn-default" id="messagepop_close" value="Anuluj">
+      </div>
+    </form>
+    <p style="font-size: 10px;line-height: 1.7em;">Wysyłając niniejszy 
+formularz, wyrażam zgodę na przesyłanie informacji handlowych drogą 
+elektroniczną przez firmę Sages Sp. z o.o. z siedzibą w Warszawie przy 
+ul. Nowogrodzkiej 62c, zgodnie z ustawą z dnia 18 lipca 2002 r. o 
+świadczeniu usług drogą elektroniczną (Dz. U. z 2002 r. Nr 144, poz. 
+1204 z późn. zm.).</p>
+</div>
+
+
+</header>
+<!-- header v1 -->
+
+
+    
+<!-- start post -->
+<div class="blog-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="blog-post single-post">
+                  <div class="post-header">
+                    <h1>Wyzwanie Python #1: Hello world!</h1>
+                    <p><i class="fa fa-calendar"></i> 
+                    6
+                    grudnia
+                    
+                    2018</p>
+                  </div>
+                    <div class="post-cover">
+                        <img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/okladkablog.png" alt="Wyzwanie Python #1: Hello world!">
+                    </div>
+                    <div class="post-content">
+                        <p>W tym poradniku dowiesz się, jak rozpocząć 
+swoją przygodę z programowaniem w języku Python. Poradnik został 
+przygotowany tak, aby dostarczyć tylko najpotrzebniejsze informacje w 
+jak najbardziej zwięzłej formie, aby móc zacząć pisać swoje pierwsze 
+programy. Wymagań jest niewiele: komputer, internet, a także dużo czasu,
+ chęci i wytrwałości.</p>
+
+<p>Oczywiście, zanim przejdziemy do technikaliów, trzeba wyjaśnić sobie,
+ czemu warto się zajmować nauką języka programowania, w szczególności 
+języka Python: po pierwsze, programowanie samo w sobie jest po prostu 
+fajne. Jest to jedna z niewielu dziedzin inżynierii, gdzie w domowym 
+zaciszu możemy używać narzędzi, które niewiele, jeśli w ogóle, różnią 
+się od narzędzi profesjonalistów. Na pewno jest to łatwiejsze, niż 
+zorganizować sobie własną betoniarkę i dźwig, by dla własnej rozrywki 
+zbudować most przez pobliską rzekę. Mamy poczucie sprawczości. Wystarczy
+ napisać parę komend, mieszczących się w paru wierszach kodu, aby 
+zobaczyć, jak nasz własny program wykonuje naszą wolę na naszym własnym 
+komputerze. Ponadto programowanie uczy logicznego myślenia, pewnej 
+dyscypliny myślowej, oraz daje praktyczne zastosowanie tym wszystkim 
+wzorom, jakich uczono nas przez lata lekcji matematyki.</p>
+
+<p>Co do samego języka Python, to jest to tzw. język programowania 
+wysokiego poziomu dla ogólnych zastosowań. Cóż to znaczy? Wysoki poziom 
+oznacza tu, że parę komend może wykonać całkiem dużo pracy. Nie musimy 
+tutaj przejmować się kwestiami niskopoziomowymi, jak zarządzanie 
+pamięcią, jej alokowanie czy zwalnianie, gdy nie jest już potrzebna, a 
+także jakim znakiem specjalnym rozpoznajemy koniec napisu itp. Możemy 
+skupić się na samym meritum i radości programowania. Istnieje wiele 
+wbudowanych funkcji, które pozwolą nam wykonać nudne i uciążliwe zadania
+ programistyczne, jak np. implementacja listy. To wszystko znów w tym 
+samym celu: aby szybciej pisać bardziej skomplikowane programy. Co zaś 
+oznaczają ogólne zastosowania? To znaczy, że gdy nauczymy się pisać 
+programy w języku Python, będzie całkiem wiele obszarów, w których 
+będziemy mogli się wykazać: czy to stworzenie własnej strony 
+internetowej (takiej z użytkownikami, logowaniem się itp.), skryptu 
+porządkującego pliki na dysku twardym w sposób automatyczny, napisania 
+rozwiązania na konkurs algorytmiczny, czy zajęciu się szeroko pojętą 
+analizą danych znaną ostatnio pod hasłem data science, co zahacza o 
+liczenie średnich w podgrupach, tabele przestawne, wizualizacje danych 
+różnymi wykresami, testy statystyczne i uczenie maszynowe (przewidywanie
+ defraudacji finansowych, raka itp.).</p>
+
+<p>Sam język Python sięga swoją historią 1990 roku, gdy został po raz 
+pierwszy wypuszczony przez Guida van Rossuma. Tak długa historia 
+sprawia, że język ten jest już dobrze ugruntowany na rynku, zawiera 
+przemyślane, sprawdzone rozwiązania, a ofert pracy jest naprawdę sporo: w
+ chwili pisania tego tekstu w serwisie https://www.pracuj.pl są 694 
+oferty pracy dla tego języka, podczas gdy dla C# (popularny język 
+programowania stworzony przez Microsoft) jest ich 678. Znajduje się on 
+też od 2003 roku regularnie na liście 10 najpopularniejszych języków, a w
+ styczniu 2018 roku zajmował tam 4 (TIOBE Index). miejsce. Sam język 
+miał wpływ na nowsze języki, które się na nim inspirowały: np. Go, 
+Julia, Ruby, Swift. Języka Python używają Google, Facebook,Amazon, 
+Instagram, CERN, Wikipedia. We wspomnianej wcześniej data science język 
+ten ma jedyną zaledwie konkurencję: język R. Więcej zastosowań dla tego 
+języka znajdziemy pod linkiem. Ostatnią ciekawostką jest to, że język 
+ten został tak skonstruowany, aby jak najbardziej przypominał język 
+angielski i był zrozumiały dla kogoś, kto nigdy nie programował: stąd 
+słowa kluczowe takie jak <code class="highlighter-rouge">and</code>, <code class="highlighter-rouge">or</code>, <code class="highlighter-rouge">def</code>, a także wymuszanie spójnej indentacji (więcej szczegółów w tym i następnych wyzwaniach).</p>
+
+<h2 id="pierwsze-kroki">Pierwsze kroki</h2>
+
+<h3 id="instalacja-środowiska">Instalacja środowiska</h3>
+
+<p>Zanim rzucimy się w wir kodowania, musimy zainstlować na naszym 
+komputerze potrzebne programy: będzie to interpreter języka Python wraz z
+ potrzebnymi bibliotekami (w naszym przypadku posłużymy się dystrybucją 
+Anaconda), oraz zintegrowane środowisko programistyczne (ang. integrated
+ development environment, IDE, w naszym przypadku będzie to PyCharm).</p>
+
+<h4 id="anaconda">Anaconda</h4>
+
+<p>Python to jeden z najpopularniejszych języków programowania na 
+świecie. Wyróżnia go wielka wszechstronność: możemy w nim zarówno 
+napisać program na konkurs algorytmiczny, stworzyć serwis internetowy, a
+ także zająć się zdobywającą coraz większą popularność dziedziną wiedzy 
+jaką jest data science. Poza samym językiem Python potrzebne nam będą 
+różne biblioteki, dlatego warto zainstalować dystrybucję, która ułatwia 
+zarządzanie takowymi, a także udostępnia inne narzędzia, którę mogą się 
+nam przydać podczas procesu programowania.</p>
+
+<p>Taką dystrybucją jest Anaconda, <a href="https://www.anaconda.com/download/">którą można pobrać stąd</a>.
+ Warto zwrócić uwagę na to, że istnieją dwie wersje języka Python: 2 i 
+3. Pomiędzy tymi wersjami istnieją zasadnicze różnice, znacznie większe 
+niż tylko numerek przy nazwie. Aktualnie rozwijaną jest wersja 3 i to 
+właśnie jej dotyczy ten poradnik.</p>
+
+<p>Poniżej znajdują się screeny z procesu instalacji Anacondy 5.3.0 dla 
+języka Python w wersji 3.7, wersji x86_64 na systemie Windows:</p>
+
+<p><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/anacondasteup1.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/anacondasteup2.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/anacondasteup3.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/anacondasteup4.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/anacondasteup5.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/anacondasteup6.png" alt=""></p>
+
+<h4 id="pycharm">PyCharm</h4>
+<p>Programowanie polega na napisaniu odpowiednich poleceń w zwykłym 
+pliku tekstowym. Jednak pisanie ich w zwykłym notatniku byłoby bardzo 
+uciążliwe. Stąd stworzono bardzo wiele tzw. środowisk programistycznych,
+ czyli programów, które ułatwiają poruszanie się po kodzie, podpowiadają
+ możliwe nazwy identyfikatorów zmiennych czy funkcji, a także wspomagają
+ proces znajdowania błędów (tzw. debugowanie). Dla języka Python możemy 
+wymienić:</p>
+
+<p>Najpopularniejszymi IDE dla Javy są:</p>
+
+<ul>
+  <li><a href="https://www.jetbrains.com/pycharm/download/#section=windows">PyCharm</a></li>
+  <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+  <li><a href="http://jupyter.org/">jupyter</a></li>
+  <li><a href="https://www.spyder-ide.org/">spyder</a></li>
+</ul>
+
+<p>Wybór środowiska programistycznego zależy głównie od osobitych 
+upodobań i dyskusje o wyższości jednego nad drugim są częstym elementem 
+spotkań branżowych programistów. Najlepiej spróbować wielu, aby móc 
+wyrobić sobie swoje własne zdanie i wybrać ten jedyny. Na potrzeby tego 
+poradnika nasz wybór padnie na środowisko PyCharm, które ściągamy w 
+wersji Community.</p>
+
+<p>Poniżej print screeny z procesu instalacji PyCharm 2018.2.4 na systemie Windows:</p>
+
+<p><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/pycharmsteup1.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/pycharmsteup2.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/pycharmsteup3.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/pycharmsteup4.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/pycharmsteup5.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/pycharmsteup6.html" alt=""></p>
+
+<h1 id="pierwszy-program">Pierwszy program</h1>
+
+<p>Mając zainstalowaną dystrybucję Pythona oraz środowisko 
+programistyczne dla niego możemy napisać swój pierwszy program w tym 
+języku. Uruchamiamy PyCharma. Naszym oczom ukazuje się okno:</p>
+
+<p><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/program1.png" alt=""></p>
+
+<p>Ponieważ nie mamy żadnych doświadczeń z poprzednimi wersjami środowiska, wybieramy <code class="highlighter-rouge">Do not import settings1</code>.
+ Następnie akceptujemy postanowienia licencyjne i politykę prywatności. 
+Aby móc wybrać Accept należy przewinąć tekst do końca suwakiem po 
+prawej:</p>
+
+<p><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/program2.png" alt=""></p>
+
+<p>Następny komunikat dotyczy wysyłania danych, aby ulepszyć środowisko.
+ Tutaj wybieramy zgodnie z własnymi przekonaniami. Podczas pytania o 
+wybór kolorystyki znów wybieramy tak, jak podpowiada nam nasz zmysł 
+estetyczny, a następnie klikamy <code class="highlighter-rouge">Skip Remaining and Set Defaults</code>:</p>
+
+<p><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/program3.png" alt=""></p>
+
+<p>Wreszcie naszym oczom ukazuje się okno startowe PyCharma. Wybieramy <code class="highlighter-rouge">Create New Project</code>:</p>
+
+<p><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/program4.png" alt=""></p>
+
+<p>W oknie tworzenia nowego projektu podajemy nazwę nowego projektu (proponujemy <code class="highlighter-rouge">kodolamacz-first-challenge</code>) i jego lokalizację. Następnie możemy rozwinąć resztę opcji pod <code class="highlighter-rouge">Project Interpreter: New Virtualenv environment</code>. Tutaj nic nie zmieniamy, jedynie upewniamy się, że w  <code class="highlighter-rouge">Base Interpreter</code> znajduje się interpreter języka Python 3.7 znajdujący się w dystrybucji Anaconda:</p>
+
+<p><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/program5.png" alt=""></p>
+
+<p>Naszym oczom ukaże się okno projektu. Już prawie gotowe! Teraz 
+wystarczy dodać do niego pierwszy plik z kodem źródłowym. W tym celu 
+klikamy prawym przyciskiem myszy na nazwę projektu (w naszym przypadku <code class="highlighter-rouge">kodolamacz-first-challenge</code>, po lewej stronie okna), a następnie wybieramy <code class="highlighter-rouge">New-&gt;File</code>. W oknie proszącym o podanie nazwy pliku wpisujemy <code class="highlighter-rouge">main.py</code>:</p>
+
+<p><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/program6.png" alt="">
+<img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/program7.png" alt=""></p>
+
+<p>Wpiszmy następujący kod w nowo utworzony plik:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    print("Witaj świecie!")
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<p>Zaraz omówimy jego składowe. Jednak pewnie nie możesz się już 
+doczekać, aby zobaczyć jego efekt działań! Dlatego w tym celu wybierz z 
+menu u góry Run-&gt;Run ‘main’. Inną możliwością jest kliknięcie prawym 
+przyciskiem myszy na kodzie źródłowym i wybór Run ‘main’ albo po prostu 
+użycie skrótu klawiszowego: Shift + F10. Wtedy u dołu zobaczymy wynik 
+działania programu:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\[...]\kodolamacz-first-challange\venv\Scripts\python.exe C:/[..]/kodolamacz-first-challange/main.py
+Witaj świecie!
+
+Process finished with exit code 0
+</code></pre></div></div>
+
+<p>Teraz, gdy nasza ciekawość została zaspokojona i wiemy już, że nasz 
+program działa i teraz ogranicza nas tylko nasza własna wyobraźnia (i 
+ew. umiejętności), możemy przejść do omówienia poszczególnych składowych
+ kodu. Program napisany w języku Python to skrypt. Ma to dwie 
+konsekwencje: po pierwsze tekst naszego programu jest interpretowany 
+przy każdym uruchomieniu. Oznacza to, że dostarczamy użytkownikowi 
+naszego programu kod programu, a on sam musi mieć komputer wyposażony w 
+interpreter języka Python (np. w dystrybucję Anaconda). Przez to nie 
+musimy sami kompilować naszego kodu na różne platformy (osobno na 
+Windowsy, Linuksy, platformy 32- i 64-bitowe). Wystarczy, że interpreter
+ został w ten sposób skompilowany.</p>
+
+<p>Drugą konsekwencją skryptu jest to, że kod wykonuje się od góry do 
+dołu (nie ma wyszczegółnionego miejsca rozpoczęcia programu, jakim w 
+innych językach programowania zazwyczaj jest funkcja <code class="highlighter-rouge">main())</code>.
+ Dlatego musimy postarać się stworzyć sobie takie miejsce rozpoczęcia 
+programu sami, aby uniknąć bałaganu. Dlatego nasz kod zamkniemy w 
+funkcji, którą sami nazwiemy <code class="highlighter-rouge">main()</code>
+ (jednak jest to nasz własny wybór, funkcja ta mogłaby się nazywać 
+dowolnie inaczej, jednak chcemy dopasować się do konwencji znanej z 
+innych języków). Służy do tego wiersz <code class="highlighter-rouge">def main()</code>:.
+ O funkcjach napiszemy więcej w jednym z przyszłych wyzwań. Na razie 
+powiedzmy sobie, że jest to pewien wydzielony fragment kodu o swojej 
+własnej nazwie. Jednak samo stworzenie funkcji nie jest wystarczające. 
+Musimy powiedzieć, że funkcja ta ma się wykonać (mówimy, że wywołujemy 
+funkcję). W tym celu piszemy <code class="highlighter-rouge">main()</code> w czwartym wierszu. Pozostaje nam tylko upewnić się, że funkcja <code class="highlighter-rouge">main</code> zostanie wywołana tylko wtedy, gdy skrypt <code class="highlighter-rouge">main.py</code> będzie uruchamiany jako samodzielny program, a nie np. moduł większego programu. Stąd wiersz  <code class="highlighter-rouge">if __name__ == "__main__"</code>: (jest to instrukcja warunkowa, którą także opiszemy w kolejnych wyzwaniach).</p>
+
+<p>Konstrukcja polegająca na definicji funkcji <code class="highlighter-rouge">main()</code>,
+ a także jej wywołaniu w instrukcji warunkowej, będzie się powtarzać we 
+wszystkich programach, które będziemy pisać. Nie martw się, jeśli póki 
+co nie jest to dla Ciebie jasne. Ta typowa konstrukcja korzysta z 
+elementów języka Python, które wprowadzimy dopiero później. Przede 
+wszystkim koncentruj się na wnętrzu funkcji <code class="highlighter-rouge">main</code>, w tym wypadku jest to  <code class="highlighter-rouge">print("Witaj świecie!")</code>. <code class="highlighter-rouge">print</code>
+ to funkcja wypisująca podany komunikat (w naszym przypadku “Witaj 
+świecie!”) na tzw. standardowe wyjście. Zazwyczaj oznacza to po prostu 
+konsolę, w której kazaliśmy wykonać nasz program. Więcej o strumieniach 
+możemy przeczytać na Wikipedii.</p>
+
+<p>Zwróćmy uwagę na jeszcze jeden ważny szczegół: tzw. wcięcia. Liczba 
+spacji poprzedzająca kod we wnętrzu funkcji, np. main musi być taka 
+sama. Co więcej, liczba wcięć, czyli spacji, ew. znaków tabulacji, 
+powinna być taka sama w całym programie, jest to tzw. dobra praktyka 
+programistyczna: w różnych funkcjach liczba wcięć może być różna, ale 
+nie powinniśmy z tego korzystać, bo kod będzie trudniejszy do czytania. 
+Liczba spacji w praktyce wynosi 3 lub 4. W naszym poradniku będziemy 
+korzystać z 4-spacjowego wcięcia. Kod wcina się w każdej konstrukcji 
+językowej: funkcji, instrukcji warunkowej, pętli itp. Wcięcia “kumulują 
+się” wraz z zagnieżdżaniem takich konstrukcji. Oznacza to, że w 
+instrukcji warunkowej w funkcji napiszemy kod poprzedzony 8 spacjami. 
+Jeśli masz doświadczenia z innymi językami programowania, to zapewne w 
+nich funkcję wydzielania fragmentu kodu pełniły klamerki. To znak 
+rozpocznawczy języka Python: nie ma klamerek, jest za to wymuszenie 
+spójnej liczby wcięć, co ma zapewnić większą czytelność kodu.</p>
+
+<p>Teraz, gdy już umiemy wypisać pierwszy komunikat, spróbujemy czegoś 
+ambitniejszego. Pobierzemy napis od użytkownika. W tym celu skorzystamy 
+ze standardowego wejścia:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    print("Witaj świecie!")
+    pobrany_napis = input()
+    print("Twój napis to: " + pobrany_napis)
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<p>Znów, najpierw przetestujmy nasz program. Po uruchomieniu napiszmy w 
+konsoli na dole, w której wykonuje się nasz program, pod napisem  <code class="highlighter-rouge">Witaj świecie!</code>, jakiś wyraz i wciśnijmy <code class="highlighter-rouge">Enter</code>. Program zaraz potem wypisze komunikat, powtarzając podane słowo.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\[...]\kodolamacz-first-challange\venv\Scripts\python.exe C:/[..]/kodolamacz-first-challange/main.py
+Witaj świecie!
+Witaj
+Twój napis to: Witaj
+
+Process finished with exit code 0
+</code></pre></div></div>
+<p>Teraz wyjaśnienie: <code class="highlighter-rouge">input()</code> 
+jest funkcją, która pobiera napis podany przez użytkownika ze 
+standardowego wejścia (czyli, jak się przekonaliśmy, tego, co użytkownik
+ napisze w konsoli, w której uruchomiliśmy nasz program). Cały wiersz <code class="highlighter-rouge">pobrany_napis = input()</code> oznacza, że tak pobrany napis ma zostać zapisany pod identyfikatorem <code class="highlighter-rouge">pobrany_napis</code>. Dokładniej, <code class="highlighter-rouge">pobrany_napis</code>
+ to tzw. zmienna. Zmiennym poświęcimy dużo miejsca w następnym wyzwaniu,
+ jednak na razie powiedzmy sobie, że jest to pojemnik na dane. Następnie
+ wywołujemy ponownie funkcję <code class="highlighter-rouge">print</code>, jednak to, co się tu zmieniło, to podany argument: <code class="highlighter-rouge">"Twój napis to: " + pobrany_napis</code>.
+ Taki zapis, konkretnie operator dodawania w przypadku napisów, oznacza,
+ że łączymy dwa napisy w jeden (profesjonalnie takie złączenie nazywamy 
+konkatenacją). Np. wynikiem dodawania <code class="highlighter-rouge">"aa"+"bb"</code> będzie <code class="highlighter-rouge">"aabb"</code>.</p>
+
+<h3 id="zadanie-1">Zadanie 1</h3>
+
+<p>Teraz zadanie dla Was! Korzystając z wiedzy, jaką przedstawiliśmy do 
+tej pory (umiejętność założenia projektu, dodania pliku, napisania 
+szablonu programu, obsługi standardowego wejścia i wyjścia, konkatenacji
+ napisów) napiszcie program (najlepiej w nowym projekcie), który 
+wyświetla prośbę o podanie imienia i następnie nazwiska, pobiera te dwa 
+napisy od użytkownika, a następnie się z nim wita:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Podaj swoje imię:
+Jan
+Podaj swoje nazwisko:
+Kowalski
+Witaj Jan Kowalski
+</code></pre></div></div>
+
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-author">
+                            <img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/mbartoszuk.png" alt="Maciej Bartoszuk">
+                            <h6>Maciej Bartoszuk</h6>
+                            <p>Ukończył z wyróżnieniem informatykę na 
+wydziale Matematyki i Nauk Informacyjnych Politechniki Warszawskiej, 
+gdzie aktualnie pracuje w zakładzie Sztucznej Inteligencji i Metod 
+Obliczeniowych. Tam też od 2013 roku prowadzi zajęcia dydaktyczne z 
+programowania w R, Pythonie, C/C++, C#. Uczestnik studiów doktoranckich w
+ Instytucie Podstaw Informatyki Polskiej Akademii Nauk w latach 
+2013-2015. W 2018 roku obronił doktorat z wyróżnieniem na swoim rodzimym
+ wydziale: System do oceny podobieństwa kodów źródłowych w językach 
+funkcyjnych oparty na metodach uczenia maszynowego i agregacji danych, 
+który obejmuje zarówno algorytmy przetwarzania kodów źródłowych 
+programów, jak i data science. Współautor książki Przetwarzanie i 
+analiza danych w języku Python wydanej przez PWN. Ponadto trener na 
+bootcampach Data Science, gdzie uczy programować w języku Python pod 
+kątem analizy danych.</p>
+                        </div>
+
+                        <!-- <ul class="socials">
+                            <li>Udostępnij post</li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                        </ul> -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+    <div class="sidebar wow bounceInRight">
+        <!-- <div class="widget">
+            <form class="widget-search-form">
+                <i class="fa fa-search"></i>
+                <input type="submit" value="" name="submit" class="search-button">
+                <input class="search-line" name="search" type="text" placeholder="Szukaj">
+            </form>
+        </div>
+
+        <div class="widget">
+            <h3 class="widget-title">Twitter<span></span></h3>
+            <div class="twitter-widget" data-user="envato" data-posts="3"></div>
+        </div> -->
+
+        <div class="widget">
+            <div class="tab-widget">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab-1" data-toggle="tab">Popularne posty</a></li>
+                    <li><a href="#tab-2" data-toggle="tab">Ostatnie posty</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab-1">
+                      
+                      
+                      
+                        
+                        <div class="mini-post">
+                            <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/big-data-science-jak-przewidziec-przyszlosc/"><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ds.png" alt="mini post"></a></div>
+                            <h3><a href="https://kodolamacz.pl/blog/big-data-science-jak-przewidziec-przyszlosc/">(Big) Data Science. Jak przewidzieć przyszłość?</a></h3>
+                            <h6>
+                            15
+                            lutego
+                              
+                            2017</h6>
+                        </div>
+                        
+                      
+                        
+                        <div class="mini-post">
+                            <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/zawod-data-scientist-czyli-jak-zostac-jednorozcem/"><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jednorozec.jpg" alt="mini post"></a></div>
+                            <h3><a href="https://kodolamacz.pl/blog/zawod-data-scientist-czyli-jak-zostac-jednorozcem/">Zawód Data Scientist, czyli jak zostać jednorożcem</a></h3>
+                            <h6>
+                            18
+                            września
+                              
+                            2017</h6>
+                        </div>
+                        
+                      
+                        
+                          
+                  </div>
+                  <div class="tab-pane fade" id="tab-2">
+                    
+                    
+                    
+                      
+                      <div class="mini-post">
+                          <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/"><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/okladkablog2.png" alt="mini post"></a></div>
+                          <h3><a href="https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/">Wyzwanie Python #2: Podstawowe instrukcje!</a></h3>
+                          <h6>
+                          13
+                          grudnia
+                          
+                          2018</h6>
+                      </div>
+                      
+                    
+                      
+                      <div class="mini-post">
+                          <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/"><img src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/okladkablog.png" alt="mini post"></a></div>
+                          <h3><a href="https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/">Wyzwanie Python #1: Hello world!</a></h3>
+                          <h6>
+                          6
+                          grudnia
+                          
+                          2018</h6>
+                      </div>
+                      
+                    
+                      
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="widget">
+            <h3 class="widget-title">Social<span></span></h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+        </div> -->
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+
+  </div>
+  <!-- start scripts -->
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery-2.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery-ui.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/popups.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/bootstrap.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/masonry.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/instagram.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/plugins.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/sticky.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/options.js" type="text/javascript"></script>
+<!-- <script src="/assets/color-box/color-js.js" type="text/javascript"></script> -->
+<!-- <script src="/assets/color-box/farbtastic/farbtastic.js" type="text/javascript"></script> -->
+<!-- end scripts -->
+
+
+
+
+
+<script type="text/javascript" id="">window.__lc=window.__lc||{};window.__lc.license=7063941;(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://":"http://")+"cdn.livechatinc.com/tracking.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","438403872984586");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=438403872984586&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:391963,hjsv:5};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"//static.hotjar.com/c/hotjar-",".js?sv\x3d");</script><script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/get_dynamic_config.json"></script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html"></iframe><script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/7063941.txt"></script><div id="ads"></div><script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/get_static_config.json"></script><script src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/localization.json"></script><div id="livechat-compact-container" style="position: fixed; bottom: 0px; right: 15px; width: 250px; height: 53px; overflow: hidden; visibility: visible; z-index: 2147483639; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden; opacity: 1; transform: translateY(0%);"><iframe src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/a.html" id="livechat-compact-view" style="position: relative;top: 20px;left: 0;width: 100%;border: 0;padding: 0;margin: 0;float: none;background: none" scrolling="no" allowtransparency="true" title="LiveChat Minimized Widget"></iframe><a id="livechat-badge" href="#" onclick="LC_API.show_full_view({source:'minimized click'});return false" style="position: absolute;display: block;visibility: hidden;height: 16px;padding: 0 4px;line-height: 16px;background: #f00;color: #fff;font-size: 10px;text-decoration: none;font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;border-radius: 3px;box-shadow: 0 -1px 0px #f00, -1px 0 0px #f00, 1px 0 0px #f00, 0 1px 0px #f00, 0 0 2px #000;border-top: 1px solid #f99;width: 16px;border-radius: 50%;box-shadow: none;border-top: 0;padding: 0;text-align: center;font-family: 'Lato', sans-serif;top: 12px;left: 20px"></a></div><div id="livechat-full" style="position: fixed; bottom: 0px; right: 15px; width: 400px; height: 450px; overflow: hidden; visibility: hidden; z-index: -1; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden; transform: translateY(100%); opacity: 0;"><iframe src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/open_chat.html" id="livechat-full-view" name="livechat-full-view" title="LiveChat Widget" scrolling="no" allowtransparency="true" allow="autoplay" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; border: 0px none; padding: 0px; margin: 0px; float: none; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;"></iframe></div><div id="lc_invite_layer" style="text-align: left; display: none; z-index: 16777261;"></div><div id="lc_overlay_layer" style="background-color: rgb(0, 0, 0); position: fixed; left: 0px; top: 0px; z-index: 16777260; display: none; width: 100%; height: 100%;"></div><script id="livechat-ping" src="Wyzwanie%20Python%20%231%20%20Hello%20world!%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ping.json"></script></body></html>
