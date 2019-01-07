@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Google Tag Manager -->
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/438403872984586.js" async=""></script><script async="" src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/fbevents.js"></script><script type="text/javascript" async="" src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/tracking.js"></script><script type="text/javascript" async="" src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/analytics.js"></script><script async="" src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K55LPRR');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://kodolamacz.pl/blog/wyzwanie-python-3-rozwiazanie/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/swipebox.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/bootstrap.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/style.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/syntax.css" rel="stylesheet">
+    <link rel="stylesheet" href="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ionicons.css">
+    <!-- <link href=""/assets/color-box/color-style.css rel="stylesheet" /> -->
+    <!-- <link href=""/assets/color-box/farbtastic/farbtastic.css rel="stylesheet" /> -->
+    <link rel="stylesheet" href="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Wyzwanie Python #3: Rozwiązanie | Kodołamacz.pl - Zostań programistą w 7 tygodni!</title>
+<meta name="generator" content="Jekyll v3.7.4">
+<meta property="og:title" content="Wyzwanie Python #3: Rozwiązanie">
+<meta name="author" content="mbartoszuk">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Poniżej rozwiązanie do naszego trzeciego wyzwania">
+<meta property="og:description" content="Poniżej rozwiązanie do naszego trzeciego wyzwania">
+<link rel="canonical" href="https://kodolamacz.pl/blog/wyzwanie-python-3-rozwiazanie/">
+<meta property="og:url" content="https://kodolamacz.pl/blog/wyzwanie-python-3-rozwiazanie/">
+<meta property="og:site_name" content="Kodołamacz.pl - Zostań programistą w 7 tygodni!">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-12-25T10:00:00+00:00">
+<script type="application/ld+json">
+{"datePublished":"2018-12-25T10:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kodolamacz.pl/blog/wyzwanie-python-3-rozwiazanie/"},"@type":"BlogPosting","url":"https://kodolamacz.pl/blog/wyzwanie-python-3-rozwiazanie/","author":{"@type":"Person","name":"mbartoszuk"},"headline":"Wyzwanie Python #3: Rozwiązanie","description":"Poniżej rozwiązanie do naszego trzeciego wyzwania","dateModified":"2018-12-25T10:00:00+00:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script async="" src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/hotjar-391963.js"></script><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><script async="" src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/modules-f05594485f7797d58b408b352f247d6e.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K55LPRR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="box-wide">
+    <!-- header v1 -->
+<header class="header-v1" id="home-section">
+    <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 45px;"><div class="sticky-bar" style="position: fixed; top: 0px;">
+    <div class="container">
+        <div class="header-top">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo"><a href="https://kodolamacz.pl/"><img src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/kodolamacz_logo3.svg"></a></div>
+                </div>
+                <div class="col-md-9">
+                    <nav class="main-nav">
+                        <div class="responsive-menu"><i class="fa fa-bars"></i></div>
+                        <ul>
+                            <li><a href="https://kodolamacz.pl/#o-nas">O nas</a>
+                                <ul>
+                                    <li><a href="https://kodolamacz.pl/#o-nas">Dlaczego my?</a></li>
+                                    <li><a href="https://kodolamacz.pl/kadra/">Wykładowcy</a></li>
+                                    <li><a href="https://kodolamacz.pl/biuro-prasowe/">Biuro prasowe</a></li>
+                                
+                                </ul>
+                            </li>
+                            <li><a href="#bootcampy">Nasze kursy</a>
+                                    <ul>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-datascience/">Data Science</a></li>
+									  <li><a href="https://kodolamacz.pl/bootcamp-python/">Python</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-fullstack/">Full-stack</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-javascript/">JavaScript</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-java/">Java</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-tester/">Tester automatyczny</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-android/">Android</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-tworzenie-gier/">Tworzenie gier</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-cpp/">C++ for IoT Development</a></li>		
+                                    </ul>
+                            </li>
+                            <li><a href="https://kodolamacz.pl/dofinansowanie/">Dofinansowanie</a></li>
+                            <li><a data-anchor="works-section" href="https://kodolamacz.pl/pracodawcy/">Dla pracodawców</a></li>
+                            <li><a href="https://kodolamacz.pl/blog/">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+<div class="messagepop pop">
+    <h2>Pobierz informator</h2>
+    <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+      <div class="form-group">
+       <label for="email" class="control-label">Adres email:</label>
+       <input type="email" class="form-control" id="email" placeholder="Email" name="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="custom_bootcamp" class="control-label">Wybierz interesującą Cię ścieżkę:</label>
+          <select name="custom_bootcamp" class="form-control">
+            <option value="Data Scientist" selected="selected">Data Scientist</option>
+            <option value="Full-stack Developer">Full-stack Developer</option>
+            <option value="Java Developer">Java Developer</option>
+            <option value="JavaScript Developer">JavaScript Developer</option>
+            <option value="Game Developer">Game Developer</option>
+            <option value="Tester oprogramowania">Tester oprogramowania</option>
+            <option value="C++ Developer">C++ Developer (IoT)</option>
+            <option value="Android Developer">Android Developer</option>
+          </select>
+      </div>
+      <input type="hidden" name="campaign_token" value="nvPRH">
+	    <input type="hidden" name="thankyou_url" value="https://kodolamacz.pl/dziekujemy">
+      <div class="form-group">
+          <input type="submit" value="Pobierz" name="commit" id="message_submit" class="btn btn-info">
+          <input type="button" class="btn btn-default" id="messagepop_close" value="Anuluj">
+      </div>
+    </form>
+    <p style="font-size: 10px;line-height: 1.7em;">Wysyłając niniejszy 
+formularz, wyrażam zgodę na przesyłanie informacji handlowych drogą 
+elektroniczną przez firmę Sages Sp. z o.o. z siedzibą w Warszawie przy 
+ul. Nowogrodzkiej 62c, zgodnie z ustawą z dnia 18 lipca 2002 r. o 
+świadczeniu usług drogą elektroniczną (Dz. U. z 2002 r. Nr 144, poz. 
+1204 z późn. zm.).</p>
+</div>
+
+
+</header>
+<!-- header v1 -->
+
+
+    
+<!-- start post -->
+<div class="blog-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="blog-post single-post">
+                  <div class="post-header">
+                    <h1>Wyzwanie Python #3: Rozwiązanie</h1>
+                    <p><i class="fa fa-calendar"></i> 
+                    25
+                    grudnia
+                    
+                    2018</p>
+                  </div>
+                    <div class="post-cover">
+                        <img src="" alt="Wyzwanie Python #3: Rozwiązanie">
+                    </div>
+                    <div class="post-content">
+                        <p>Poniżej rozwiązanie do naszego <a href="https://kodolamacz.pl/blog/wyzwanie-python-3-algorytmy-i-struktury-danych/">trzeciego wyzwania</a></p>
+
+<h1 id="sprytne-potęgowanie">Sprytne potęgowanie</h1>
+
+<p>To zadanie nie wymaga większego komentarza, gdy już widzimy 
+rozwiązanie. Rozwiązujemy je tak, jak to zwykle bywa przy takich 
+problemach: najpierw sprawdzamy przypadki szczególne. W tym wypadku jest
+ to sprawdzenie, czy wykładnik nie jest równy 0 lub 1 (przypominamy, że 
+liczba podniesiona do potęgi zerowej jest równa 1). Następnie obliczamy 
+“połowę” potęgi. Aby wykonać tzw. dzielenie całkowitoliczbowe, czyli 
+takie, które, upraszczając, zwróci wynik zaokrąglony do dołu do liczby 
+całkowitej, używamy <code class="highlighter-rouge">//</code>. Warto zaznaczyć, że niepoprawne byłoby zapisanie w stylu: <code class="highlighter-rouge">potega_wydajnie(podstawa, wykladnik//2)*potega_wydajnie(podstawa, wykladnik//2)</code>.
+ Wtedy zmusilibyśmy procesor do wykonania dwa razy tej samej funkcji i 
+zamiast potęgowania sprytnego, mielibyśmy najzwyklejsze potęgowanie z 
+pełną liczbą mnożeń. Dlatego musimy wynik działania tej funkcji 
+przypisać do zmiennej i dopiero pracując na niej, obliczyć jej kwadrat. 
+Ostatecznie sprawdzamy, czy wykładnik był parzysty (czy reszta z 
+dzielenia przez dwa jest równa zero) i w zależności od tego domnażamy 
+jeszcze raz podstawę lub nie.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def potega_wydajnie(podstawa, wykladnik):
+    if wykladnik == 1:
+        return podstawa
+    if wykladnik == 0:
+        return 1
+    polowa = potega_wydajnie(podstawa, wykladnik//2)
+    if wykladnik % 2 == 0:
+        return polowa*polowa
+    else:
+        return polowa*polowa*podstawa
+</code></pre></div></div>
+
+<h1 id="palindromy">Palindromy</h1>
+
+<p>To zadanie można próbować rozwiązywać na dwa sposoby: bardziej w 
+stylu innych języków programowania lub bardziej w stylu Pythona. 
+Rozwiązanie, co do którego mamy pewność, że zadziałałoby w innych 
+językach programowania, wygląda następująco:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def czyPalindrom(napis):
+    n = len(napis)
+    for i in range(len(napis)//2):
+        if napis[i] != napis[n-i-1]:
+            return False
+    return True
+</code></pre></div></div>
+
+<p>Używamy pętli <code class="highlighter-rouge">for</code>, która 
+przechodzi po połowie liter napisu wejściowego. Następnie dla każdej 
+litery obliczamy pozycję odpowiadającej jej litery leżącej w drugiej 
+połowie napisu. Porównujemy je, i jeśli nie są one sobie równe, wiemy, 
+że napis nie ma szans być palindromem. Zaznaczmy, że w przeciwnym 
+wypadku, gdy litery są sobie równe, nie możemy jeszcze zwrócić prawdy, 
+gdyż być może kolejna para liter okaże się sobie nierówna. Możemy to 
+zrobić dopiero po przejrzeniu wszystkich par liter, czyli za pętlą.</p>
+
+<p>Możemy spróbować rozwiązać to zadanie inaczej:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def czyPalindrom2(napis):
+    return napis == napis[::-1]
+</code></pre></div></div>
+
+<p>Po prostu tworzymy nowy napis, który ma odwrócone wszystkie litery <code class="highlighter-rouge">(napis[::-1])</code>.
+ Następnie porównujemy oryginalny napis z odwróconym. Pozostaje 
+odpowiedzieć na pytanie, które rozwiązanie jest lepsze. Odpowiedź brzmi:
+ to zależy. Rozwiązanie drugie, choć bardzo kuszące, może okazać się 
+zgubne, gdy napis będzie naprawdę bardzo długi. Wtedy tworzymy jego 
+kopię (o odwróconej kolejności liter), która zajmuje drugie tyle miejsca
+ w pamięci. Może się okazać, że pamięć nam się zwyczajnie skończy. Co 
+jednak, gdy pamięci mamy pod dostatkiem? Czy któreś rozwiązanie jest 
+szybsze? Okazuje się, że tu znowu zależy. Gdy mamy do czynienia z 
+palindromem i trzeba przejść po wszystkich znakach napisu, rozwiązanie <code class="highlighter-rouge">czyPalindrom2()</code>
+ będzie szybsze, gdyż operacja porównywania napisów zaimplementowana w 
+Pythonie będzie szybsza, niż nasze własne chodzenie po kolejnych 
+literach pętlą <code class="highlighter-rouge">for</code>. Nawet narzut na tworzenie odwróconego napisu nie zmieni wyniku. W naszych testach <code class="highlighter-rouge">czyPalindrom2()</code> był 100 razy wolniejszy niż <code class="highlighter-rouge">czyPalindrom()</code>. Jednak gdy nie mamy do czynienia z palindromem i możemy to rozstrzygnąć na podstawie pierwszej i ostatniej litery, to <code class="highlighter-rouge">czyPalindrom()</code> jest górą. Nie mamy tu narzutu na tworzenie nowego napisu, ale już po pierwszym porównaniu zwracamy wynik. Wtedy to <code class="highlighter-rouge">czyPalindrom()</code> jest 100 razy szybszy od <code class="highlighter-rouge">czyPalindrom2()</code>.</p>
+
+<h1 id="anagramy">Anagramy</h1>
+
+<p>To zadanie jest lubiane na testach rekrutacyjnych, gdyż można je 
+rozwiązać na całkiem wiele sposobów. Najważniejszą obserwacją jest to, 
+że liczba poszczególnych liter w jednym napisie musi się zgadzać z 
+liczbą poszczególnych liter w drugim.</p>
+
+<p>Najbardziej naiwna implementacja polegałaby na tym, że dla każdej 
+litery z pierwszego napisu szukalibyśmy w pętli takiej samej litery w 
+napisie drugim. Gdy dla każdego znaku znajdziemy odpowiednią parę, 
+rozstrzygamy, że dwa napisy są anagramami. To rozwiązanie jednak rodzi 
+wiele problemów: co, gdy mamy więcej, niż jeden taki sam znak w 
+pierwszym napisie? Czy nie przydarzy nam się go dopasować do tego samego
+ znaku w drugim napisie? Można oczywiście ratować się listą wartości 
+logicznych, gdzie będziemy zapisywać, które znaki już wykorzystaliśmy. 
+Jednak komplikuje to implementację, a czas wykonania i tak będzie daleki
+ od optymalnego.</p>
+
+<p>Drugim popularnym rozwiązaniem, na jaki wpadają starający się o 
+pracę, jest posortowanie obu napisów alfabetycznie (mądrzej: 
+leksykograficznie), a następnie sprawdzenie, czy są one takie same. Jest
+ to bardzo eleganckie rozwiązanie, zwłaszcza z punktu widzenia 
+matematyki: wprowadzamy pewną postać kanoniczną dla napisu (czyli 
+posortowaną alfabetycznie), następnie oba napisy sprowadzamy do tej 
+postaci kanonicznej, by sprawdzić, czy jest ona taka sama. Jednak z 
+punktu widzenia złożoności obliczeniowej to nadal nie jest najlepsze 
+rozwiązanie.</p>
+
+<p>My przedstawimy następujące podejście: policzymy, ile razy występują 
+poszczególne znaki w obu napisach, a następnie porównamy, czy te 
+liczności się pokrywają. W tym celu użyjemy poznanej w wyzwaniu 3 
+struktury danych: słownik. Kluczem będzie dany znak, a stowarzyszoną 
+wartością liczba jego wystąpień w napisie. W rozwiązaniu sprawdzamy, czy
+ już napotkaliśmy dany znak. Jeśli tak, to tylko zwiększamy jego wartość
+ o 1. W przeciwnym wypadku dopiero wprowadzamy nową parę klucz-wartość, 
+przyporządkowując liczbę wystąpień równą jeden. Całe szczęście 
+porównanie dwóch słowników jest już zaimplementowane w Pythonie:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def czyAnagram(napis1, napis2):
+    n = len(napis1)
+    if n != len(napis2):
+        return False
+    slownik1 = dict()
+    slownik2 = dict()
+    for i in range(n):
+        if napis1[i] in slownik1:
+            slownik1[napis1[i]] += 1
+        else:
+            slownik1[napis1[i]] = 1
+        if napis2[i] in slownik2:
+            slownik2[napis2[i]] += 1
+        else:
+            slownik2[napis2[i]] = 1
+    return slownik1 == slownik2
+</code></pre></div></div>
+
+<h1 id="moda">Moda</h1>
+
+<p>To zadanie jest dość podobne do poprzedniego. Także będziemy zliczać 
+liczbę wystąpień poszczególnych wartości, jednak gdy już to zrobimy, 
+musimy znaleźć największą liczbę wystąpień. W tym celu przejdziemy po 
+wszystkich parach klucz-wartość (metoda <code class="highlighter-rouge">items()</code>), znajdziemy największą stowarzyszoną wartość, a następnie zwrócimy odpowiadający jej klucz.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def moda(lista):
+    zliczenia = dict()
+    for i in range(len(lista)):
+        if lista[i] in zliczenia:
+            zliczenia[lista[i]] += 1
+        else:
+            zliczenia[lista[i]] = 1
+    maks = -1
+    liczba_maks = -1
+    for (co, ile) in zliczenia.items():
+        if ile &gt; maks:
+            liczba_maks = co
+            maks = ile
+    return liczba_maks
+</code></pre></div></div>
+
+<h1 id="test-rozwiązań">Test rozwiązań</h1>
+
+<p>Na zakończenie przykładowa funkcja <code class="highlighter-rouge">main()</code>, która testuje poszczególne rozwiązania:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    print("2^10 = " + str(potega_wydajnie(2, 10)))
+    print("czyPalindrom(kajak) = " + str(czyPalindrom("kajak")))
+    print("czyPalindrom(kobyla) = " + str(czyPalindrom("kobyla")))
+    print("czyPalindrom2(kajak) = " + str(czyPalindrom2("kajak")))
+    print("czyPalindrom2(kobyla) = " + str(czyPalindrom2("kobyla")))
+    print("czyAnagram(kajak, jaakk) = " + str(czyAnagram("kajak", "jaakk")))
+    print("czyAnagram(kobyla, boczek) = " + str(czyAnagram("kobyla", "boczek")))
+    print("moda([1,6,4,7,2,8,6,7,6]) = " + str(moda([1,6,4,7,2,8,6,7,6])))
+
+
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<p>Jeśli macie więcej pytań lub problemów, piszcie do nas śmiało <a href="https://www.facebook.com/events/367200160514189/">na Facebooku</a>, chętnie pomożemy. :) Do zobaczenia w czwartek na kolejnym wyzwaniu!</p>
+
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-author">
+                            <img src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/mbartoszuk.png" alt="Maciej Bartoszuk">
+                            <h6>Maciej Bartoszuk</h6>
+                            <p>Ukończył z wyróżnieniem informatykę na 
+wydziale Matematyki i Nauk Informacyjnych Politechniki Warszawskiej, 
+gdzie aktualnie pracuje w zakładzie Sztucznej Inteligencji i Metod 
+Obliczeniowych. Tam też od 2013 roku prowadzi zajęcia dydaktyczne z 
+programowania w R, Pythonie, C/C++, C#. Uczestnik studiów doktoranckich w
+ Instytucie Podstaw Informatyki Polskiej Akademii Nauk w latach 
+2013-2015. W 2018 roku obronił doktorat z wyróżnieniem na swoim rodzimym
+ wydziale: System do oceny podobieństwa kodów źródłowych w językach 
+funkcyjnych oparty na metodach uczenia maszynowego i agregacji danych, 
+który obejmuje zarówno algorytmy przetwarzania kodów źródłowych 
+programów, jak i data science. Współautor książki Przetwarzanie i 
+analiza danych w języku Python wydanej przez PWN. Ponadto trener na 
+bootcampach Data Science, gdzie uczy programować w języku Python pod 
+kątem analizy danych.</p>
+                        </div>
+
+                        <!-- <ul class="socials">
+                            <li>Udostępnij post</li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                        </ul> -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+    <div class="sidebar wow bounceInRight">
+        <!-- <div class="widget">
+            <form class="widget-search-form">
+                <i class="fa fa-search"></i>
+                <input type="submit" value="" name="submit" class="search-button">
+                <input class="search-line" name="search" type="text" placeholder="Szukaj">
+            </form>
+        </div>
+
+        <div class="widget">
+            <h3 class="widget-title">Twitter<span></span></h3>
+            <div class="twitter-widget" data-user="envato" data-posts="3"></div>
+        </div> -->
+
+        <div class="widget">
+            <div class="tab-widget">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab-1" data-toggle="tab">Popularne posty</a></li>
+                    <li><a href="#tab-2" data-toggle="tab">Ostatnie posty</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab-1">
+                      
+                      
+                      
+                        
+                        <div class="mini-post">
+                            <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/big-data-science-jak-przewidziec-przyszlosc/"><img src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ds.png" alt="mini post"></a></div>
+                            <h3><a href="https://kodolamacz.pl/blog/big-data-science-jak-przewidziec-przyszlosc/">(Big) Data Science. Jak przewidzieć przyszłość?</a></h3>
+                            <h6>
+                            15
+                            lutego
+                              
+                            2017</h6>
+                        </div>
+                        
+                      
+                        
+                        <div class="mini-post">
+                            <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/zawod-data-scientist-czyli-jak-zostac-jednorozcem/"><img src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jednorozec.jpg" alt="mini post"></a></div>
+                            <h3><a href="https://kodolamacz.pl/blog/zawod-data-scientist-czyli-jak-zostac-jednorozcem/">Zawód Data Scientist, czyli jak zostać jednorożcem</a></h3>
+                            <h6>
+                            18
+                            września
+                              
+                            2017</h6>
+                        </div>
+                        
+                      
+                        
+                          
+                  </div>
+                  <div class="tab-pane fade" id="tab-2">
+                    
+                    
+                    
+                      
+                      <div class="mini-post">
+                          <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/wyzwanie-python-5-rozwiazanie/"><img src="" alt="mini post"></a></div>
+                          <h3><a href="https://kodolamacz.pl/blog/wyzwanie-python-5-rozwiazanie/">Wyzwanie Python #5: Rozwiązanie</a></h3>
+                          <h6>
+                          8
+                          stycznia
+                            
+                          2019</h6>
+                      </div>
+                      
+                    
+                      
+                      <div class="mini-post">
+                          <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/"><img src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/okladkablog5.png" alt="mini post"></a></div>
+                          <h3><a href="https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/">Wyzwanie Python #5: Zaawansowane aspekty programowania obiektowego</a></h3>
+                          <h6>
+                          3
+                          stycznia
+                            
+                          2019</h6>
+                      </div>
+                      
+                    
+                      
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="widget">
+            <h3 class="widget-title">Social<span></span></h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+        </div> -->
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+<!-- end post -->
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    messageStyle: "none",
+    "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/MathJax.js" type="text/javascript"></script>
+    
+
+  </div>
+  <!-- start scripts -->
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery-2.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery-ui.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/popups.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/bootstrap.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/masonry.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/instagram.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/plugins.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/sticky.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/options.js" type="text/javascript"></script>
+<!-- <script src="/assets/color-box/color-js.js" type="text/javascript"></script> -->
+<!-- <script src="/assets/color-box/farbtastic/farbtastic.js" type="text/javascript"></script> -->
+<!-- end scripts -->
+
+
+
+
+
+<script type="text/javascript" id="">window.__lc=window.__lc||{};window.__lc.license=7063941;(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://":"http://")+"cdn.livechatinc.com/tracking.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","438403872984586");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=438403872984586&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:391963,hjsv:5};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"//static.hotjar.com/c/hotjar-",".js?sv\x3d");</script><script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/get_dynamic_config.json"></script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html"></iframe><div id="ads"></div><script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/get_static_config.json"></script><script src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/localization.json"></script><div id="livechat-compact-container" style="position: fixed; bottom: 0px; right: 15px; width: 250px; height: 53px; overflow: hidden; visibility: visible; z-index: 2147483639; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden; opacity: 1; transform: translateY(0%);"><iframe src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/a.html" id="livechat-compact-view" style="position: relative;top: 20px;left: 0;width: 100%;border: 0;padding: 0;margin: 0;float: none;background: none" scrolling="no" allowtransparency="true" title="LiveChat Minimized Widget"></iframe><a id="livechat-badge" href="#" onclick="LC_API.show_full_view({source:'minimized click'});return false" style="position: absolute;display: block;visibility: hidden;height: 16px;padding: 0 4px;line-height: 16px;background: #f00;color: #fff;font-size: 10px;text-decoration: none;font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;border-radius: 3px;box-shadow: 0 -1px 0px #f00, -1px 0 0px #f00, 1px 0 0px #f00, 0 1px 0px #f00, 0 0 2px #000;border-top: 1px solid #f99;width: 16px;border-radius: 50%;box-shadow: none;border-top: 0;padding: 0;text-align: center;font-family: 'Lato', sans-serif;top: 12px;left: 20px"></a></div><div id="livechat-full" style="position: fixed; bottom: 0px; right: 15px; width: 400px; height: 450px; overflow: hidden; visibility: hidden; z-index: -1; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden; transform: translateY(100%); opacity: 0;"><iframe src="Wyzwanie%20Python%20%233%20%20Rozwi%C4%85zanie%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/open_chat.html" id="livechat-full-view" name="livechat-full-view" title="LiveChat Widget" scrolling="no" allowtransparency="true" allow="autoplay" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; border: 0px none; padding: 0px; margin: 0px; float: none; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;"></iframe></div><div id="lc_invite_layer" style="text-align: left; display: none; z-index: 16777261;"></div><div id="lc_overlay_layer" style="background-color: rgb(0, 0, 0); position: fixed; left: 0px; top: 0px; z-index: 16777260; display: none; width: 100%; height: 100%;"></div><script id="livechat-ping" src="https://secure.livechatinc.com/licence/7063941/v2/ping?t=1546696788265&amp;data=%7B%22visitor%22%3A%7B%22id%22%3A%22S1544805525.c2199ac1ba%22%7D%7D&amp;jsonp=__lc_ping_664446"></script></body></html>

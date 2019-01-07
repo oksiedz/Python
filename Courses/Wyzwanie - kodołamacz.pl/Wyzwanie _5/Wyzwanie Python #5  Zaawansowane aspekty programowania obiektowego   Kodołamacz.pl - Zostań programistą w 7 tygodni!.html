@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="pl"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Google Tag Manager -->
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/438403872984586.js" async=""></script><script async="" src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/fbevents.js"></script><script type="text/javascript" async="" src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/tracking.js"></script><script type="text/javascript" async="" src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/analytics.js"></script><script async="" src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K55LPRR');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/swipebox.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/bootstrap.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/style.css" rel="stylesheet">
+    <link href="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/syntax.css" rel="stylesheet">
+    <link rel="stylesheet" href="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ionicons.css">
+    <!-- <link href=""/assets/color-box/color-style.css rel="stylesheet" /> -->
+    <!-- <link href=""/assets/color-box/farbtastic/farbtastic.css rel="stylesheet" /> -->
+    <link rel="stylesheet" href="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Wyzwanie Python #5: Zaawansowane aspekty programowania obiektowego | Kodołamacz.pl - Zostań programistą w 7 tygodni!</title>
+<meta name="generator" content="Jekyll v3.7.4">
+<meta property="og:title" content="Wyzwanie Python #5: Zaawansowane aspekty programowania obiektowego">
+<meta name="author" content="mbartoszuk">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="W poprzednim wyzwaniu nakreśliliśmy podstawy programowania obiektowego. Wiemy już, czym różni się klasa od jej instancji, czym jest pole, a czym metoda, a także jak zdefiniować konstruktor. Jednak we wstępie do poprzedniego wyzwania powiedzieliśmy sobie, że obiektowość została wymyślona, aby radzić sobie z coraz to większymi partiami kodu, aby zaprowadzić w nim porządek. Aby wydzielić podobne partie kodu, a także wskazać, gdzie kod rozwiązań dwóch problemów się różni.">
+<meta property="og:description" content="W poprzednim wyzwaniu nakreśliliśmy podstawy programowania obiektowego. Wiemy już, czym różni się klasa od jej instancji, czym jest pole, a czym metoda, a także jak zdefiniować konstruktor. Jednak we wstępie do poprzedniego wyzwania powiedzieliśmy sobie, że obiektowość została wymyślona, aby radzić sobie z coraz to większymi partiami kodu, aby zaprowadzić w nim porządek. Aby wydzielić podobne partie kodu, a także wskazać, gdzie kod rozwiązań dwóch problemów się różni.">
+<link rel="canonical" href="https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/">
+<meta property="og:url" content="https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/">
+<meta property="og:site_name" content="Kodołamacz.pl - Zostań programistą w 7 tygodni!">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-01-03T10:00:00+00:00">
+<script type="application/ld+json">
+{"datePublished":"2019-01-03T10:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/"},"@type":"BlogPosting","url":"https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/","author":{"@type":"Person","name":"mbartoszuk"},"headline":"Wyzwanie Python #5: Zaawansowane aspekty programowania obiektowego","description":"W poprzednim wyzwaniu nakreśliliśmy podstawy programowania obiektowego. Wiemy już, czym różni się klasa od jej instancji, czym jest pole, a czym metoda, a także jak zdefiniować konstruktor. Jednak we wstępie do poprzedniego wyzwania powiedzieliśmy sobie, że obiektowość została wymyślona, aby radzić sobie z coraz to większymi partiami kodu, aby zaprowadzić w nim porządek. Aby wydzielić podobne partie kodu, a także wskazać, gdzie kod rozwiązań dwóch problemów się różni.","dateModified":"2019-01-03T10:00:00+00:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script async="" src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/hotjar-391963.js"></script><script async="" src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/modules-f05594485f7797d58b408b352f247d6e.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K55LPRR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="box-wide">
+    <!-- header v1 -->
+<header class="header-v1" id="home-section">
+    <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 45px;"><div class="sticky-bar" style="position: fixed; top: 0px;">
+    <div class="container">
+        <div class="header-top">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo"><a href="https://kodolamacz.pl/"><img src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/kodolamacz_logo3.svg"></a></div>
+                </div>
+                <div class="col-md-9">
+                    <nav class="main-nav">
+                        <div class="responsive-menu"><i class="fa fa-bars"></i></div>
+                        <ul style="display: none;">
+                            <li><a href="https://kodolamacz.pl/#o-nas">O nas</a>
+                                <ul>
+                                    <li><a href="https://kodolamacz.pl/#o-nas">Dlaczego my?</a></li>
+                                    <li><a href="https://kodolamacz.pl/kadra/">Wykładowcy</a></li>
+                                    <li><a href="https://kodolamacz.pl/biuro-prasowe/">Biuro prasowe</a></li>
+                                
+                                </ul>
+                            </li>
+                            <li><a href="#bootcampy">Nasze kursy</a>
+                                    <ul>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-datascience/">Data Science</a></li>
+									  <li><a href="https://kodolamacz.pl/bootcamp-python/">Python</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-fullstack/">Full-stack</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-javascript/">JavaScript</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-java/">Java</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-tester/">Tester automatyczny</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-android/">Android</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-tworzenie-gier/">Tworzenie gier</a></li>
+                                      <li><a href="https://kodolamacz.pl/bootcamp-cpp/">C++ for IoT Development</a></li>		
+                                    </ul>
+                            </li>
+                            <li><a href="https://kodolamacz.pl/dofinansowanie/">Dofinansowanie</a></li>
+                            <li><a data-anchor="works-section" href="https://kodolamacz.pl/pracodawcy/">Dla pracodawców</a></li>
+                            <li><a href="https://kodolamacz.pl/blog/">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+<div class="messagepop pop">
+    <h2>Pobierz informator</h2>
+    <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+      <div class="form-group">
+       <label for="email" class="control-label">Adres email:</label>
+       <input type="email" class="form-control" id="email" placeholder="Email" name="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="custom_bootcamp" class="control-label">Wybierz interesującą Cię ścieżkę:</label>
+          <select name="custom_bootcamp" class="form-control">
+            <option value="Data Scientist" selected="selected">Data Scientist</option>
+            <option value="Full-stack Developer">Full-stack Developer</option>
+            <option value="Java Developer">Java Developer</option>
+            <option value="JavaScript Developer">JavaScript Developer</option>
+            <option value="Game Developer">Game Developer</option>
+            <option value="Tester oprogramowania">Tester oprogramowania</option>
+            <option value="C++ Developer">C++ Developer (IoT)</option>
+            <option value="Android Developer">Android Developer</option>
+          </select>
+      </div>
+      <input type="hidden" name="campaign_token" value="nvPRH">
+	    <input type="hidden" name="thankyou_url" value="https://kodolamacz.pl/dziekujemy">
+      <div class="form-group">
+          <input type="submit" value="Pobierz" name="commit" id="message_submit" class="btn btn-info">
+          <input type="button" class="btn btn-default" id="messagepop_close" value="Anuluj">
+      </div>
+    </form>
+    <p style="font-size: 10px;line-height: 1.7em;">Wysyłając niniejszy 
+formularz, wyrażam zgodę na przesyłanie informacji handlowych drogą 
+elektroniczną przez firmę Sages Sp. z o.o. z siedzibą w Warszawie przy 
+ul. Nowogrodzkiej 62c, zgodnie z ustawą z dnia 18 lipca 2002 r. o 
+świadczeniu usług drogą elektroniczną (Dz. U. z 2002 r. Nr 144, poz. 
+1204 z późn. zm.).</p>
+</div>
+
+
+</header>
+<!-- header v1 -->
+
+
+    
+<!-- start post -->
+<div class="blog-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="blog-post single-post">
+                  <div class="post-header">
+                    <h1>Wyzwanie Python #5: Zaawansowane aspekty programowania obiektowego</h1>
+                    <p><i class="fa fa-calendar"></i> 
+                    3
+                    stycznia
+                      
+                    2019</p>
+                  </div>
+                    <div class="post-cover">
+                        <img src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/okladkablog5.png" alt="Wyzwanie Python #5: Zaawansowane aspekty programowania obiektowego">
+                    </div>
+                    <div class="post-content">
+                        <p>W poprzednim wyzwaniu nakreśliliśmy podstawy 
+programowania obiektowego. Wiemy już, czym różni się klasa od jej 
+instancji, czym jest pole, a czym metoda, a także jak zdefiniować 
+konstruktor. Jednak we wstępie do poprzedniego wyzwania powiedzieliśmy 
+sobie, że obiektowość została wymyślona, aby radzić sobie z coraz to 
+większymi partiami kodu, aby zaprowadzić w nim porządek. Aby wydzielić 
+podobne partie kodu, a także wskazać, gdzie kod rozwiązań dwóch 
+problemów się różni.</p>
+
+<p>W tym wyzwaniu omówimy bardziej zaawansowane aspekty programowania 
+obiektowego, takie jak dziedziczenie, polimorfizm, hermetyzacja i 
+abstrakcja. Dopiero poznając te koncepty poznamy prawdziwą moc 
+programowania obiektowego, które pozwala zaprowadzić realny porządek w 
+kodzie.</p>
+
+<h2 id="dziedziczenie">Dziedziczenie</h2>
+
+<p>Bardzo często pojawia się następujący scenariusz: chcemy stworzyć 
+dwie lub więcej klas, które, choć reprezentują trochę inne idee, mają 
+jednak całkiem sporo części wspólnych. Może to być klasa reprezentująca 
+dokument tekstowy oraz w HTML. Taka, która reprezentuje koło oraz 
+prostokąt. Albo osoby: wykładowcę i studenta na uczelni. Spójrzmy na 
+przykład z figurami geometrycznymi: muszą być inne pola, koło jest 
+definiowane przez środek oraz promień, podczas gdy prostokąt przez 
+długości swoich boków i jeden wierzchołek (są to pola w klasach). Jednak
+ dla obu tych figur można policzyć ich obwód oraz pole (są to metody). Z
+ drugiej strony, wykładowca oraz student mają swoje imiona oraz nazwiska
+ (pola), jednak ich czynności na uczelni są zupełnie inne (metody).</p>
+
+<p>Gdyby chcieć tworzyć osobne klasy dla każdej z tych idei, to szybko 
+okazałoby się, że mamy bardzo dużo powtórzonego kodu, a jak 
+wspomninaliśmy w jednym z pierwszych wyzwań, sztuka programowania to 
+sztuka pisania kodu tylko raz, tak aby w razie błędu nie musieć 
+wprowadzać tych samych poprawek wielokrotnie (poza tym jest mniej 
+czytania, gdy wrócimy do kodu za jakiś czas po przerwie). Dlatego 
+wymyślono <strong>dziedziczenie</strong>. Polega ono na tym, że tworzymy jedną klasę (nazwijmy ją klasą <em>bazową</em>),
+ która ma pewne cechy (pola i metody), a następnie tworzymy drugą klasę,
+ która po niej dziedziczy, co oznacza, że ma te same pola i metody, 
+jednak po pierwsze może dodać swoje własne nowe składowe, a po drugie 
+zmienić kod samych metod klasy bazowej.</p>
+
+<p>W naszym wyzwaniu posłużymy się znanym i lubianym przykładem ZOO: 
+stworzymy klasy reprezentujące słonia, lwa i papugę. Na początku 
+stworzymy klasę bazową, <code class="highlighter-rouge">Zwierze</code>, która wyekstrachuje pewne cechy, które są wspólne dla wszystkich tych zwierząt: pola <code class="highlighter-rouge">nazwa</code>, <code class="highlighter-rouge">wiek</code> oraz  <code class="highlighter-rouge">waga</code>. Do tego dodajmy dwie metody: <code class="highlighter-rouge">przedstaw_sie()</code> oraz <code class="highlighter-rouge">urodziny()</code>. W końcu każde zwierzę może powiedzieć, jak się nazywa oraz każde się starzeje.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Zwierze:
+    def __init__(self, nazwa, wiek, waga):
+        self.nazwa = nazwa
+        self.wiek = wiek
+        self.waga = waga
+    def przedstaw_sie(self):
+        print(f"Jestem zwierzęciem {self.nazwa}, mam {self.wiek} lat oraz wazę {self.waga} kg.")
+        
+    def urodziny(self):
+        self.wiek += 1
+class Slon(Zwierze):
+    pass
+    
+class Lew(Zwierze):
+    pass
+    
+class Papuga(Zwierze):
+    pass
+def main():
+    Dumboo = Slon("Dumboo", 77, 6000)
+    Simba = Lew("Simba", 24, 100)
+    Jago = Papuga("Jago", 32, 3)
+    jakis_zwierz = Zwierze("Katarzyna", 31, 80) 
+    
+    Dumboo.przedstaw_sie()
+    Simba.przedstaw_sie()
+    jakis_zwierz.przedstaw_sie()
+    
+    Jago.urodziny()
+    Jago.przedstaw_sie()
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Jestem zwierzęciem Dumboo, mam 77 lat oraz wazę 6000 kg.
+## Jestem zwierzęciem Simba, mam 24 lat oraz wazę 100 kg.
+## Jestem zwierzęciem Katarzyna, mam 31 lat oraz wazę 80 kg.
+## Jestem zwierzęciem Jago, mam 33 lat oraz wazę 3 kg.
+</code></pre></div></div>
+
+<p>Sama definicja klasy <code class="highlighter-rouge">Zwierz</code> 
+nie powinna nam sprawiać problemów, gdyż nie odbiega ona od tego, czego 
+nauczyliśmy się w poprzednim wyzwaniu. Jednak ciekawsze są kolejne 
+definicje klas. Spójrzmy na klasę <code class="highlighter-rouge">Slon</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Slon(Zwierze):
+    pass
+</code></pre></div></div>
+
+<p>Obok nazwy klasy napisaliśmy w okrągłych nawiasach nazwę klasy bazowej (tej, z której dziedziczymy). Dzięki temu klasa <code class="highlighter-rouge">Slon</code> ma te same pola i metody, co klasa <code class="highlighter-rouge">Zwierze</code>. W samym ciele klasy napisaliśmy słówko <code class="highlighter-rouge">pass</code>, co znaczy tyle, że ciało to jest zwyczajnie puste.</p>
+
+<p>Przyjrzyjmy się teraz funkcji <code class="highlighter-rouge">main()</code>. Możemy stworzyć instancje zarówno klasy bazowej, jak i klas dziedziczących. Każda z nich ma metody  <code class="highlighter-rouge">przedstaw_sie()</code> oraz <code class="highlighter-rouge">urodziny()</code>, a także taki sam konstruktor.</p>
+
+<p>Póki co, poza tym, że wprowadziliśmy pojęcie dziedziczenia, niewiele 
+ciekawego zdarzyło się w naszym programie. Tak naprawdę wprowadzenie 
+klas poszczególnych zwierząt jest sztuczne i niczego nam nie ułatwia. 
+Zastanowić też można się, czy możliwość stworzenia instancji klasy  <code class="highlighter-rouge">Zwierze</code>,
+ bez podania konkretnego gatunku, ma sens. Jednak to dopiero początek, 
+zaraz pokażemy, jak wprowadzać drobne zmiany na poziomie każdej klasy, a
+ także ciekawiej korzystać z dobrodziejstw wspólnego “przodka”.</p>
+
+<h2 id="przesłanianie-metod">Przesłanianie metod</h2>
+
+<p>Tak jak już wspominaliśmy, z dziedziczenia korzystamy, gdy chcemy 
+mieć wiele cech wspólnych z klasą bazową, jednak chcemy także mieć 
+pewien fragment kodu, który różni się od odziedziczonego. Aby 
+zilustrować to zjawisko, wprowadzimy inny sposób przedstawiania się 
+poszczególnych zwierząt:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Zwierze:
+    def __init__(self, nazwa, wiek, waga):
+        self.nazwa = nazwa
+        self.wiek = wiek
+        self.waga = waga
+    def przedstaw_sie(self):
+        print(f"Jestem zwierzęciem {self.nazwa}, mam {self.wiek} lat oraz wazę {self.waga} kg.")
+        
+    def urodziny(self):
+        self.wiek += 1
+class Slon(Zwierze):
+    def przedstaw_sie(self):
+        print(f"Jestem słoniem {self.nazwa}, mam {self.wiek} lat oraz wazę {self.waga} kg.")
+    
+class Lew(Zwierze):
+    def przedstaw_sie(self):
+        super().przedstaw_sie()
+        print("A tak w ogóle to jestem lwem")
+        
+class Papuga(Zwierze):
+    pass
+def main():
+    Dumboo = Slon("Dumboo", 77, 6000)
+    Simba = Lew("Simba", 24, 100)
+    Jago = Papuga("Jago", 32, 3)
+    jakis_zwierz = Zwierze("Katarzyna", 31, 80) 
+    
+    Dumboo.przedstaw_sie()
+    Simba.przedstaw_sie()
+    jakis_zwierz.przedstaw_sie()
+    
+    Jago.urodziny()
+    Jago.przedstaw_sie()
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Jestem słoniem Dumboo, mam 77 lat oraz wazę 6000 kg.
+## Jestem zwierzęciem Simba, mam 24 lat oraz wazę 100 kg.
+## A tak w ogóle to jestem lwem
+## Jestem zwierzęciem Katarzyna, mam 31 lat oraz wazę 80 kg.
+## Jestem zwierzęciem Jago, mam 33 lat oraz wazę 3 kg.
+</code></pre></div></div>
+
+<p>Przedstawiliśmy tutaj dwa typowe scenariusze: jeden, zastosowany w klasie <code class="highlighter-rouge">Slon</code>, pokazuje sytuacje, gdy kompletnie rezygnujemy z metody klasy bazowej i wprowadzamy swój własny kod. W drugim zaś, w klasie <code class="highlighter-rouge">Lew</code>, najpierw wywołujemy metodę klasy bazowej, by następnie dodać coś od siebie. Zwróćmy uwagę na to, że <code class="highlighter-rouge">super()</code> zwraca nam instancję klasy bazowej: są to wszystkie pola i metody naszego obiektu, jakie otrzymaliśmy dzięki klasie bazowej.</p>
+
+<h2 id="konstruktory">Konstruktory</h2>
+
+<p>Teraz dokonajmy jeszcze jednej zmiany: niech papugi mają pewną cechę,
+ która jest właściwa tylko im. Będzie to kolor, który będzie 
+przechowywany jako dodatkowe pole. W tym celu musimy zmodyfikować 
+konstruktor: konstruktor papugi będzie przyjmował cztery parametry, 
+gdzie oryginalne trzy będą przekazywane do konstruktora klasy bazowej, 
+podczas gdy czwarty będzie przypisywany w nowo napisanym konstrukorze. 
+Znów, wszystko ma na celu uniknięcie pisania dwa razy tego samego kodu 
+(w tym wypadku przypisań do pól <code class="highlighter-rouge">nazwa</code>, <code class="highlighter-rouge">wiek</code>, <code class="highlighter-rouge">waga</code>).</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Zwierze:
+    def __init__(self, nazwa, wiek, waga):
+        self.nazwa = nazwa
+        self.wiek = wiek
+        self.waga = waga
+    def przedstaw_sie(self):
+        print(f"Jestem zwierzęciem {self.nazwa}, mam {self.wiek} lat oraz wazę {self.waga} kg.")
+        
+    def urodziny(self):
+        self.wiek += 1
+class Slon(Zwierze):
+    def przedstaw_sie(self):
+        print(f"Jestem słoniem {self.nazwa}, mam {self.wiek} lat oraz wazę {self.waga} kg.")
+    
+class Lew(Zwierze):
+    def przedstaw_sie(self):
+        super().przedstaw_sie()
+        print("A tak w ogóle to jestem lwem")
+        
+class Papuga(Zwierze):
+    def __init__(self, nazwa, wiek, waga, kolor):
+        super().__init__(nazwa, wiek, waga)
+        self.kolor = kolor
+        
+    def przedstaw_sie(self):
+        super().przedstaw_sie()
+        print(f"Jako papuga mój kolor to {self.kolor}")
+def main():
+    Dumboo = Slon("Dumboo", 77, 6000)
+    Simba = Lew("Simba", 24, 100)
+    # Jago = Papuga("Jago", 32, 3) # będzie błąd
+    Jago = Papuga("Jago", 32, 3, "czerwony")
+    jakis_zwierz = Zwierze("Katarzyna", 31, 80) 
+    
+    Dumboo.przedstaw_sie()
+    Simba.przedstaw_sie()
+    jakis_zwierz.przedstaw_sie()
+    
+    Jago.urodziny()
+    Jago.przedstaw_sie()
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Jestem słoniem Dumboo, mam 77 lat oraz wazę 6000 kg.
+## Jestem zwierzęciem Simba, mam 24 lat oraz wazę 100 kg.
+## A tak w ogóle to jestem lwem
+## Jestem zwierzęciem Katarzyna, mam 31 lat oraz wazę 80 kg.
+## Jestem zwierzęciem Jago, mam 33 lat oraz wazę 3 kg.
+## Jako papuga mój kolor to czerwony
+</code></pre></div></div>
+
+<p>Jak widzimy, <code class="highlighter-rouge">super()</code>.<code class="highlighter-rouge">__init__()</code>
+ pozwola odwołać się do konstruktora klasy bazowej. Co więcej, definicja
+ nowego, czteroargumentowego konstruktora w klasie dziedziczącej 
+zabrania nam skorzystania z oryginalnego, trójargumentowego konstruktora
+ w <code class="highlighter-rouge">main()</code>. Ma to sens: nie chcemy
+ papugi, która nie ma zdefiniowanego koloru. Dodatkowo, nadpisaliśmy 
+metodę przedstaw_sie() wzorem klasy Lew. W tym wypadku ma ona więcej 
+sensu, gdyż wywołujemy oryginalną metodę, która działa na trzech polach z
+ klasy bazowej, a także dodajemy jeszcze jeden komunikat, wypisujący 
+wartość pola specyficznego tylko dla papug.</p>
+
+<p>Gdy umiemy już modyfikować istniejące metody, wywoływać metody i 
+konstruktory klasy bazowej a także wprowadzać własne pola do klasy 
+dziedziczącej, pora przedstawić bardziej wysublimowane niuanse 
+programowania obiektowego.</p>
+
+<h2 id="polimorfizm">Polimorfizm</h2>
+
+<p>Na dobry początek omówmy czym jest polimorfizm w kontekście 
+programowania obiektowego. Oznacza to, że klasa dziedzicząca może być 
+użyta wszędzie tam, gdzie może być użyta klasa bazowa. Oznacza to, że 
+instancja klasy dziedziczącej jest uznawana za instancję klasy bazowej. W
+ języku Python sprawdzenie przynależności danego obiektu do klasy 
+wykonuje się metodą <code class="highlighter-rouge">isinstance()</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
+    Dumboo = Slon("Dumboo", 77, 6000)
+    Simba = Lew("Simba", 24, 100)
+    Jago = Papuga("Jago", 32, 3, "czerwony")
+    jakis_zwierz = Zwierze("Katarzyna", 31, 80) 
+    
+    print(f"isinstance(Dumboo, Slon): {isinstance(Dumboo, Slon)}")
+    print(f"isinstance(Dumboo, Lew): {isinstance(Dumboo, Lew)}")
+    print(f"isinstance(Jago, Papuga): {isinstance(Jago, Papuga)}")
+    print(f"isinstance(Jago, Zwierze): {isinstance(Jago, Zwierze)}")
+    print(f"isinstance(jakis_zwierz, Zwierze): {isinstance(jakis_zwierz, Zwierze)}")
+    print(f"isinstance(jakis_zwierz, Papuga): {isinstance(jakis_zwierz, Papuga)}")
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## isinstance(Dumboo, Slon): True
+## isinstance(Dumboo, Lew): False
+## isinstance(Jago, Papuga): True
+## isinstance(Jago, Zwierze): True
+## isinstance(jakis_zwierz, Zwierze): True
+## isinstance(jakis_zwierz, Papuga): False
+</code></pre></div></div>
+
+<p>Jakie może być zastosowanie polimorfizmu? Łatwiej jest uogólniać 
+pewne czynności: np. wywołać tę samą metodę na wielu elementach listy, 
+które są instancjami różnych klas dziedziczących. W naszym przypadku 
+będziemy chcieli, np. z dniem pierwszego stycznia, postarzeć wszystkie 
+zwierzęta obecne w ZOO:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def nowy_rok(zoo):
+    for zwierze in zoo:
+        zwierze.urodziny()
+def przedstaw_zwierzeta(zoo):
+    for zwierze in zoo:
+        zwierze.przedstaw_sie()
+        
+def main():
+    Dumboo = Slon("Dumboo", 77, 6000)
+    Simba = Lew("Simba", 24, 100)
+    Jago = Papuga("Jago", 32, 3, "czerwony")
+    jakis_zwierz = Zwierze("Katarzyna", 31, 80) 
+    
+    zoo = [Dumboo, Simba, Jago, jakis_zwierz]
+    nowy_rok(zoo)
+    przedstaw_zwierzeta(zoo)
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Jestem słoniem Dumboo, mam 78 lat oraz wazę 6000 kg.
+## Jestem zwierzęciem Simba, mam 25 lat oraz wazę 100 kg.
+## A tak w ogóle to jestem lwem
+## Jestem zwierzęciem Jago, mam 33 lat oraz wazę 3 kg.
+## Jako papuga mój kolor to czerwony
+## Jestem zwierzęciem Katarzyna, mam 32 lat oraz wazę 80 kg.
+</code></pre></div></div>
+
+<p>Jak widzimy, polimorfizm zapewnia nam dużą wygodę: możemy potraktować wszystkie zwierzęta jako przedstawicieli klasy bazowej: <code class="highlighter-rouge">Zwierze</code>.</p>
+
+<h2 id="abstrakcja">Abstrakcja</h2>
+
+<p>W naszym przykładzie cały czas jest pewien mankament: tak naprawdę nie ma sensu tworzyć instancji klasy <code class="highlighter-rouge">Zwierze</code>.
+ Chcemy zakazać tworzenia instancji tej klasy. Poza tym, tak naprawdę 
+każdy gatunek zwierzęcia ma swoją nazwę. Gdyby umieć wprowadzić tę nazwę
+ na poziomie klasy <code class="highlighter-rouge">Zwierze</code> (a 
+przecież wtedy jeszcze jej nie znamy, gdyż ustali się ona dopiero 
+podczas dziedziczenia), można by napisać raz a dobrze metodę 
+przedstawiającą zwierzę, z użyciem nazwy gatunku, i to już w klasie 
+bazowej.</p>
+
+<p>Aby zrealizować nasze cele, wprowadzimy nową metodę w klasie bazowej: <code class="highlighter-rouge">nazwa_gatunku()</code>. Będzie ona zwracać nazwę gatunku, np. <code class="highlighter-rouge">"Lew"</code>.
+ Jednak jak wypełnić ciało takiej funkcji? Moglibyśmy oczywiście napisać
+ cokolwiek, np. zwracać napis pusty. Jednak lepszym rozwiązaniem będzie 
+oznaczenie tej metody jako abstrakcyjnej. Oznacza to, że definiujemy w 
+klasie bazowej taką metodę, której nie implementujemy, ale spodziewamy 
+się, że klasy dziedziczące się tym zajmą. Ma to jeszcze jedno 
+następstwo: nie możemy stworzyć instancji klasy bazowej, gdyż obiekt 
+taki miałby niezdefiniowaną metodę. Co ciekawe, mimo to możemy wywoływać
+ tę metodę w klasie bazowej. Spójrzmy:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from abc import ABC, abstractmethod
+class Zwierze(ABC):
+    def __init__(self, nazwa, wiek, waga):
+        self.nazwa = nazwa
+        self.wiek = wiek
+        self.waga = waga
+        
+    @abstractmethod # tutaj wymuszamy implementację tej metody w klasach pochodnych
+    def nazwa_gatunku(self): 
+        pass
+    def przedstaw_sie(self):
+        print(f"Jestem {self.nazwa_gatunku()}. Mam na imię {self.nazwa}, mam {self.wiek} lat oraz wazę {self.waga} kg.")
+        
+    def urodziny(self):
+        self.wiek += 1
+class Slon(Zwierze):
+    def nazwa_gatunku(self):
+        return "Słoń"
+    
+class Lew(Zwierze):
+    def nazwa_gatunku(self):
+        return "Lew"
+        
+class Papuga(Zwierze):
+    def nazwa_gatunku(self):
+        return "Papuga"
+        
+    def __init__(self, nazwa, wiek, waga, kolor):
+        super().__init__(nazwa, wiek, waga)
+        self.kolor = kolor
+        
+    def przedstaw_sie(self):
+        super().przedstaw_sie()
+        print(f"Jako papuga mój kolor to {self.kolor}")
+def main():
+    Dumboo = Slon("Dumboo", 77, 6000)
+    Simba = Lew("Simba", 24, 100)
+    Jago = Papuga("Jago", 32, 3, "czerwony")
+    # jakis_zwierz = Zwierze("Katarzyna", 31, 80) # będzie błąd
+    
+    Dumboo.przedstaw_sie()
+    Simba.przedstaw_sie()
+    # jakis_zwierz.przedstaw_sie()
+    
+    Jago.urodziny()
+    Jago.przedstaw_sie()
+if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Jestem Słoń. Mam na imię Dumboo, mam 77 lat oraz wazę 6000 kg.
+## Jestem Lew. Mam na imię Simba, mam 24 lat oraz wazę 100 kg.
+## Jestem Papuga. Mam na imię Jago, mam 33 lat oraz wazę 3 kg.
+## Jako papuga mój kolor to czerwony
+</code></pre></div></div>
+
+<p>Niestety, mechanizm klas i metod abstrakcyjnych (klasa jest 
+abstrakcyjna gdy ma co najmniej jedną metodę abstrakcyjną) w języku 
+Python jest wprowadzony trochę sztucznie. Klasa bazowa (abstrakcyjna) 
+musi dziedziczyć po sztucznej klasie <code class="highlighter-rouge">ABC</code>, a metoda abstrakcyjna jest opatrzona dekoratorem <code class="highlighter-rouge">@abstractmethod</code>.
+ Zwróćmy uwagę, że jedno i drugie zostało zaimportowane. Jednak po tych 
+czynnościach rzeczywiście nie jesteśmy w stanie stworzyć instancji klasy
+ bazowej.</p>
+
+<p>Zwróćmy uwagę na ten zaawansowany mechanizm: w klasie Zwierze 
+tworzymy metodę, zakładamy, co ta metoda będzie zwracać, a następnie 
+korzystamy z niej w innej metodzie, pomimo, że prawdziwa jej 
+implementacja nastąpi dopiero w klasie pochodnej. Dzięki temu musimy 
+napisać mniej kodu w klasach pochodnych: musimy jedynie zaimplementować 
+metodę <code class="highlighter-rouge">nazwa_gatunku()</code>, jednak nie musimy już od zera pisać kodu na przedstawienie zwierzęta. Jedynie w klasie <code class="highlighter-rouge">Papuga</code>, gdzie wprowadziliśmy nowe pole, dopisujemy kod odpowiedzialny za wypisanie jego wartości.</p>
+
+<h2 id="hermetyzacja">Hermetyzacja</h2>
+
+<p>Pisząc programy obiektowo, staramy się, aby wnętrze klasy, w 
+szczególności sposób przechowywania poszczególnych danych w polach, 
+pozostawał dla użytkownika nieznany. Dlatego raczej chcemy udostępniać 
+interfejs klasy (możliwość użycia danej klasy do rozwiązania swoich 
+problemów) poprzez metody, niż pola. W szczególności nie chcemy, aby 
+użytkownik sam, ręcznie, modyfikował pola w klasie. Dlatego zazwyczaj 
+tworzy się metody, które pozwalają na uzyskanie wartości danego pola, 
+jak i nadanie mu nowej. Weźmy za przykład pole <code class="highlighter-rouge">nazwa</code>.W wielu językach programowania stworzylibyśmy metodę <code class="highlighter-rouge">get_name()</code> oraz <code class="highlighter-rouge">set_name(nowa_nazwa)</code>,
+ które pozwoliłyby na obie te rzeczy. Czemu tak bardzo zależy nam na 
+hermetyzacji i odcięciu użytkownika od pól? Powody są dwa. Po pierwsze 
+możemy chcieć wykonać pewne dodatkowe czynności podczas zmiany pola. Być
+ może jest to bardzo ważne pole, którego zmiana pociąga za sobą w 
+konsekwencji przeliczenie i modyfikację także innych pól? Albo chcemy 
+sprawdzić poprawność danego pola, tak by nie pozwolić na wprowadzenie 
+ujemnego wieku? Po drugie sama implementacja klasy może się zmienić. Być
+ może pojawią się nowe pola, a stare zostaną usunięte. Jednak kod 
+użytkowników naszej klasy został już napisany. Jeśli jest to kod, który 
+operuje na metodach, to prawdopodobnie uda nam się zachować taką samą 
+metodę zwracającą daną informację, choć wyliczającą ją w inny sposób w 
+swym wnętrzu. Przy polach nie mamy takiej możliwości.</p>
+
+<p>Jednak oczywiście używanie metod, zwłaszcza z przedrostkiem <code class="highlighter-rouge">get_</code> czy <code class="highlighter-rouge">set_</code>,
+ jest mniej wygodne. Dlatego nowoczesne języki programowania umożliwiają
+ tworzenie tzw. właściwości (ang. property). Z punktu widzenia 
+możliwości, są to po prostu metody, jednak z punktu widzenia zapisu i 
+wygody, przypominają one pola.</p>
+
+<p>Dla większej czytelności pozostaniemy co prawda przy zwierzęciu, 
+jednak zostawimy jedno pole, a także pominiemy klasy dziedziczące. Polem
+ będzie <code class="highlighter-rouge">wiek</code>, który musi być dodatni, jednak nie większy niż 200:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">class</span> <span class="n">Zwierze</span><span class="o">:</span>
+    <span class="n">def</span> <span class="n">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">wiek</span><span class="p">)</span><span class="o">:</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">wiek</span> <span class="o">=</span> <span class="n">wiek</span>
+        
+    <span class="k">@property</span>
+    <span class="n">def</span> <span class="n">wiek</span><span class="p">(</span><span class="n">self</span><span class="p">)</span><span class="o">:</span>
+        <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">__wiek</span>
+    <span class="err">@wiek</span><span class="p">.</span><span class="n">setter</span>
+    <span class="n">def</span> <span class="n">wiek</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">wiek</span><span class="p">)</span><span class="o">:</span>
+        <span class="k">if</span> <span class="n">wiek</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">:</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">__wiek</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">elif</span> <span class="n">wiek</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="o">:</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">__wiek</span> <span class="o">=</span> <span class="mi">200</span>
+        <span class="k">else</span><span class="o">:</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">__wiek</span> <span class="o">=</span> <span class="n">wiek</span>
+<span class="n">def</span> <span class="n">main</span><span class="p">()</span><span class="o">:</span>
+    <span class="n">jakis_zwierz</span> <span class="o">=</span> <span class="n">Zwierze</span><span class="p">(</span><span class="mi">202</span><span class="p">)</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">jakis_zwierz</span><span class="p">.</span><span class="n">wiek</span><span class="p">)</span>
+    <span class="n">jakis_zwierz</span><span class="p">.</span><span class="n">wiek</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">jakis_zwierz</span><span class="p">.</span><span class="n">wiek</span><span class="p">)</span>
+    <span class="n">jakis_zwierz</span><span class="p">.</span><span class="n">wiek</span> <span class="o">=</span> <span class="mi">30</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">jakis_zwierz</span><span class="p">.</span><span class="n">wiek</span><span class="p">)</span>
+    
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="o">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 200
+## 0
+## 30
+</code></pre></div></div>
+
+<p>Tym razem w osiągnięciu naszego celu pomógł nam dekorator <code class="highlighter-rouge"><span class="k">@property</span></code>. Zwróćmy uwagę, że już na etapie konstruktora został wywołany kod, który sprawdził poprawność przekazanej wartości wieku.</p>
+
+<h2 id="zadanie-5">Zadanie 5</h2>
+
+<h3 id="figury-geometryczne">Figury geometryczne</h3>
+
+<p>Stwórz hierarchię klas reprezentujących figury geometryczne. Każda 
+figura powinna umieć wypisać informacje o sobie, a także obliczyć swój 
+obwód i pole. W grę niech wchodzą koła, prostokąty, kwadraty oraz 
+trójkąty. Czy prostokąt i kwadrat mogą być połączone relacją 
+dziedziczenia?</p>
+
+<h3 id="struktura-wyrażeń-arytmetycznych">Struktura wyrażeń arytmetycznych</h3>
+
+<p>Stwórz hierarchię klas: węzeł dodawania, odejmowania, mnożenia i 
+dzielenia, a także silnii. Poza tym powinien być węzeł zwykłej wartości 
+typu  <code class="highlighter-rouge">float</code>. Węzły dodawania, 
+odejmowania, mnożenia i dzielenia mają po dwa węzły potomne (być może 
+inne działanie, a być może po prostu wartość), silnia jeden węzeł 
+potomny, a wartość nie ma żadnych dzieci. Kluczową będzie tu metoda 
+abstrakcyjne <code class="highlighter-rouge">oblicz_wartosc()</code>, która zwraca obliczoną wartość danego węzła. Polami powinny być węzły potomne.</p>
+
+
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-author">
+                            <img src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/mbartoszuk.png" alt="Maciej Bartoszuk">
+                            <h6>Maciej Bartoszuk</h6>
+                            <p>Ukończył z wyróżnieniem informatykę na 
+wydziale Matematyki i Nauk Informacyjnych Politechniki Warszawskiej, 
+gdzie aktualnie pracuje w zakładzie Sztucznej Inteligencji i Metod 
+Obliczeniowych. Tam też od 2013 roku prowadzi zajęcia dydaktyczne z 
+programowania w R, Pythonie, C/C++, C#. Uczestnik studiów doktoranckich w
+ Instytucie Podstaw Informatyki Polskiej Akademii Nauk w latach 
+2013-2015. W 2018 roku obronił doktorat z wyróżnieniem na swoim rodzimym
+ wydziale: System do oceny podobieństwa kodów źródłowych w językach 
+funkcyjnych oparty na metodach uczenia maszynowego i agregacji danych, 
+który obejmuje zarówno algorytmy przetwarzania kodów źródłowych 
+programów, jak i data science. Współautor książki Przetwarzanie i 
+analiza danych w języku Python wydanej przez PWN. Ponadto trener na 
+bootcampach Data Science, gdzie uczy programować w języku Python pod 
+kątem analizy danych.</p>
+                        </div>
+
+                        <!-- <ul class="socials">
+                            <li>Udostępnij post</li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                        </ul> -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+    <div class="sidebar wow bounceInRight">
+        <!-- <div class="widget">
+            <form class="widget-search-form">
+                <i class="fa fa-search"></i>
+                <input type="submit" value="" name="submit" class="search-button">
+                <input class="search-line" name="search" type="text" placeholder="Szukaj">
+            </form>
+        </div>
+
+        <div class="widget">
+            <h3 class="widget-title">Twitter<span></span></h3>
+            <div class="twitter-widget" data-user="envato" data-posts="3"></div>
+        </div> -->
+
+        <div class="widget">
+            <div class="tab-widget">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab-1" data-toggle="tab">Popularne posty</a></li>
+                    <li><a href="#tab-2" data-toggle="tab">Ostatnie posty</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab-1">
+                      
+                      
+                      
+                        
+                        <div class="mini-post">
+                            <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/big-data-science-jak-przewidziec-przyszlosc/"><img src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/ds.png" alt="mini post"></a></div>
+                            <h3><a href="https://kodolamacz.pl/blog/big-data-science-jak-przewidziec-przyszlosc/">(Big) Data Science. Jak przewidzieć przyszłość?</a></h3>
+                            <h6>
+                            15
+                            lutego
+                              
+                            2017</h6>
+                        </div>
+                        
+                      
+                        
+                        <div class="mini-post">
+                            <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/zawod-data-scientist-czyli-jak-zostac-jednorozcem/"><img src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jednorozec.jpg" alt="mini post"></a></div>
+                            <h3><a href="https://kodolamacz.pl/blog/zawod-data-scientist-czyli-jak-zostac-jednorozcem/">Zawód Data Scientist, czyli jak zostać jednorożcem</a></h3>
+                            <h6>
+                            18
+                            września
+                              
+                            2017</h6>
+                        </div>
+                        
+                      
+                        
+                          
+                  </div>
+                  <div class="tab-pane fade" id="tab-2">
+                    
+                    
+                    
+                      
+                      <div class="mini-post">
+                          <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/wyzwanie-python-5-rozwiazanie/"><img src="" alt="mini post"></a></div>
+                          <h3><a href="https://kodolamacz.pl/blog/wyzwanie-python-5-rozwiazanie/">Wyzwanie Python #5: Rozwiązanie</a></h3>
+                          <h6>
+                          8
+                          stycznia
+                            
+                          2019</h6>
+                      </div>
+                      
+                    
+                      
+                      <div class="mini-post">
+                          <div class="mini-post-cover"><a href="https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/"><img src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/okladkablog5.png" alt="mini post"></a></div>
+                          <h3><a href="https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/">Wyzwanie Python #5: Zaawansowane aspekty programowania obiektowego</a></h3>
+                          <h6>
+                          3
+                          stycznia
+                            
+                          2019</h6>
+                      </div>
+                      
+                    
+                      
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="widget">
+            <h3 class="widget-title">Social<span></span></h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-vine"></i></a></li>
+                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+        </div> -->
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+<!-- end post -->
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    messageStyle: "none",
+    "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/MathJax.js" type="text/javascript"></script>
+    
+
+  </div>
+  <!-- start scripts -->
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery-2.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery-ui.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/popups.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/bootstrap.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/jquery.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/masonry.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/instagram.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/plugins.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/sticky.js" type="text/javascript"></script>
+<script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/options.js" type="text/javascript"></script>
+<!-- <script src="/assets/color-box/color-js.js" type="text/javascript"></script> -->
+<!-- <script src="/assets/color-box/farbtastic/farbtastic.js" type="text/javascript"></script> -->
+<!-- end scripts -->
+
+
+
+
+
+<script type="text/javascript" id="">window.__lc=window.__lc||{};window.__lc.license=7063941;(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://":"http://")+"cdn.livechatinc.com/tracking.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","438403872984586");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=438403872984586&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:391963,hjsv:5};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"//static.hotjar.com/c/hotjar-",".js?sv\x3d");</script><script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/get_dynamic_config.json"></script><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html"></iframe><script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/7063941.txt"></script><div id="ads"></div><script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/get_static_config.json"></script><script src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/localization.json"></script><div id="livechat-compact-container" style="position: fixed; bottom: 0px; right: 15px; width: 250px; height: 53px; overflow: hidden; visibility: visible; z-index: 2147483639; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden; opacity: 1; transform: translateY(0%);"><iframe src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/a.html" id="livechat-compact-view" style="position: relative;top: 20px;left: 0;width: 100%;border: 0;padding: 0;margin: 0;float: none;background: none" scrolling="no" allowtransparency="true" title="LiveChat Minimized Widget"></iframe><a id="livechat-badge" href="#" onclick="LC_API.show_full_view({source:'minimized click'});return false" style="position: absolute;display: block;visibility: hidden;height: 16px;padding: 0 4px;line-height: 16px;background: #f00;color: #fff;font-size: 10px;text-decoration: none;font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;border-radius: 3px;box-shadow: 0 -1px 0px #f00, -1px 0 0px #f00, 1px 0 0px #f00, 0 1px 0px #f00, 0 0 2px #000;border-top: 1px solid #f99;width: 16px;border-radius: 50%;box-shadow: none;border-top: 0;padding: 0;text-align: center;font-family: 'Lato', sans-serif;top: 12px;left: 20px"></a></div><div id="livechat-full" style="position: fixed; bottom: 0px; right: 15px; width: 400px; height: 450px; overflow: hidden; visibility: hidden; z-index: -1; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden; transform: translateY(100%); opacity: 0;"><iframe src="Wyzwanie%20Python%20%235%20%20Zaawansowane%20aspekty%20programowania%20obiektowego%20%20%20Kodo%C5%82amacz.pl%20-%20Zosta%C5%84%20programist%C4%85%20w%207%20tygodni!_pliki/open_chat.html" id="livechat-full-view" name="livechat-full-view" title="LiveChat Widget" scrolling="no" allowtransparency="true" allow="autoplay" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; border: 0px none; padding: 0px; margin: 0px; float: none; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;"></iframe></div><div id="lc_invite_layer" style="text-align: left; display: none; z-index: 16777261;"></div><div id="lc_overlay_layer" style="background-color: rgb(0, 0, 0); position: fixed; left: 0px; top: 0px; z-index: 16777260; display: none; width: 100%; height: 100%;"></div><script id="livechat-ping" src="https://secure.livechatinc.com/licence/7063941/v2/ping?t=1546696636912&amp;data=%7B%22visitor%22%3A%7B%22id%22%3A%22S1544805525.c2199ac1ba%22%7D%7D&amp;jsonp=__lc_ping_613432"></script></body></html>
