@@ -2,17 +2,19 @@ import random
 import datetime
 import math
 
-NoOfNumbers = int(input('Podaj dlugosc ciagu liczb: '))
+#NoOfNumbers = int(input('Podaj dlugosc ciagu liczb: '))
+NoOfNumbers = 7000000
 
 randomlist = []
 print("Rozpoczecie generowania ciagu liczb.")
 for i in range(0, NoOfNumbers):
     randomlist.append(random.random())
 print("Zakonczenie generowania ciagu liczb.")
+listofresults = []
 
 #wyszukanie najwyższych wartości podwójnym przeszukaniem
 def double_search(startnumber, endnumber):
-    print("Podwojne przeszukanie wszystkich elementow")
+    #print("Podwojne przeszukanie wszystkich elementow")
     max_1 = 0
     max_2 = 0
     listofnumbers = randomlist[startnumber:endnumber]
@@ -24,12 +26,14 @@ def double_search(startnumber, endnumber):
         if (listofnumbers[i] > max_2 and listofnumbers[i] < max_1):
             max_2 = listofnumbers[i]
     endtime = datetime.datetime.now()
-    print("Maksymalna liczba jest rowna: ", max_1, ", druga co do wielkosci jest rowna: ", max_2, ", czas wyszukiwania wynosi: ", endtime - starttime)
-    return endtime - starttime
+    #print("Maksymalna liczba jest rowna: ", max_1, ", druga co do wielkosci jest rowna: ", max_2, ", czas wyszukiwania wynosi: ", endtime - starttime)
+    listofresults.append("Podwójne"+str(max_1)+";"+str(max_2)+";"+str(endtime-starttime))
+
+
 
 #wyszukanie najwyższych wartości pojedynczym przeszukaniem
 def single_search(startnumber, endnumber):
-    print("Pojedyncze przeszukanie wszystkich elementow")
+    #print("Pojedyncze przeszukanie wszystkich elementow")
     max_1 = 0
     max_2 = 0
     listofnumbers = randomlist[startnumber:endnumber]
@@ -41,12 +45,12 @@ def single_search(startnumber, endnumber):
             max_2 = max_1
             max_1 = listofnumbers[i]
     endtime = datetime.datetime.now()
-    print("Maksymalna liczba jest rowna: ", max_1, ", druga co do wielkosci jest rowna: ", max_2, ", czas wyszukiwania wynosi: ", endtime - starttime)
-    return endtime - starttime
+    #print("Maksymalna liczba jest rowna: ", max_1, ", druga co do wielkosci jest rowna: ", max_2, ", czas wyszukiwania wynosi: ", endtime - starttime)
+    listofresults.append("Pojedyncze"+str(max_1)+";"+str(max_2)+";"+str(endtime-starttime))
 
 #wyszukanie najwyższych wartości metodą turniejową
 def tournament_search(startnumber, endnumber):
-    print("Przeszukanie wszystkich elementow metodą turniejową")
+    #print("Przeszukanie wszystkich elementow metodą turniejową")
     #start clearing and defining parameters
     listofloserpairs = []
     listofnumbers = randomlist[startnumber:endnumber]
@@ -143,25 +147,40 @@ def tournament_search(startnumber, endnumber):
         change_the_listofnumbers = 1
     #end of loop
     endtime = datetime.datetime.now()
-    
-
-    print("Maksymalna liczba jest rowna: ", max_1, ", druga co do wielkosci jest rowna: ", max_2, ", czas wyszukiwania wynosi: ", endtime - starttime)
-
+    #print("Maksymalna liczba jest rowna: ", max_1, ", druga co do wielkosci jest rowna: ", max_2, ", czas wyszukiwania wynosi: ", endtime - starttime)
+    listofresults.append("Turniej"+str(max_1)+";"+str(max_2)+";"+str(endtime-starttime))
 
 
+for i in range(0,10):    
+    double_search(1000000, 2200000)
+for i in range(0,10):
+    double_search(2200000, 3400000)
+for i in range(0,10):    
+    double_search(3400000, 4600000)
+for i in range(0,10):    
+    double_search(4600000, 5800000)
+for i in range(0,10):
+    double_search(5800000, 7000000)
+for i in range(0,10):
+    single_search(1000000, 2200000)
+for i in range(0,10):
+    single_search(2200000, 3400000)
+for i in range(0,10):
+    single_search(3400000, 4600000)
+for i in range(0,10):
+    single_search(4600000, 5800000)
+for i in range(0,10):
+    single_search(5800000, 7000000)
+for i in range(0,10):
+    tournament_search(1000000, 2200000)
+for i in range(0,10):
+    tournament_search(2200000, 3400000)
+for i in range(0,10):
+    tournament_search(3400000, 4600000)
+for i in range(0,10):
+    tournament_search(4600000, 5800000)
+for i in range(0,10):
+    tournament_search(5800000, 7000000)
 
-
-
-
-
-
-
-
-
-double_search(0, NoOfNumbers)
-
-single_search(0, NoOfNumbers)
-
-tournament_search(0, NoOfNumbers)
-
-
+for i in range(0, len(listofresults)):
+    print(listofresults[i])
