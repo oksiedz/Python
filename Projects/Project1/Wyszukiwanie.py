@@ -2,7 +2,6 @@ import random
 import datetime
 import math
 
-#NoOfNumbers = int(input('Podaj dlugosc ciagu liczb: '))
 NoOfNumbers = 7000000
 
 randomlist = []
@@ -126,22 +125,22 @@ def tournament_search(startnumber, endnumber):
                     max_1 = listofnumbers[0]
                 if round == 2:
                     max_2 = listofnumbers[0]
-                listofloserpairs.append(str(listofnumbers[0])+";"+str(listofnumbers[1]))
+#                listofloserpairs.append(str(listofnumbers[0])+";"+str(listofnumbers[1]))
             else:
                 if round == 1:
                     max_1 = listofnumbers[1]
                 if round == 2:
                     max_2 = listofnumbers[1]
-                listofloserpairs.append(str(listofnumbers[1])+";"+str(listofnumbers[0]))
+#                listofloserpairs.append(str(listofnumbers[1])+";"+str(listofnumbers[0]))
         else:
             for i in range(0, n):
                 if 2*i+1<len(listofnumbers):
                     if listofnumbers[2*i] > listofnumbers[2*i+1]:
                         listofwinners.append(listofnumbers[2*i])
-                        listofloserpairs.append(str(listofnumbers[2*i])+";"+str(listofnumbers[2*i+1]))
+#                        listofloserpairs.append(str(listofnumbers[2*i])+";"+str(listofnumbers[2*i+1]))
                     else:
                         listofwinners.append(listofnumbers[2*i+1])
-                        listofloserpairs.append(str(listofnumbers[2*i+1])+";"+str(listofnumbers[2*i]))
+#                       listofloserpairs.append(str(listofnumbers[2*i+1])+";"+str(listofnumbers[2*i]))
                 else:
                     listofwinners.append(str(listofnumbers[2*i]))
         change_the_listofnumbers = 1
@@ -151,34 +150,49 @@ def tournament_search(startnumber, endnumber):
     listofresults.append("Turniej"+str(max_1)+";"+str(max_2)+";"+str(endtime-starttime))
 
 
+print("1. Double search")
 for i in range(0,10):    
     double_search(1000000, 2200000)
+print("2. Double search")
 for i in range(0,10):
     double_search(2200000, 3400000)
+print("3. Double search")
 for i in range(0,10):    
     double_search(3400000, 4600000)
+print("4. Double search")
 for i in range(0,10):    
     double_search(4600000, 5800000)
+print("5. Double search")
 for i in range(0,10):
     double_search(5800000, 7000000)
+print("1. single search")
 for i in range(0,10):
     single_search(1000000, 2200000)
+print("2. single search")
 for i in range(0,10):
     single_search(2200000, 3400000)
+print("3. single search")
 for i in range(0,10):
     single_search(3400000, 4600000)
+print("4. single search")
 for i in range(0,10):
     single_search(4600000, 5800000)
+print("5. single search")
 for i in range(0,10):
     single_search(5800000, 7000000)
+print("1. tournament search")
 for i in range(0,10):
     tournament_search(1000000, 2200000)
+print("2. tournament search")
 for i in range(0,10):
     tournament_search(2200000, 3400000)
+print("3. tournament search")
 for i in range(0,10):
     tournament_search(3400000, 4600000)
+print("4. tournament search")
 for i in range(0,10):
     tournament_search(4600000, 5800000)
+print("5. tournament search")
 for i in range(0,10):
     tournament_search(5800000, 7000000)
 
