@@ -1,9 +1,0 @@
-1 sekunda:
-Selection Sort 1 700 obserwacji
-Insertion Sort 1 700 obserwacji
-Merge Sort 20 000 obserwacji
-
-5 minut:
-Selection Sort 27 000 obserwacji
-Insertion Sort 30 000 obserwacji
-Merge Sort 3 000 000 obserwacji

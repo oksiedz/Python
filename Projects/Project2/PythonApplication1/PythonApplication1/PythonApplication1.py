@@ -4,7 +4,7 @@ import datetime
 ##import math
 
 #NoOfGeneratedNumber - number of items in array to be sorted
-noOfGeneratedNumber = 2000
+noOfGeneratedNumber = 1200
 
 #array with random numbers
 listToBeSorted = []
@@ -23,10 +23,10 @@ for i in range(0, noOfGeneratedNumber):
     listToBeSorted.append(float(random.random()))
 print("Zakończenie generowania ciagu liczb losowych")
 
-print("Nieposortowany ciąg:")
+#print("Nieposortowany ciąg:")
 #notsorted
-for i in range(len(listToBeSorted)):
-	print(listToBeSorted[i])
+#for i in range(len(listToBeSorted)):
+#	print(listToBeSorted[i])
 
 #Selection sort
 def selectionSort(inputArray, inputType):
@@ -119,27 +119,30 @@ def mergeSort(inputArray, ifPrint = 0, inputType = "Z"):
 		listOfResults.append("M;"+str(inputType)+";"+str(endTime-startTime))
 
 
+#Sorting on random array
 selectionSort(listToBeSorted, "R")
 insertionSort(listToBeSorted, "R")
 mergeSort(listToBeSorted, 1, "R")
 
 listSortedDesc = list(reversed(listSortedAsc))
 
+#Sorting on sorted ascending array
 selectionSort(listToBeSorted, "A")
 insertionSort(listToBeSorted, "A")
 mergeSort(listToBeSorted, 1, "A")
 
+#Sorting on sorted descending array
 selectionSort(listToBeSorted, "D")
 insertionSort(listToBeSorted, "D")
 mergeSort(listToBeSorted, 1, "D")
 
-print("posortowany ciąg ASC")
-for i in range(len(listSortedAsc)):
-	print(listSortedAsc[i])
+#print("posortowany ciąg ASC")
+#for i in range(len(listSortedAsc)):
+#	print(listSortedAsc[i])
 
-print("posortowany ciąg DESC")
-for i in range(len(listSortedDesc)):
-	print(listSortedDesc[i])
+#print("posortowany ciąg DESC")
+#for i in range(len(listSortedDesc)):
+#	print(listSortedDesc[i])
 
 print("Wyniki")
 #Print results
