@@ -14,7 +14,7 @@ sortedArrayDesc = []
 resultsList = []
 
 #noOfGeneratedNumber - how many items contain array of random numbers
-noOfGeneratedNumber = 17000
+noOfGeneratedNumber = 100000
 
 #print("Start of random array generation")
 for i in range(0, noOfGeneratedNumber):
@@ -26,7 +26,7 @@ for i in range(0, noOfGeneratedNumber):
 #    print(randomArray[i])
 
 #Selection sort
-def selectionSort(inputArray, ifSave = 0, inputType = "Z"):
+def selectionSort(inputArray, inputType = "Z"):
 	#Array to be sorted
 	A = []
 	for i in range(0, len(inputArray)):
@@ -43,13 +43,10 @@ def selectionSort(inputArray, ifSave = 0, inputType = "Z"):
 		A[i], A[min_idx] = A[min_idx], A[i]
 	endTime = datetime.datetime.now()
 #	print("End - Selection sort")
-	if (ifSave == 1):
-		for i in range(len(A)):
-			sortedArrayAsc.append(A[i])
 	resultsList.append("S;"+str(inputType)+";"+str(endTime-startTime))
 
 #Insertion sort
-def insertionSort(inputArray, inputType = "Z"): 
+def insertionSort(inputArray, inputType = "Z", ifSave = 0): 
 #	print("Start - Insertion sort")
 	A = []
 	for i in range(0, len(inputArray)):
@@ -65,68 +62,79 @@ def insertionSort(inputArray, inputType = "Z"):
 		A[j+1] = key
 	endTime = datetime.datetime.now()
 #	print("End - Insertion sort")
+	if (ifSave == 1):
+		for i in range(len(A)):
+			sortedArrayAsc.append(A[i])
 	resultsList.append("I;"+str(inputType)+";"+str(endTime-startTime))
 
-def mergeSort(inputArray, ifPrint = 0, inputType = "Z"):
-#	if ifPrint == 1:
-#		print("Merge sort start")
+def mergeSortEngine(alist):
+	if len(alist)>1:
+		mid = len(alist)//2
+		lefthalf = alist[:mid]
+		righthalf = alist[mid:]
+
+		mergeSortEngine(lefthalf)
+		mergeSortEngine(righthalf)
+
+		i=0
+		j=0
+		k=0
+		while i < len(lefthalf) and j < len(righthalf):
+			if lefthalf[i] <= righthalf[j]:
+				alist[k]=lefthalf[i]
+				i=i+1
+			else:
+				alist[k]=righthalf[j]
+				j=j+1
+			k=k+1
+
+		while i < len(lefthalf):
+			alist[k]=lefthalf[i]
+			i=i+1
+			k=k+1
+
+		while j < len(righthalf):
+			alist[k]=righthalf[j]
+			j=j+1
+			k=k+1
+
+def mergeSort(inputArray, inputType = "Z", ifSave = 0):
 	A = []
 	for i in range(0, len(inputArray)):
 		A.append(inputArray[i])
+	#print("Start - Merge sort")
 	startTime = datetime.datetime.now()
-	if len(A) > 1:
-		# Finding the mid of the array
-		mid = len(A)//2
-		# Dividing the array elements
-		L = A[:mid]
-		# into 2 halves
-		R = A[mid:]
-		# Sorting the first half
-		mergeSort(L)
-		# Sorting the second half
-		mergeSort(R)
-		i = j = k = 0
-		# Copy data to temp arrays L[] and R[]
-		while i < len(L) and j < len(R):
-			if L[i] < R[j]:
-				A[k] = L[i]
-				i += 1
-			else:
-				A[k] = R[j]
-				j += 1
-			k += 1
-		# Checking if any element was left
-		while i < len(L):
-			A[k] = L[i]
-			i += 1
-			k += 1
-		while j < len(R):
-			A[k] = R[j]
-			j += 1
-			k += 1
-	if ifPrint == 1:
-		endTime = datetime.datetime.now()
-#		print("End - Merge sort")
-		resultsList.append("M;"+str(inputType)+";"+str(endTime-startTime))
+	mergeSortEngine(A)
+	endTime = datetime.datetime.now()
+	#print("End - Merge sort")
+	if (ifSave == 1):
+		for i in range(len(A)):
+			sortedArrayAsc.append(A[i])
+	resultsList.append("M;"+str(inputType)+";"+str(endTime-startTime))
+
 
 print("Start - random sorting")
-selectionSort(randomArray, 1, "R")
+#selectionSort(randomArray, "R")
 #insertionSort(randomArray, "R")
-mergeSort(randomArray, 1, "R")
+mergeSort(randomArray, "R", 1)
 print("End - random sorting")
 
+print("Start - Sorting Desc")
+reverseStart = datetime.datetime.now()
 for i in range(0, len(sortedArrayAsc)):
 	sortedArrayDesc.append(list(reversed(sortedArrayAsc))[i])
+reverseEnd = datetime.datetime.now()
+print("End - Sorting Desc, lasted: "+str(reverseEnd - reverseStart))
 
 print("Start - sortedASC sorting")
-#selectionSort(sortedArrayAsc, 0, "A")
+#selectionSort(sortedArrayAsc, "A")
 insertionSort(sortedArrayAsc, "A")
-mergeSort(sortedArrayAsc, 1, "A")
+#mergeSort(sortedArrayAsc, "A", 0)
 print("End - sortedASC sorting")
 print("Start - sortedDESC sorting")
-#selectionSort(sortedArrayDesc, 0, "D")
+#selectionSort(sortedArrayDesc, "D")
 #insertionSort(sortedArrayDesc, "D")
-mergeSort(sortedArrayDesc, 1, "D")
+#mergeSort(sortedArrayDesc, "D", 0)
 print("End - sortedDESC sorting")
 
 #print("random array:")
