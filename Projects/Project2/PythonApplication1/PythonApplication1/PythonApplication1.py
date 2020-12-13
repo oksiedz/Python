@@ -1,38 +1,37 @@
 
 import random
 import datetime
-##import math
 
-#NoOfGeneratedNumber - number of items in array to be sorted
-noOfGeneratedNumber = 1200
+#Arrays to be used - randomArray - array with random numbers, sortedArrayAsc - array with sorted ascending numbers, sortedArrayDesc - array with sorted ascending numbers
+randomArray = []
+sortedArrayAsc = []
+sortedArrayDesc = []
 
-#array with random numbers
-listToBeSorted = []
-#array with list of results of sorting
-listOfResults = []
-#array with sorted array ASC
-listSortedAsc = []
-#array with sorted array DESC
-listSortedDesc = []
+#variables explanation:
+#inputArray - parameter for input array to be sorted
+#ifSave = parameter set 1 if as an output there should be saved the sorted array
+#inputType = parameter defining type of input array - if it's random (R), sorted ASC (A) or sorted DESC (D)
+resultsList = []
 
-#inputType - R - random, A - sorted ascending, D - sorted descending
+#noOfGeneratedNumber - how many items contain array of random numbers
+noOfGeneratedNumber = 17000
 
-
-print("Rozpoczęcie generowania ciagu liczb losowych")
+#print("Start of random array generation")
 for i in range(0, noOfGeneratedNumber):
-    listToBeSorted.append(float(random.random()))
-print("Zakończenie generowania ciagu liczb losowych")
+    randomArray.append(float(random.random()))
+#print("End of random array generation")
 
-#print("Nieposortowany ciąg:")
-#notsorted
-#for i in range(len(listToBeSorted)):
-#	print(listToBeSorted[i])
+#print("random array:")
+#for i in range(len(randomArray)):
+#    print(randomArray[i])
 
 #Selection sort
-def selectionSort(inputArray, inputType):
+def selectionSort(inputArray, ifSave = 0, inputType = "Z"):
 	#Array to be sorted
-	print("Selection sort start")
-	A = inputArray
+	A = []
+	for i in range(0, len(inputArray)):
+		A.append(inputArray[i])
+	#print("Start - Selection sort")
 	startTime = datetime.datetime.now()
 	for i in range(len(A)): 
 		#Find the min value in the remaining not sorted part of array
@@ -41,21 +40,20 @@ def selectionSort(inputArray, inputType):
 			if A[min_idx] > A[j]: 
 				min_idx = j 
 		#Swap the minimum with the first array element
-		A[i], A[min_idx] = A[min_idx], A[i] 
+		A[i], A[min_idx] = A[min_idx], A[i]
 	endTime = datetime.datetime.now()
-	#Printout
-	print("Selection sort end")
-	#print ("Posortowany ciąg:") 
-	#for i in range(len(A)): 
-	#	print(A[i])
-	listOfResults.append("S;"+str(inputType)+";"+str(endTime-startTime))
-
-
+#	print("End - Selection sort")
+	if (ifSave == 1):
+		for i in range(len(A)):
+			sortedArrayAsc.append(A[i])
+	resultsList.append("S;"+str(inputType)+";"+str(endTime-startTime))
 
 #Insertion sort
-def insertionSort(inputArray, inputType): 
-	print("Insertion sort start")
-	A = inputArray
+def insertionSort(inputArray, inputType = "Z"): 
+#	print("Start - Insertion sort")
+	A = []
+	for i in range(0, len(inputArray)):
+		A.append(inputArray[i])
 	startTime = datetime.datetime.now()
 	for i in range(1, len(A)): 
 		key = A[i] 
@@ -66,17 +64,15 @@ def insertionSort(inputArray, inputType):
 				j -= 1
 		A[j+1] = key
 	endTime = datetime.datetime.now()
-	print("Insertion sort end")
-	#print("Insertion sort:")
-	#for i in range(len(A)): 
-	#	print (A[i]) 
-	listOfResults.append("I;"+str(inputType)+";"+str(endTime-startTime))
+#	print("End - Insertion sort")
+	resultsList.append("I;"+str(inputType)+";"+str(endTime-startTime))
 
-#Merge sort
 def mergeSort(inputArray, ifPrint = 0, inputType = "Z"):
-	if ifPrint == 1:
-		print("Merge sort start")
-	A = inputArray
+#	if ifPrint == 1:
+#		print("Merge sort start")
+	A = []
+	for i in range(0, len(inputArray)):
+		A.append(inputArray[i])
 	startTime = datetime.datetime.now()
 	if len(A) > 1:
 		# Finding the mid of the array
@@ -110,41 +106,41 @@ def mergeSort(inputArray, ifPrint = 0, inputType = "Z"):
 			k += 1
 	if ifPrint == 1:
 		endTime = datetime.datetime.now()
-		print("Merge sort end")
-		#print("Merge sort:")
-		for i in range(0, len(A)):
-			#print(A[i])
-			if (inputType == "R"):
-				listSortedAsc.append(A[i])
-		listOfResults.append("M;"+str(inputType)+";"+str(endTime-startTime))
+#		print("End - Merge sort")
+		resultsList.append("M;"+str(inputType)+";"+str(endTime-startTime))
 
+print("Start - random sorting")
+selectionSort(randomArray, 1, "R")
+#insertionSort(randomArray, "R")
+mergeSort(randomArray, 1, "R")
+print("End - random sorting")
 
-#Sorting on random array
-selectionSort(listToBeSorted, "R")
-insertionSort(listToBeSorted, "R")
-mergeSort(listToBeSorted, 1, "R")
+for i in range(0, len(sortedArrayAsc)):
+	sortedArrayDesc.append(list(reversed(sortedArrayAsc))[i])
 
-listSortedDesc = list(reversed(listSortedAsc))
+print("Start - sortedASC sorting")
+#selectionSort(sortedArrayAsc, 0, "A")
+insertionSort(sortedArrayAsc, "A")
+mergeSort(sortedArrayAsc, 1, "A")
+print("End - sortedASC sorting")
+print("Start - sortedDESC sorting")
+#selectionSort(sortedArrayDesc, 0, "D")
+#insertionSort(sortedArrayDesc, "D")
+mergeSort(sortedArrayDesc, 1, "D")
+print("End - sortedDESC sorting")
 
-#Sorting on sorted ascending array
-selectionSort(listToBeSorted, "A")
-insertionSort(listToBeSorted, "A")
-mergeSort(listToBeSorted, 1, "A")
+#print("random array:")
+#for i in range(0, len(randomArray)):
+#	print(randomArray[i])
 
-#Sorting on sorted descending array
-selectionSort(listToBeSorted, "D")
-insertionSort(listToBeSorted, "D")
-mergeSort(listToBeSorted, 1, "D")
+#print("sorted ASC array:")
+#for i in range(0, len(sortedArrayAsc)):
+#	print(sortedArrayAsc[i])
 
-#print("posortowany ciąg ASC")
-#for i in range(len(listSortedAsc)):
-#	print(listSortedAsc[i])
+#print("sorted DESC array:")
+#for i in range(0, len(sortedArrayDesc)):
+#	print(sortedArrayDesc[i])
 
-#print("posortowany ciąg DESC")
-#for i in range(len(listSortedDesc)):
-#	print(listSortedDesc[i])
-
-print("Wyniki")
-#Print results
-for i in range(len(listOfResults)):
-	print(listOfResults[i])
+print("time results")
+for i in range(0, len(resultsList)):
+	print(resultsList[i])
