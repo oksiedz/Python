@@ -1,0 +1,33 @@
+Na nieposortowanym ci¹gu:
+
+1 sekunda:
+Selection Sort 1 500 obserwacji
+Insertion Sort 1 600 obserwacji
+Merge Sort 24 000 obserwacji
+
+5 minut:
+Selection Sort obserwacji
+Insertion Sort obserwacji
+Merge Sort obserwacji
+
+Na posortowanym ASC ci¹gu:
+1 sekunda:
+Selection Sort 1 700 obserwacji
+Insertion Sort 500 000 obserwacji
+Merge Sort 24 000 obserwacji
+
+5 minut:
+Selection Sort  obserwacji
+Insertion Sort  obserwacji
+Merge Sort  obserwacji
+
+Na posortowanym DESC ci¹gu:
+1 sekunda:
+Selection Sort 1 600 obserwacji
+Insertion Sort 1 300 obserwacji
+Merge Sort 24 000 obserwacji
+
+5 minut:
+Selection Sort  obserwacji
+Insertion Sort  obserwacji
+Merge Sort  obserwacji
