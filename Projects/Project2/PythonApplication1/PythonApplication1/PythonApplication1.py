@@ -14,7 +14,7 @@ sortedArrayDesc = []
 resultsList = []
 
 #noOfGeneratedNumber - how many items contain array of random numbers
-noOfGeneratedNumber = 100000
+noOfGeneratedNumber = 18000
 
 #print("Start of random array generation")
 for i in range(0, noOfGeneratedNumber):
@@ -114,27 +114,32 @@ def mergeSort(inputArray, inputType = "Z", ifSave = 0):
 
 
 print("Start - random sorting")
-#selectionSort(randomArray, "R")
-#insertionSort(randomArray, "R")
+selectionSort(randomArray, "R")
+insertionSort(randomArray, "R")
 mergeSort(randomArray, "R", 1)
 print("End - random sorting")
 
 print("Start - Sorting Desc")
 reverseStart = datetime.datetime.now()
-for i in range(0, len(sortedArrayAsc)):
-	sortedArrayDesc.append(list(reversed(sortedArrayAsc))[i])
+#for i in range(0, len(sortedArrayAsc)):
+#	sortedArrayDesc.append(list(reversed(sortedArrayAsc))[i])
+sortedArrayDesc = list(reversed(sortedArrayAsc))
 reverseEnd = datetime.datetime.now()
 print("End - Sorting Desc, lasted: "+str(reverseEnd - reverseStart))
 
+#print("sortowany DESC")
+#print(sortedArrayDesc)
+#sortedArrayDesc = list(reversed(sortedArrayAsc))
+
 print("Start - sortedASC sorting")
-#selectionSort(sortedArrayAsc, "A")
+selectionSort(sortedArrayAsc, "A")
 insertionSort(sortedArrayAsc, "A")
-#mergeSort(sortedArrayAsc, "A", 0)
+mergeSort(sortedArrayAsc, "A", 0)
 print("End - sortedASC sorting")
 print("Start - sortedDESC sorting")
-#selectionSort(sortedArrayDesc, "D")
-#insertionSort(sortedArrayDesc, "D")
-#mergeSort(sortedArrayDesc, "D", 0)
+selectionSort(sortedArrayDesc, "D")
+insertionSort(sortedArrayDesc, "D")
+mergeSort(sortedArrayDesc, "D", 0)
 print("End - sortedDESC sorting")
 
 #print("random array:")
