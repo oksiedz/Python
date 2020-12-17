@@ -120,6 +120,7 @@ mergeSort(randomArray, "R", 1, 0, 0)
 #print("End - random sorting")
 print("End - generation of sorted array ASC")
 
+###Section reversing sorted array
 print("Start - Sorting Desc")
 reverseStart = datetime.datetime.now()
 #for i in range(0, len(sortedArrayAsc)):
@@ -171,19 +172,19 @@ for i in range(loopStart,loopEnd):
 print("End - random array")
 print("Start - ASC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "A", 1)
+	selectionSort(sortedArrayAsc[startNumber:endNumber], "A", 1)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "A", 1)
+	insertionSort(sortedArrayAsc[startNumber:endNumber], "A", 1)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "A", 0, 1, 1)
+	mergeSort(sortedArrayAsc[startNumber:endNumber], "A", 0, 1, 1)
 print("End - ASC array")
 print("Start - DESC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "D", 1)
+	selectionSort(sortedArrayDesc[startNumber:endNumber], "D", 1)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "D", 1)
+	insertionSort(sortedArrayDesc[startNumber:endNumber], "D", 1)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "D", 0, 1, 1)
+	mergeSort(sortedArrayDesc[startNumber:endNumber], "D", 0, 1, 1)
 print("End - DESC array")
 print("End: First loop")
 startNumber = 6001
@@ -198,19 +199,19 @@ for i in range(loopStart,loopEnd):
 print("End - random array")
 print("Start - ASC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "A", 2)
+	selectionSort(sortedArrayAsc[startNumber:endNumber], "A", 2)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "A", 2)
+	insertionSort(sortedArrayAsc[startNumber:endNumber], "A", 2)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "A", 0, 1, 2)
+	mergeSort(sortedArrayAsc[startNumber:endNumber], "A", 0, 1, 2)
 print("End - ASC array")
 print("Start - DESC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "D", 2)
+	selectionSort(sortedArrayDesc[startNumber:endNumber], "D", 2)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "D", 2)
+	insertionSort(sortedArrayDesc[startNumber:endNumber], "D", 2)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "D", 0, 1, 2)
+	mergeSort(sortedArrayDesc[startNumber:endNumber], "D", 0, 1, 2)
 print("End - DESC array")
 print("End: Second loop")
 startNumber = 12001
@@ -226,21 +227,21 @@ for i in range(loopStart,loopEnd):
 print("End - random array")
 print("Start - ASC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "A", 3)
+	selectionSort(sortedArrayAsc[startNumber:endNumber], "A", 3)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "A", 3)
+	insertionSort(sortedArrayAsc[startNumber:endNumber], "A", 3)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "A", 0, 1, 3)
+	mergeSort(sortedArrayAsc[startNumber:endNumber], "A", 0, 1, 3)
 print("End - ASC array")
 print("Start - DESC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "D", 3)
+	selectionSort(sortedArrayDesc[startNumber:endNumber], "D", 3)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "D", 3)
+	insertionSort(sortedArrayDesc[startNumber:endNumber], "D", 3)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "D", 0, 1, 3)
+	mergeSort(sortedArrayDesc[startNumber:endNumber], "D", 0, 1, 3)
 print("End - DESC array")
-print("End: First loop")
+print("End: Third loop")
 startNumber = 18001
 endNumber = 24000
 print("Start: Fourth loop")
@@ -254,19 +255,19 @@ for i in range(loopStart,loopEnd):
 print("End - random array")
 print("Start - ASC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "A", 4)
+	selectionSort(sortedArrayAsc[startNumber:endNumber], "A", 4)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "A", 4)
+	insertionSort(sortedArrayAsc[startNumber:endNumber], "A", 4)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "A", 0, 1, 4)
+	mergeSort(sortedArrayAsc[startNumber:endNumber], "A", 0, 1, 4)
 print("End - ASC array")
 print("Start - DESC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "D", 4)
+	selectionSort(sortedArrayDesc[startNumber:endNumber], "D", 4)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "D", 4)
+	insertionSort(sortedArrayDesc[startNumber:endNumber], "D", 4)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "D", 0, 1, 4)
+	mergeSort(sortedArrayDesc[startNumber:endNumber], "D", 0, 1, 4)
 print("End - DESC array")
 print("End: Fourth loop")
 startNumber = 24001
@@ -282,27 +283,77 @@ for i in range(loopStart,loopEnd):
 print("End - random array")
 print("Start - ASC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "A", 5)
+	selectionSort(sortedArrayAsc[startNumber:endNumber], "A", 5)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "A", 5)
+	insertionSort(sortedArrayAsc[startNumber:endNumber], "A", 5)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "A", 0, 1, 5)
+	mergeSort(sortedArrayAsc[startNumber:endNumber], "A", 0, 1, 5)
 print("End - ASC array")
 print("Start - DESC array")
 for i in range(loopStart,loopEnd):
-	selectionSort(randomArray[startNumber:endNumber], "D", 5)
+	selectionSort(sortedArrayDesc[startNumber:endNumber], "D", 5)
 for i in range(loopStart,loopEnd):
-	insertionSort(randomArray[startNumber:endNumber], "D", 5)
+	insertionSort(sortedArrayDesc[startNumber:endNumber], "D", 5)
 for i in range(loopStart,loopEnd):
-	mergeSort(randomArray[startNumber:endNumber], "D", 0, 1, 5)
+	mergeSort(sortedArrayDesc[startNumber:endNumber], "D", 0, 1, 5)
 print("End - DESC array")
 print("End: Fifth loop")
-
 
 print("time results")
 for i in range(0, len(resultsList)):
 	print(resultsList[i])
 
+##to write down results of general tests
 with open('testing results.txt', 'w') as f:
     for item in resultsList:
         f.write("%s\n" % item)
+
+
+
+
+##Section of comparison of performance between Insertion sort and merge sort on sorted array enriched with some random numbers
+
+noOfGeneratedNumber = 100000
+randomArray = []
+sortedArrayAsc = []
+
+print("Start of random array generation")
+for i in range(0, noOfGeneratedNumber):
+    randomArray.append(float(random.random()))
+print("End of random array generation")
+
+print("Start - generation of sorted array ASC")
+mergeSort(randomArray, "R", 1, 0, 0)
+#print("End - random sorting")
+print("End - generation of sorted array ASC")
+
+
+resultsList = []
+sortedArray1 = sortedArrayAsc[0:100000]
+
+print("Start - append the first array")
+for i in range(0, 10000):
+    sortedArray1.append(float(random.random()))
+print("End - append the first array")
+
+print("Time measures")
+resultsList.append("Results of performance comparison")
+sortedLength = noOfGeneratedNumber
+step = 10
+print("Start - first loops")
+for i in (0,1,2,3,4,5,6,7,8,9,10):
+	resultsList.append("array 10 000 with additional " + str(i)+" random numbers at the end of array")
+	print(sortedLength+i*step);
+	insertionSort(sortedArray1[0:sortedLength+i*step]);
+	mergeSort(sortedArray1[0:sortedLength+i*step],saveResults = 1);
+print("End - first loops")
+
+
+##results of simulations of performance of insertion sort and merge sort
+with open('testing results2.txt', 'w') as f:
+    for item in resultsList:
+        f.write("%s\n" % item)
+
+for i in range(0, len(resultsList)):
+	print(resultsList[i])
+

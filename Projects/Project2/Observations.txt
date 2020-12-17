@@ -31,3 +31,11 @@ Merge Sort 24 000 obserwacji
 Selection Sort 23 000 obserwacji
 Insertion Sort 20 000 obserwacji
 Merge Sort 4 700 000 obserwacji
+
+
+Bior¹c pod uwagê powy¿sze wyniki przyjêto, i¿ pomiary zostan¹ wykonane na wektorze 30 000 obserwacji podzielonych na 5 przezdzia³ów
+0 - 6000
+6001 - 12000
+12001 - 18000
+18001-24000
+24001-30000
