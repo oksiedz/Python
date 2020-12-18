@@ -18,7 +18,7 @@ noOfGeneratedNumber = 30000
 
 print("Start of random array generation")
 for i in range(0, noOfGeneratedNumber):
-    randomArray.append(float(random.random()))
+	randomArray.append(float(random.random()))
 print("End of random array generation")
 
 #print("random array:")
@@ -33,12 +33,12 @@ def selectionSort(inputArray, inputType = "Z",measurePoint = 0):
 		A.append(inputArray[i])
 	#print("Start - Selection sort")
 	startTime = datetime.datetime.now()
-	for i in range(len(A)): 
+	for i in range(len(A)):
 		#Find the min value in the remaining not sorted part of array
-		min_idx = i 
-		for j in range(i+1, len(A)): 
-			if A[min_idx] > A[j]: 
-				min_idx = j 
+		min_idx = i
+		for j in range(i+1, len(A)):
+			if A[min_idx] > A[j]:
+				min_idx = j
 		#Swap the minimum with the first array element
 		A[i], A[min_idx] = A[min_idx], A[i]
 	endTime = datetime.datetime.now()
@@ -46,18 +46,18 @@ def selectionSort(inputArray, inputType = "Z",measurePoint = 0):
 	resultsList.append("S;"+str(inputType)+";"+str(measurePoint)+";"+str(endTime-startTime))
 
 #Insertion sort
-def insertionSort(inputArray, inputType = "Z", measurePoint = 0): 
+def insertionSort(inputArray, inputType = "Z", measurePoint = 0):
 #	print("Start - Insertion sort")
 	A = []
 	for i in range(0, len(inputArray)):
 		A.append(inputArray[i])
 	startTime = datetime.datetime.now()
-	for i in range(1, len(A)): 
-		key = A[i] 
+	for i in range(1, len(A)):
+		key = A[i]
 		#Moving elements of A[0..i-1], which are greater that key, to one position ahead of their current position
 		j = i-1
-		while j >=0 and key < A[j] : 
-				A[j+1] = A[j] 
+		while j >=0 and key < A[j] :
+				A[j+1] = A[j]
 				j -= 1
 		A[j+1] = key
 	endTime = datetime.datetime.now()
