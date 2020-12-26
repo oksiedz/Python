@@ -1,4 +1,3 @@
-
 import random
 import datetime
 
@@ -348,7 +347,6 @@ for i in (0,1,2,3,4,5,6,7,8,9,10):
 	mergeSort(sortedArray1[0:sortedLength+i*step],saveResults = 1);
 print("End - first loops")
 
-
 ##results of simulations of performance of insertion sort and merge sort
 with open('testing results2.txt', 'w') as f:
     for item in resultsList:
@@ -356,4 +354,3 @@ with open('testing results2.txt', 'w') as f:
 
 for i in range(0, len(resultsList)):
 	print(resultsList[i])
-
