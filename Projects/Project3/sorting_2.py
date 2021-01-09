@@ -1,172 +1,253 @@
 import random
 import datetime
 
-##############################Quick sort code
-def quickSort(arr, start , stop, mode):
-	if(start < stop):
-		if mode == 1: #Random pivot
-			pivotindex = partitionRand(arr,start, stop)
-		if mode == 2: #First element as pivot
-			pivotindex = partitionLow(arr,start, stop)
-		if mode == 3: #Last element as pivot
-			pivotindex = partitionHigh(arr,start, stop)
-		quickSort(arr , start , pivotindex-1, mode)
-		quickSort(arr, pivotindex + 1, stop, mode)
 
-def partitionRand(arr , start, stop):
-	randpivot = random.randrange(start, stop)
+# #############################Quick sort code
+# This function is same in both iterative and recursive
+def partition_end(arr, start, stop):
+	index = start - 1
+	x = arr[stop]
 
-	arr[start], arr[randpivot] = arr[randpivot], arr[start]
-	return partitionLow(arr, start, stop)
+	for j in range(start, stop):
+		if arr[j] <= x:
+			# increment index of smaller element
+			index = index + 1
+			arr[index], arr[j] = arr[j], arr[index]
 
-def partitionLow(arr,start,stop):
+	arr[index + 1], arr[stop] = arr[stop], arr[index + 1]
+	return index + 1
+
+
+def partition_start(arr, start, stop):
 	pivot = start
-	i = start + 1
+	index = start + 1
 	for j in range(start + 1, stop + 1):
 		if arr[j] <= arr[pivot]:
-			arr[i] , arr[j] = arr[j] , arr[i]
-			i = i + 1
-	arr[pivot] , arr[i - 1] =\
-			arr[i - 1] , arr[pivot]
-	pivot = i - 1
-	return (pivot)
+			arr[index], arr[j] = arr[j], arr[index]
+			index = index + 1
+	arr[pivot], arr[index - 1] = arr[index - 1], arr[pivot]
+	return index - 1
 
-def partitionHigh(arr, start, stop): 
-	i = (start - 1)
-	pivot = arr[stop]
-	for j in range(start, stop): 
-		if arr[j] <= pivot:
-			i = i+1
-			arr[i], arr[j] = arr[j], arr[i] 
-	arr[i+1], arr[stop] = arr[stop], arr[i+1]
-	return (i+1) 
 
-def quickSortEngine(inputArray, quickSortMode = 1, inputType = "Z", ifSave = 0, saveResults = 0, measurePoint = 0):
-    A = []
-    for i in range(0, len(inputArray)):
-        A.append(inputArray[i])
-    startTime = datetime.datetime.now()
-    quickSort(inputArray, 0, len(A) - 1, quickSortMode)
-    endTime = datetime.datetime.now()
-    if (ifSave == 1):
-        for i in range(len(inputArray)):
-            sortedArrayAsc.append(inputArray[i])
-    if (saveResults == 1):
-        resultsList.append("Q;"+str(quickSortMode)+";"+str(inputType)+";"+str(measurePoint)+";"+str(endTime-startTime))
+def partition_rand(arr, start, stop):
+	rand_pivot = random.randrange(start, stop)
 
-##############################Merge Sort code
-def mergeSort(alist):
-	if len(alist)>1:
-		mid = len(alist)//2
-		leftHalf = alist[:mid]
-		rightHalf = alist[mid:]
+	arr[start], arr[rand_pivot] = arr[rand_pivot], arr[start]
+	return partition_start(arr, start, stop)
 
-		mergeSort(leftHalf)
-		mergeSort(rightHalf)
 
-		i=0
-		j=0
-		k=0
-		while i < len(leftHalf) and j < len(rightHalf):
-			if leftHalf[i] <= rightHalf[j]:
-				alist[k]=leftHalf[i]
-				i=i+1
+# Function to do Quick sort
+# arr[] --> Array to be sorted,
+# start --> Starting index,
+# stop --> Ending index
+def quick_sort_iterative(arr, start, stop, mode):
+
+	# Create an auxiliary stack
+	size = stop - start + 1
+	stack = [0] * size
+	# initialize top of stack
+	top = -1
+
+	# push initial values of l and h to stack
+	top = top + 1
+	stack[top] = start
+	top = top + 1
+	stack[top] = stop
+
+	# Keep popping from stack while is not empty
+	while top >= 0:
+
+		# Pop h and l
+		stop = stack[top]
+		top = top - 1
+		start = stack[top]
+		top = top - 1
+
+		# Set pivot element at its correct position in
+		# sorted array
+		p = 0
+		if mode == 1:
+			p = partition_rand(arr, start, stop)
+		if mode == 2:
+			p = partition_start(arr, start, stop)
+		if mode == 3:
+			p = partition_end(arr, start, stop)
+
+		# If there are elements on left side of pivot,
+		# then push left side to stack
+		if p - 1 > start:
+			top = top + 1
+			stack[top] = start
+			top = top + 1
+			stack[top] = p - 1
+
+		# If there are elements on right side of pivot,
+		# then push right side to stack
+		if p + 1 < stop:
+			top = top + 1
+			stack[top] = p + 1
+			top = top + 1
+			stack[top] = stop
+
+
+def quick_sort_engine(input_array, q_s_mode=1, input_type="Z", if_save=0, save_results=0, measure_point=0):
+	a = []
+	for i1 in range(0, len(input_array)):
+		a.append(input_array[i1])
+	print("Quicksort Start: " + str(input_type))
+	st = datetime.datetime.now()
+	quick_sort_iterative(input_array, 0, len(a) - 1, q_s_mode)
+	et = datetime.datetime.now()
+	print("Quicksort End: " + str(input_type))
+	if if_save == 1:
+		for i2 in range(len(input_array)):
+			sortedArrayAsc.append(input_array[i2])
+	if save_results == 1:
+		resultsList.append("Q;" + str(q_s_mode) + ";"+str(input_type) + ";" + str(measure_point) + ";" + str(et - st))
+
+
+# #############################Merge Sort code
+def merge_sort(array):
+	if len(array) > 1:
+		mid = len(array)//2
+		left_half = array[:mid]
+		right_half = array[mid:]
+
+		merge_sort(left_half)
+		merge_sort(right_half)
+
+		i1 = 0
+		j = 0
+		k = 0
+		while i1 < len(left_half) and j < len(right_half):
+			if left_half[i1] <= right_half[j]:
+				array[k] = left_half[i1]
+				i1 = i1 + 1
 			else:
-				alist[k]=rightHalf[j]
-				j=j+1
-			k=k+1
+				array[k] = right_half[j]
+				j = j + 1
+			k = k + 1
 
-		while i < len(leftHalf):
-			alist[k]=leftHalf[i]
-			i=i+1
-			k=k+1
+		while i1 < len(left_half):
+			array[k] = left_half[i1]
+			i1 = i1 + 1
+			k = k + 1
 
-		while j < len(rightHalf):
-			alist[k]=rightHalf[j]
-			j=j+1
-			k=k+1
+		while j < len(right_half):
+			array[k] = right_half[j]
+			j = j + 1
+			k = k + 1
 
-def mergeSortEngine(inputArray, inputType = "Z", ifSave = 0, saveResults = 0, measurePoint = 0):
-	A = []
-	for i in range(0, len(inputArray)):
-		A.append(inputArray[i])
-	#print("Start - Merge sort")
-	startTime = datetime.datetime.now()
-	mergeSort(A)
-	endTime = datetime.datetime.now()
-	#print("End - Merge sort")
-	if (ifSave == 1):
-		for i in range(len(A)):
-			sortedArrayAsc.append(A[i])
-	if (saveResults == 1):
-		resultsList.append("M;"+str(inputType)+";"+str(measurePoint)+";"+str(endTime-startTime))
 
-##############################HeapSort
-def heapify(arr, n, i):
-	largest = i
-	l = 2 * i + 1
-	r = 2 * i + 2
+def merge_sort_engine(input_array, input_type="Z", if_save=0, save_results=0, measure_point=0):
+	a = []
+	for i1 in range(0, len(input_array)):
+		a.append(input_array[i1])
+	print("Start - Merge sort")
+	start_time = datetime.datetime.now()
+	merge_sort(a)
+	end_time = datetime.datetime.now()
+	print("End - Merge sort")
+	if if_save == 1:
+		for i2 in range(len(a)):
+			sortedArrayAsc.append(a[i2])
+	if save_results == 1:
+		resultsList.append("M;"+str(input_type)+";"+str(measure_point)+";"+str(end_time-start_time))
 
-	if l < n and arr[largest] < arr[l]:
-		largest = l
-	if r < n and arr[largest] < arr[r]:
-		largest = r
-	if largest != i:
-		arr[i], arr[largest] = arr[largest], arr[i]
+
+# #############################HeapSort
+def heapify(arr, n, iterator):
+	largest = iterator
+	left = 2 * iterator + 1
+	right = 2 * iterator + 2
+
+	if left < n and arr[largest] < arr[left]:
+		largest = left
+	if right < n and arr[largest] < arr[right]:
+		largest = right
+	if largest != iterator:
+		arr[iterator], arr[largest] = arr[largest], arr[iterator]
 		heapify(arr, n, largest)
 
-def heapSort(arr):
+
+def heap_sort(arr):
 	n = len(arr)
 
-	for i in range(n//2 - 1, -1, -1):
-		heapify(arr, n, i)
+	for i1 in range(n//2 - 1, -1, -1):
+		heapify(arr, n, i1)
 
-	for i in range(n-1, 0, -1):
-		arr[i], arr[0] = arr[0], arr[i]
-		heapify(arr, i, 0)
+	for i2 in range(n-1, 0, -1):
+		arr[i2], arr[0] = arr[0], arr[i2]
+		heapify(arr, i2, 0)
 
-def heapSortEngine(inputArray, inputType = "Z", ifSave = 0, saveResults = 0, measurePoint = 0):
-	A = []
-	for i in range(0, len(inputArray)):
-		A.append(inputArray[i])
-	#print("Start - Heap sort")
-	startTime = datetime.datetime.now()
-	heapSort(A)
-	endTime = datetime.datetime.now()
-	#print("End - Heap sort")
-	if (ifSave == 1):
-		for i in range(len(A)):
-			sortedArrayAsc.append(A[i])
-	if (saveResults == 1):
-		resultsList.append("H;"+str(inputType)+";"+str(measurePoint)+";"+str(endTime-startTime))
 
-################################Working code
+def heap_sort_engine(input_array, input_type="Z", if_save=0, save_results=0, measure_point=0):
+	a = []
+	for i1 in range(0, len(input_array)):
+		a.append(input_array[i1])
+	print("Start - Heap sort")
+	start_time = datetime.datetime.now()
+	heap_sort(a)
+	end_time = datetime.datetime.now()
+	print("End - Heap sort")
+	if if_save == 1:
+		for i2 in range(len(a)):
+			sortedArrayAsc.append(a[i2])
+	if save_results == 1:
+		resultsList.append("H;"+str(input_type)+";"+str(measure_point)+";"+str(end_time - start_time))
+
+
+# ###############################Working code
 resultsList = []
 sortedArrayAsc = []
 sortedArrayDesc = []
-input = []
-randomArray = []
-noOfGeneratedNumber = 10
+array_input = []
+random_array = []
+noOfGeneratedNumber = 2000
 
 print("Start of random array generation")
 for i in range(0, noOfGeneratedNumber):
-	randomArray.append(float(random.random()))
+	random_array.append(float(random.random()))
 print("End of random array generation")
 
+print("Input array is:")
+print(random_array)
 
-for i in range(0, len(randomArray)):
-        input.append(randomArray[i])
+array_input = list(random_array)
+quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="R", if_save=1, save_results=1, measure_point=0)
+array_input = list(random_array)
+quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="R", if_save=0, save_results=1, measure_point=0)
+array_input = list(random_array)
+quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="R", if_save=0, save_results=1, measure_point=0)
 
-print ("Input array is:")
-print(randomArray)
-
-quickSortEngine(inputArray = input, quickSortMode = 3, inputType = "R", ifSave = 1, saveResults = 1, measurePoint = 0)
-#mergeSortEngine(inputArray = input, inputType = "R", ifSave = 1, saveResults = 1, measurePoint = 0)
-#heapSortEngine(inputArray = input, inputType = "R", ifSave = 1, saveResults = 1, measurePoint = 0)
-print ("Sorted array is:")
+print("sorted array is:")
 print(sortedArrayAsc)
-print(randomArray)
 
-print ("Results:")
-print(resultsList)
+array_input = list(sortedArrayAsc)
+quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="A", if_save=0, save_results=1, measure_point=0)
+array_input = list(sortedArrayAsc)
+quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="A", if_save=0, save_results=1, measure_point=0)
+array_input = list(sortedArrayAsc)
+quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="A", if_save=0, save_results=1, measure_point=0)
 
+print("reverse sorted Start")
+sortedArrayDesc = list(reversed(sortedArrayAsc))
+print("reverse sorted End")
+
+array_input = list(sortedArrayDesc)
+quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="D", if_save=0, save_results=1, measure_point=0)
+array_input = list(sortedArrayDesc)
+quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="D", if_save=0, save_results=1, measure_point=0)
+array_input = list(sortedArrayDesc)
+quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="D", if_save=0, save_results=1, measure_point=0)
+
+
+# mergeSortEngine(inputArray = input, inputType = "R", ifSave = 1, saveResults = 1, measurePoint = 0)
+# heapSortEngine(inputArray = input, inputType = "R", ifSave = 1, saveResults = 1, measurePoint = 0)
+# print ("Sorted array is:")
+# print(sortedArrayAsc)
+# print(randomArray)
+
+print("Results:")
+for i in resultsList:
+	print(i)
