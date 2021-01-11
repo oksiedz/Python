@@ -202,7 +202,7 @@ sortedArrayAsc = []
 sortedArrayDesc = []
 array_input = []
 random_array = []
-noOfGeneratedNumber = 24000000
+noOfGeneratedNumber = 100000
 
 print("Start of random array generation")
 for i in range(0, noOfGeneratedNumber):
@@ -214,36 +214,568 @@ print("End of random array generation")
 
 array_input = list(random_array)
 quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="R", if_save=1, save_results=0, measure_point=0)
-# array_input = list(random_array)
-# quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="R", if_save=0, save_results=1, measure_point=0)
-# array_input = list(random_array)
-# quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="R", if_save=0, save_results=1, measure_point=0)
-
-# print("sorted array is:")
-# print(sortedArrayAsc)
-
-# array_input = list(sortedArrayAsc)
-# quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="A", if_save=0, save_results=1, measure_point=0)
-# array_input = list(sortedArrayAsc)
-# quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="A", if_save=0, save_results=1, measure_point=0)
-# array_input = list(sortedArrayAsc)
-# quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="A", if_save=0, save_results=1, measure_point=0)
-
 print("reverse sorted Start")
 sortedArrayDesc = list(reversed(sortedArrayAsc))
 print("reverse sorted End")
 
+loop_start = 0
+loop_end = 5
+print("Quick sort calculation")
+print("Start - random array with random pivot")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="R", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="R", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="R", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="R", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="R", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+print("Start - random array with first pivot")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="R", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="R", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="R", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="R", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="R", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+print("Start - random array with end pivot")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="R", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="R", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="R", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="R", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="R", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
 
-array_input = list(sortedArrayDesc)
-quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="D", if_save=0, save_results=1, measure_point=0)
-# array_input = list(sortedArrayDesc)
-# quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="D", if_save=0, save_results=1, measure_point=0)
-# array_input = list(sortedArrayDesc)
-# quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="D", if_save=0, save_results=1, measure_point=0)
+print("Start - sorted ASC array with random pivot")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="A", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="A", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="A", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="A", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="A", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+print("Start - sorted ASC array with first pivot")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="A", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="A", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="A", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="A", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="A", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+print("Start - sorted asc array with end pivot")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="A", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="A", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="A", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="A", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="A", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+
+print("Start - sorted DSC array with random pivot")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="D", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="D", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="D", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="D", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="D", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+print("Start - sorted DSC array with first pivot")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="D", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="D", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="D", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="D", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="D", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+print("Start - sorted DSC array with end pivot")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="D", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="D", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="D", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="D", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="D", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+
+print("Merge sort calculation")
+print("Start - random array")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+
+print("Start - sorted ASC array")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+
+print("Start - sorted DSC array")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	merge_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
 
 
-# mergeSortEngine(inputArray = input, inputType = "R", ifSave = 1, saveResults = 1, measurePoint = 0)
-# heapSortEngine(inputArray = input, inputType = "R", ifSave = 1, saveResults = 1, measurePoint = 0)
+
+print("Heap sort calculation")
+print("Start - random array")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(random_array[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="R", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+
+print("Start - sorted ASC array")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayAsc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="A", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+
+print("Start - sorted DSC array")
+print("Start: First loop")
+start_number = 0
+end_number = 20000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=1)
+print("End: First loop")
+print("Start: Second loop")
+start_number = 20001
+end_number = 40000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=2)
+print("End: Second loop")
+print("Start: Third loop")
+start_number = 40001
+end_number = 60000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=3)
+print("End: Third loop")
+print("Start: Fourth loop")
+start_number = 60001
+end_number = 80000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=4)
+print("End: Fourth loop")
+print("Start: Fifth loop")
+start_number = 80001
+end_number = 100000
+for i in range(loop_start, loop_end):
+	array_input = list(sortedArrayDesc[start_number:end_number])
+	heap_sort_engine(input_array=array_input, input_type="D", if_save=0, save_results=1, measure_point=5)
+print("End: Fifth loop")
+
+
+
 # print ("Sorted array is:")
 # print(sortedArrayAsc)
 # print(randomArray)
