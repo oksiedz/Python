@@ -31,7 +31,6 @@ def partition_start(arr, start, stop):
 
 def partition_rand(arr, start, stop):
 	rand_pivot = random.randrange(start, stop)
-
 	arr[start], arr[rand_pivot] = arr[rand_pivot], arr[start]
 	return partition_start(arr, start, stop)
 
@@ -203,43 +202,44 @@ sortedArrayAsc = []
 sortedArrayDesc = []
 array_input = []
 random_array = []
-noOfGeneratedNumber = 2000
+noOfGeneratedNumber = 24000000
 
 print("Start of random array generation")
 for i in range(0, noOfGeneratedNumber):
 	random_array.append(float(random.random()))
 print("End of random array generation")
 
-print("Input array is:")
-print(random_array)
+# print("Input array is:")
+# print(random_array)
 
 array_input = list(random_array)
-quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="R", if_save=1, save_results=1, measure_point=0)
-array_input = list(random_array)
-quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="R", if_save=0, save_results=1, measure_point=0)
-array_input = list(random_array)
-quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="R", if_save=0, save_results=1, measure_point=0)
+quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="R", if_save=1, save_results=0, measure_point=0)
+# array_input = list(random_array)
+# quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="R", if_save=0, save_results=1, measure_point=0)
+# array_input = list(random_array)
+# quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="R", if_save=0, save_results=1, measure_point=0)
 
-print("sorted array is:")
-print(sortedArrayAsc)
+# print("sorted array is:")
+# print(sortedArrayAsc)
 
-array_input = list(sortedArrayAsc)
-quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="A", if_save=0, save_results=1, measure_point=0)
-array_input = list(sortedArrayAsc)
-quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="A", if_save=0, save_results=1, measure_point=0)
-array_input = list(sortedArrayAsc)
-quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="A", if_save=0, save_results=1, measure_point=0)
+# array_input = list(sortedArrayAsc)
+# quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="A", if_save=0, save_results=1, measure_point=0)
+# array_input = list(sortedArrayAsc)
+# quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="A", if_save=0, save_results=1, measure_point=0)
+# array_input = list(sortedArrayAsc)
+# quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="A", if_save=0, save_results=1, measure_point=0)
 
 print("reverse sorted Start")
 sortedArrayDesc = list(reversed(sortedArrayAsc))
 print("reverse sorted End")
 
+
 array_input = list(sortedArrayDesc)
 quick_sort_engine(input_array=array_input, q_s_mode=1, input_type="D", if_save=0, save_results=1, measure_point=0)
-array_input = list(sortedArrayDesc)
-quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="D", if_save=0, save_results=1, measure_point=0)
-array_input = list(sortedArrayDesc)
-quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="D", if_save=0, save_results=1, measure_point=0)
+# array_input = list(sortedArrayDesc)
+# quick_sort_engine(input_array=array_input, q_s_mode=2, input_type="D", if_save=0, save_results=1, measure_point=0)
+# array_input = list(sortedArrayDesc)
+# quick_sort_engine(input_array=array_input, q_s_mode=3, input_type="D", if_save=0, save_results=1, measure_point=0)
 
 
 # mergeSortEngine(inputArray = input, inputType = "R", ifSave = 1, saveResults = 1, measurePoint = 0)
